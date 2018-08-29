@@ -87,38 +87,7 @@ p {
   border: 1px solid black;
 }
 
-.project-1-text {
-  background-color: #1BAF66;
-  color: white;
-  grid-row: 3 / 4;
-  padding: 0 2rem;
-}
 
-.project-1-img {
-  background-color: #1BAF66;
-  display: grid;
-  grid-row: 4 / 5;
-}
-
-.project-2-text {
-  grid-row: 5 / 6;
-  background-color: #0059DF;
-  color: white;
-  padding: 0 2rem;
-}
-
-.project-2-img {
-  grid-row: 6 / 7;
-  background-color: #0059DF;
-}
-
-.contact-me {
-  grid-row: 7 / 9;
-}
-.cd-footer {
-  background-color: #F8FAFF;
-  grid-row: 9 / 11;
-}
 
 /* tablet media queries */
 @media screen and (min-width:768px) {
@@ -131,6 +100,10 @@ p {
 @media screen and (min-width:1025px) {
   .grid-wrapper {
     grid-template-columns: repeat(12, 1fr);
+  }
+
+  .hero {
+    grid-row: 2 / 3;
   }
 
   .menu li {
