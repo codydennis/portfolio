@@ -591,3 +591,50 @@ footer {
 }
 
 }
+
+
+
+
+
+/* Sphere Case Study
+.project-hero {
+  background-color: blue;
+  padding-top: 40rem;
+}
+
+.project-info {
+  background-color: #F7F9FF;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.project-info > ul {
+  list-style-type: none;
+}
+
+
+
+
+
+*/
+
+
+
+/* other media
+
+.illo {
+  width: 80%;
+  height: 80%
+}
+
+
+.about-me-image {
+  grid-column: 1 / -1;
+}
+
+.about-text {
+  grid-column: 5 / 9;
+}
+}
+
+*/
