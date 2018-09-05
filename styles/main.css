@@ -295,12 +295,14 @@ button {
   width: 29rem;
   border-radius: .5rem;
   border: 0;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
   background-color: rgb(11, 35, 255);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   color: #fff;
   margin-top: 2rem;
+
 }
 
 button:hover {
@@ -309,21 +311,25 @@ button:hover {
 }
 
 .fruition-btn, .sphere-btn {
-  background-color: rgb(255, 255, 255);
+  color: #FFFFFF;
+  border: 0.2rem solid #ffffff;
+  background-color: transparent;
   border-radius: .5rem;
+  box-shadow: none;
 }
 
 .fruition-btn:hover, .sphere-btn:hover {
-  background-color: white;
-}
-
-.fruition-btn {
   color: #07B682;
+  transition: 0.3s all ease;
+  background-color: #FFFFFF;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
-.sphere-btn {
+.sphere-btn:hover {
   color: #0777DC;
 }
+
+
 
 @media screen and (min-width:1025px)
 {
