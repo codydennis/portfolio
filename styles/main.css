@@ -280,6 +280,10 @@ color: rgb(128, 136, 158);
   padding: 8rem 0;
   grid-row: 5 / 6;
 }
+
+.contact-me > form {
+  width: 20rem;
+}
 }
 
 /* END GET IN TOUCH SECTION */
@@ -405,7 +409,7 @@ h4 {
 p {
   font-size: 1.7rem;
   font-weight: 300;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
   margin: 2rem 0;
 }
 
@@ -466,7 +470,7 @@ input {
 }
 
 input:focus {
-  border: .2rem solid #5E9BF4;
+  border: .2rem solid rgb(11, 35, 255);
 }
 
 .contactForm div {
@@ -490,7 +494,7 @@ textarea {
 }
 
 textarea:focus {
-  border: .2rem solid #5E9BF4;
+  border: .2rem solid rgb(11, 35, 255);
 }
 .contactSend {
   font-family: "ff-real-text-pro", Helvetica, sans-serif;
