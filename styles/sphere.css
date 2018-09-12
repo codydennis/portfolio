@@ -17,7 +17,6 @@ button {
 .project-hero {
   background-image: linear-gradient(to bottom, rgb(0, 96, 208), rgb(10, 132, 227));
   padding-top: 8rem;
-  grid-row: 1 / 2;
 }
 
 .introduction, .problem, .solution, .info-list, .user-survey, .survey-insights div, .survey-btn,
@@ -53,13 +52,8 @@ figcaption {
 .project-img {
   display: none;
   justify-content: center;
-  align-self: center;
-}
-
-.sphere-logo {
-margin: auto;
-height: 100%;
-width: 5rem;
+  text-align: center;
+  color: white;
 }
 
 .project-img-mobile {
@@ -71,7 +65,6 @@ width: 5rem;
 }
 
 .introduction {
-  grid-row: 2 / 3;
 }
 
 .introduction button {
@@ -100,7 +93,6 @@ width: 5rem;
   background-color: #F7F9FF;
   font-size: 1.7rem;
   font-weight: 300;
-  grid-row: 3 / 4;
 }
 
 .project-info h4, .project-info ul {
@@ -111,11 +103,10 @@ width: 5rem;
 }
 
 .roles, .timeframe, .deliverables {
-  margin: 2rem 0;
+  maring:
 }
 
 .problem-solution {
-  grid-row: 4 / 5;
   background-color: #F7F9FF;
 }
 
@@ -123,12 +114,7 @@ width: 5rem;
   margin-top: 3rem;
 }
 
-.user-survey {
-  grid-row: 5 / 6;
-}
-
 .survey-insights {
-  grid-row: 6 / 7;
   margin: 0;
   background-color: #0266D4;
   color: #FFFFFF;
@@ -149,11 +135,9 @@ width: 5rem;
 }
 
 .survey-btn {
-  grid-row: 7 / 8;
 }
 
 .comp-analysis {
-  grid-row: 8 / 9;
   margin-top: 0;
 }
 
@@ -161,7 +145,6 @@ width: 5rem;
   background-color: #0266D4;
   color: #FFFFFF;
   padding: 4rem 0;
-  grid-row: 9 / 10;
 }
 
 .comp-data {
@@ -184,11 +167,9 @@ width: 5rem;
 }
 
 .comp-btn {
-  grid-row: 10 / 11;
 }
 
 .discovery {
-  grid-row: 13 / 15;
   background-color: #F7F9FF;
   margin-bottom: 3rem;
 }
@@ -201,11 +182,9 @@ width: 5rem;
 }
 
 .persona-1 {
-  grid-row: 12 / 13;
 }
 
 .persona-2 {
-  grid-row: 13 / 14;
 }
 
 .persona-img {
@@ -267,11 +246,9 @@ width: 5rem;
 }
 
 .persona-btn {
-  grid-row: 14 / 15;
 }
 
 .user-stories {
-  grid-row: 15 / 16;
   margin-top: 0;
 }
 
@@ -287,7 +264,6 @@ width: 5rem;
 }
 
 .stories-btn {
-  grid-row: 16 / 17;
   margin-top: 0;
 }
 
@@ -330,30 +306,12 @@ width: 5rem;
 }
 
 .sketching {
-  grid-row: 17 / 22;
   background-color: #F7F9FF;
   padding-top: 3rem;
 }
 
 .sketching-intro {
-  grid-row: 17 / 18;
   background-color: #F7F9FF;
-}
-
-.sketch-1 {
-  grid-row: 18 / 19;
-}
-
-.sketch-2 {
-  grid-row: 19 / 20;
-}
-
-.lofi-wires {
-  grid-row: 20 / 21;
-}
-
-.lofi-testing {
-  grid-row: 21 / 22;
 }
 
 .lofi-testing ul {
@@ -372,42 +330,35 @@ width: 5rem;
 }
 
 .sketches-btn {
-  grid-row: 22 / 23;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 3rem;
 }
 
 .hifi-mockups {
-  grid-row: 23 / 24;
 }
 
 .hifi-btn {
   margin: 0 2rem;
-  grid-row: 24 / 25;
 }
 
 .ab-testing {
-  grid-row: 25 / 26;
   margin: 0 2rem;
   padding-top: 4rem;
 }
 
 .hifi-1 {
-  grid-row: 26 / 27;
   margin: 0;
   padding: 0;
 }
 
 .hifi-2 {
-  grid-row: 27 / 28;
 }
 
 .hifi-info {
 
 }
 .data-info {
-  grid-row: 28 / 29;
   margin-bottom: 0;
 }
 
@@ -431,46 +382,28 @@ width: 5rem;
 }
 
 .testing-btn {
-  grid-row: 29 / 30;
   margin-bottom: 3rem;
   margin-top: 0;
 }
 
 .iteration-intro {
-  grid-row: 30 / 31;
   margin-top: 0;
-}
-
-.iter-1 {
-  grid-row: 31 / 32;
-}
-
-.iter-2 {
-  grid-row: 32 / 33;
-}
-
-.iter-3 {
-  grid-row: 33 / 34;
 }
 
 .crit-iteration {
   padding-top: 3rem;
-  grid-row: 34 / 38;
   background-color: #F7F9FF;
 }
 
 .crit {
-  grid-row: 34 / 35;
   margin-bottom: 0;
 }
 
 .crit-submit {
   padding: 2rem 0;
-  grid-row: 35 / 36;
 }
 
 .crit-info {
-  grid-row: 36 / 37;
   margin-bottom: 0;
 }
 
@@ -478,19 +411,11 @@ width: 5rem;
   padding-bottom: 3rem;
 }
 
-.crit-revised {
-  grid-row: 37 / 38;
-}
-.crit-info-2 {
-  grid-row: 38 / 39;
-}
-
 .iteration-1-btn {
   margin: 0;
 }
 
 .usability-testing {
-  grid-row: 39 / 40;
 }
 
 .usability-testing ul {
@@ -504,30 +429,12 @@ width: 5rem;
   padding: 1rem 0;
 }
 
-.iteration1 {
-  grid-row: 40 / 41;
-}
-
-.iteration2 {
-  grid-row: 41 / 42;
-}
-
-.iteration3 {
-  grid-row: 42 / 43;
-}
-
-.iteration4 {
-  grid-row: 43 / 44;
-}
-
 .iterations-btn {
-  grid-row: 44 / 45;
   margin: 0 2rem;
   padding: 2rem 0;
 }
 
 .finishing-touches {
-  grid-row: 45 / 49;
   background-color: #F7F9FF;
 }
 
@@ -537,48 +444,27 @@ width: 5rem;
 }
 
 .identity {
-  grid-row: 49 / 50;
-}
-
-.logo-sketch {
-  grid-row: 50 / 51;
-}
-
-.logo-digital {
-  grid-row: 51 / 52;
-}
-
-.logo-final {
-  grid-row: 52 / 53;
 }
 
 .styleguide-btn {
-  grid-row: 53 / 54;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .process-btn {
-  grid-row: 54 / 55;
   padding: 0;
   margin-top: 1.5rem;
 }
 
 .conclusion {
- grid-row: 55 / 56;
  background-color: #F7F9FF;
 }
 
 .learn {
-grid-row: 55 / 56;
 }
 
 .learn p {
   margin-bottom: 2rem;
-}
-footer {
-  grid-row: 56 / 57;
-  background-color: dark grey;
 }
 
 
@@ -601,9 +487,10 @@ footer {
   padding: 0;
 }
 
-.project-img {
+.project-image{
   display: block;
-  grid-column: 1 / -1;
+  grid-column: 2 / 6;
+  width: 80%;
 }
 
 button {
@@ -727,13 +614,13 @@ button {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
+  grid-template-rows: auto;
   grid-column-gap: 2rem;
   padding: 3rem 0;
 }
 
 /* rows and columns are within the discovery nested grid */
 .persona-intro {
-  grid-row: 1 / 2;
   margin-top: 0;
 }
 
@@ -743,13 +630,11 @@ button {
 
 .persona-1 {
   grid-column: 1 / 4;
-  grid-row: 2 / 3;
   margin-left: 2rem;
 }
 
 .persona-2 {
   grid-column: 4 / -1;
-  grid-row: 2 / 3;
   margin-right: 2rem;
 }
 
@@ -777,14 +662,12 @@ button {
 
 .sketch-2 {
   grid-column: 4 / -1;
-  grid-row: 18 / 19;
   margin-right: 2rem;
 }
 
 .lofi-wires {
   grid-column: 1 / -1;
   margin: 0 2rem;
-  grid-row: 19 / 20;
 }
 
 .lofi-testing li{
@@ -806,12 +689,10 @@ button {
 .hifi-1 {
   grid-column: 1 / 4;
   margin-left: 2rem;
-  grid-row: 26 / 27;
 }
 
 .hifi-2 {
   grid-column: 4 / -1;
-  grid-row: 26 / 27;
 }
 
 .hifi-btn {
@@ -842,12 +723,10 @@ button {
 
 .iter-2 {
   grid-column: 3 / 5;
-  grid-row: 31 / 32;
 }
 
 .iter-3 {
   grid-column: 5 / -1;
-  grid-row: 31 / 32;
   margin-right: 2rem;
 }
 
@@ -855,24 +734,22 @@ button {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
+  grid-template-rows: auto;
   grid-column-gap: 2rem;
   padding: 3rem 0;
   margin: 4rem 0;
 }
 
 .crit {
-  grid-row: 1 / 2;
   margin: 3rem 0;
 }
 
 .crit-submit {
   grid-column: 2 / 4;
-  grid-row: 2 / 3;
 }
 
 .crit-info {
   grid-column: 4 / 6;
-  grid-row: 2 / 3;
   margin: 0;
 }
 
@@ -882,12 +759,10 @@ button {
 
 .crit-revised {
   grid-column: 2 / 4;
-  grid-row: 3 / 4;
 }
 
 .crit-info-2 {
   grid-column: 4 / 6;
-  grid-row: 3 / 4;
   margin: 0;
 }
 
@@ -901,25 +776,21 @@ button {
 
 .iteration1 {
   grid-column: 1 / 4;
-  grid-row: 41 / 42;
   margin-left: 2rem;
 }
 
 .iteration2 {
   grid-column: 4 / -1;
-  grid-row: 41 / 42;
   margin-right: 2rem;
 }
 
 .iteration3 {
   grid-column: 1 / 4;
-  grid-row: 42 / 43;
   margin-left: 2rem;
 }
 
 .iteration4 {
   grid-column: 4 / -1;
-  grid-row: 42 / 43;
   margin-right: 2rem;
 }
 
@@ -927,42 +798,36 @@ button {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
+  grid-template-rows: auto;
   grid-column-gap: 2rem;
-  padding: 0;
-  margin: 1rem 0;
+  padding: 3rem 0;
+  margin: 4rem 0;
 }
 
 .finishing-intro {
-  grid-row: 45 / 46;
 }
 
 .state1 {
   grid-column: 1 / 4;
-  grid-row: 46 / 47;
   margin-left: 2rem;
 }
 
 .state2 {
   grid-column: 4 / -1;
-  grid-row: 46 / 47;
   margin-right: 2rem;
 }
 
 .state3 {
   grid-column: 1 / 4;
-  grid-row: 47 / 48;
   margin-left: 2rem;
 }
 
 .state4 {
   grid-column: 4 / -1;
-  grid-row: 47 / 48;
   margin-right: 2rem;
 }
 
 .states-btn {
-  grid-row: 48 / 49;
-  padding-bottom: 3rem;
 }
 
 .identity {
@@ -970,31 +835,26 @@ button {
 }
 
 .logo-sketch {
-  grid-row: 50 / 51;
   grid-column: 1 / 4;
   margin-left: 2rem;
 }
 
 .logo-digital {
-  grid-row: 50 / 51;
   grid-column: 4 / -1;
   margin-right: 2rem;
 }
 
 .logo-final {
-  grid-row: 52 / 53;
   grid-column: 1 / -1;
   margin: 0 2rem;
 }
 
 .styleguide-btn {
-  grid-row: 53 / 54;
   grid-column: 2 / 4;
   margin: 2rem 0;
 }
 
 .process-btn {
-  grid-row: 53 / 54;
   grid-column: 4 / 6;
   margin: 2rem 0;
 }
@@ -1004,11 +864,6 @@ button {
   display: grid;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
   grid-column-gap: 2rem;
-}
-
-footer {
-  grid-row: 56 / 57 !important;
-
 }
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
@@ -1028,22 +883,34 @@ footer {
   grid-column-gap: 2rem;
 }
 
-.project-hero {
-  grid-column: 1 / -1;
+/* ALL PARAGRAPHS on SAME COLUMN go here */
+.problem, .solution, .user-survey, .comp-analysis, .info-graph, .persona-intro, .user-stories, .sketching-intro, .lofi-testing,
+.hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .usability-testing, .finishing-intro,
+.identity, .learn {
+  grid-column: 4 / 12;
+}
 
+/* ALL BUTTONS on the SAME COLUMN go here */
+.survey-btn, .comp-btn, .persona-btn, .stories-btn, .sketches-btn, .hifi-btn, .testing-btn, .iterations-btn, .states-btn {
+  grid-column: 6 / 10;
+}
+
+.project-hero {
+  grid-column: 1/ -1;
+}
+
+.project-img {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0;
 }
 
 .introduction {
   grid-column: 3 / 11;
-  grid-row: 2 / 3;
-}
-
-.introduction button {
-  width: 37rem;
 }
 
 .project-info {
-  grid-row: 2 / 3;
   grid-column: 11 / 14;
   display: block;
 }
@@ -1069,11 +936,6 @@ footer {
 .survey-insights div {
   margin-left: 10rem;
   padding-bottom: 3rem
-}
-
-/* ALL BUTTONS on the SAME COLUMN go here */
-.survey-btn, .comp-btn, .persona-btn, .stories-btn, .sketches-btn, .hifi-btn, .testing-btn, .iterations-btn, .states-btn {
-  grid-column: 6 / 10;
 }
 
 .comp-insights {
@@ -1138,6 +1000,7 @@ footer {
 
 .hifi-2 {
   grid-column: 8 / 14;
+
 }
 
 .iter-1 {
@@ -1225,15 +1088,5 @@ font-size: 2rem;
 .conclusion {
   grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
 }
-
-/* ALL PARAGRAPHS on SAME COLUMN go here */
-.problem, .solution, .user-survey, .comp-analysis, .info-graph, .persona-intro, .user-stories, .sketching-intro, .lofi-testing,
-.hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .usability-testing, .finishing-intro,
-.identity, .learn {
-  grid-column: 4 / 12;
-}
-
-
-
 
 }
