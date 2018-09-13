@@ -32,7 +32,7 @@ header {
   padding: 1.5rem 0.4rem;
   background-color: rgba(255, 255, 255, 0.93);
   border-top: 0.6rem solid rgb(12, 190, 169);
-  border-bottom: 0.1rem solid rgb(225, 225, 225);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05),0 0 5px 0 rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
   z-index: 1;
@@ -56,12 +56,12 @@ header {
 **/
 .hamburger {
   position: absolute;
-  top: 5em;
-  right: 8%;
+  top: 5rem;
+  right: 4rem;
   margin-left: -2em;
-  margin-top: -35px;
-  width: 2em;
-  height: 45px;
+  margin-top: -34px;
+  width: 2rem;
+  height: 4.5rem;
   z-index: 5;
 }
 
@@ -82,7 +82,7 @@ Nav Styles
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(12, 190, 169, 0.98);
+  background-color: rgb(11, 35, 255, 0.93);
   top: -100%; left: 0; right: 0; bottom: 0;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
@@ -97,7 +97,7 @@ Nav Styles
 
 .menu ul {
   padding: 0;
-  margin: 0;
+  margin-top: 1.5rem;
   list-style: none;
 }
 
@@ -105,16 +105,16 @@ Nav Styles
 .menu {
   text-align: left;
   margin-left: 10%;
-  font-size: 1rem;
+  font-weight: 700;
 }
 
 .menu a {
   position: relative;
   text-decoration: none;
   color: #FFF;
-  font-size: 2em;
+  font-size: 1.7rem;
   display: inline-block;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   transition: color 0.2s ease-in-out;
   letter-spacing: 1px;
 }
@@ -129,6 +129,9 @@ Nav Styles
 }
 .menu a:hover {
   color: white;
+  font-weight: 900;
+  font-size: 1.8rem;
+  transition: 0.2s ease all;
 }
 .menu a:hover:before {
   height: 100%;
@@ -241,7 +244,6 @@ header {
 @media screen and (min-width:768px) {
   .grid-wrapper {
     grid-template-columns: 8rem repeat(4, 1fr) 8rem;
-    grid-template-rows: auto;
     grid-column-gap: 2rem;
   }
 
@@ -251,8 +253,7 @@ header {
 
   .grid-wrapper {
     background-color: #fff;
-    display: grid;
-      grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
+    grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
 }
 }
 
@@ -274,7 +275,13 @@ header {
 /* HERO CONTENT */
 
 .hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   background-color: rgb(255, 255, 255);
+  height: 100vh;
+  align-content: center;
+
 }
 
 .intro-h1, .intro-h3 {
@@ -286,41 +293,45 @@ header {
 }
 
 .hero-content {
-  padding: 22rem 0 15rem 0;
   text-align: left;
+  padding-top: 5rem;
+  margin: 0 2rem;
 }
 
 #subhead {
-  color: rgb(62, 74, 104);
+  color: rgb(100, 109, 131);
+  line-height: 3rem
 }
 
-.featured-work {
+.scroll {
   display: none;
 }
 
 @media screen and (min-width:768px) {
 
 .hero {
-  display: grid;
   grid-column: 2 / 6;
-  text-align: center;
-  align-items: center;
-  height: 100vh;
+  position: relative;
 }
 
 .hero-content {
-  align-content: space-between;
+  text-align: center;
+  margin: 0;
 }
 
-.featured-work {
-  display: block;
-  grid-column: 3 / 5;
+.scroll {
+  position: absolute;
   bottom: 0;
+  left: 50%;
+  margin-bottom: 1.5rem;
+  display: block;
 }
-.featured-work h4 {
-  font-size: 1.3rem;
-  color: rgb(62, 74, 104);
+
+.mouse-icon {
+  height: 1.7rem;
+  width: 4.9rem;
 }
+
 }
 
 @media screen and (min-width:1224px) {
@@ -337,8 +348,14 @@ header {
   margin-top: 10rem;
 }
 
-.featured-work {
-  grid-column: 6 / 9;
+#subhead {
+  color: rgb(100, 109, 131);
+  line-height: 4rem
+}
+
+.feat-projects {
+  grid-column: 7 / 9;
+  text-align: center;
   bottom: 0;
 }
 
@@ -365,8 +382,14 @@ header {
 }
 
 .project-1, .project-2, .contact-me, footer {
-  padding: 8rem 0rem;
+  padding: 10rem 0rem;
   text-align: center;
+}
+
+.project-1-text, .project-2-text {
+  grid-column: 2 / 6;
+  margin: 3rem 2rem 0 2rem;
+  padding-top: 0;
 }
 
 /* TABLET */
@@ -386,8 +409,8 @@ header {
 
 .project-1-text, .project-2-text {
   grid-column: 2 / 6;
-  margin: 0 10rem;
-  padding: 0;
+  margin: 3rem 10rem;
+  padding-top: 0;
 }
 
 }
@@ -555,13 +578,14 @@ footer {
 
 
 h1, h2, h3, h4, h5, h6, p {
-  margin: 1.3rem 0;
+  margin: 1rem 0;
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   font-weight: 900;
-  line-height: 2rem;
+  line-height: 3.8rem;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -572,6 +596,7 @@ h2 {
 h3 {
   font-size: 2.0rem;
   font-weight: 300;
+  line-height: 3rem;
 }
 
 h4 {
@@ -626,8 +651,8 @@ li {
 @media screen and (min-width:1224px) {
 
   h1 {
-    font-size: 6.4rem;
-    margin-bottom: 4rem;
+    font-size: 7.4rem;
+    margin-bottom: 4.5rem;
     line-height: 0;
   }
 
