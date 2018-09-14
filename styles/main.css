@@ -779,11 +779,15 @@ textarea:focus {
 /* ABOUT PAGE */
 
 .about-img {
-  margin-top: 12rem;
+  margin-top: 7.5rem;
 }
 
 .about-text {
   margin: 0 1rem;
+}
+
+.ascent, .relief, .senna {
+  display: none;
 }
 
 @media screen and (min-width:768px) {
@@ -796,11 +800,16 @@ textarea:focus {
   border-radius: 2rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  margin-top: 12rem;
 }
 
 
  .about-text {
    grid-column: 2 / 6;
+ }
+
+ .ascent, .relief, .senna {
+   display: block;
  }
 }
 
@@ -822,6 +831,22 @@ textarea:focus {
 .about-text {
   grid-column: 4 / 12;
   margin: 0;
+}
+
+.illo-1, .illo-2, .illo-3 {
+  border-radius: 2rem;
+  padding: 2rem 0;
+}
+
+.senna {
+  grid-column: 4 / 6;
+}
+
+.relief {
+  grid-column: 7 / 9;
+}
+.ascent{
+  grid-column: 10 / 12;
 }
 
 }
