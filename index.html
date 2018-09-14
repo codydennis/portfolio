@@ -11,121 +11,119 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/gxy1tee.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
   </head>
-
   <body>
-      <header class="header">
-      <div class="logo-container"> <!-- Centers logo and header -->
+  <header class="header">
+        <div class="logo-container"> <!-- Centers logo in header -->
+          <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
+        </div>
+      <!-- Wraps mobile and tablet/desktop navs -->
+      <nav>
 
-        <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
-      </div>
-<nav>
+      <!-- Divs to make hamburger button -->
+        <input id="toggle" type="checkbox"></input><!-- Enables hamburger menu to be clicked -->
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
 
-  <input id="toggle" type="checkbox"></input>
-    <label for="toggle" class="hamburger">
-      <div class="top-bun"></div>
-      <div class="meat"></div>
-      <div class="bottom-bun"></div>
-    </label>
+        <!-- Hamburger menu -->
+      <div class="nav"><!-- Wraps entire mobile menu -->
+      <div class="nav-wrapper"><!-- Wraps menu links -->
+      <div class="menu"><!-- Menu -->
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./images/resume.pdf">Resume</a></li>
+         </ul>
+      </div><!-- END menu -->
+    </div><!-- END menu links wrap-->
+  </div><!-- END entire mobile menu wrap -->
 
-<div class="nav">
-  <div class="nav-wrapper">
-    <div class="menu">
-      <ul>
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#">Resume</a></li>
-    </ul>
-    </div>
-  </div>
-</div>
-
+      <!-- tablet and desktop navigation -->
       <div class="nav-links">
-        <ul>
-          <li><a class="nav-link" href="index.html">Work</a></li>
-          <li><a class="nav-link" href="about.html">About</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li><a class="nav-link" href="#">Resume</a></li>
-        </ul>
+          <ul>
+            <li><a class="nav-link" href="index.html">Work</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="images/resume.pdf">Resume</a></li>
+          </ul>
       </div>
-      </nav>
-    </header>
+    </nav><!-- END all Navigation -->
+</header>
 
 
-<div class="grid-wrapper"> <!-- CSS Grid wrapper start-->
+<div class="grid-wrapper"> <!-- CSS Grid wrapper START-->
       <!-- Hero -->
-      <section class="hero">
-        <div class="hero-content">
-        <h1>Hello! I'm <span class="intro-h1">Cody,</h1>
-          <h3 id="subhead">a <span class="intro-h3">product designer</span> based in the <span class="intro-h3">San Francisco Bay Area</span>.
-          I make the complex simple and easy through a love of understanding users and collaborating with teams.</h3>
-        </div>
+  <section class="hero">
+      <div class="hero-content">
+           <h1>Hello! I'm <span class="intro-h1">Cody,</h1>
+           <h3 id="subhead">a <span class="intro-h3">product designer</span> based in the <span class="intro-h3">San Francisco Bay Area</span>.
+           I make the complex simple and easy through a love of understanding users and collaborating with teams.</h3>
+     </div>
 
-        <div class="scroll">
-          <img class"mouse-icon" src="images/mouse.svg"/>
-        </div>
+     <div class="scroll"><!-- Hero Mouse Icon -->
+          <img class"mouse-icon" src="images/mouse.svg" alt="mouse icon"/>
+     </div>
 
-      </section>
+  </section><!-- End Hero -->
 
-      <section class="project-1">
-      <div class="project-1-img">
+  <section class="project-1">
+     <div class="project-1-img">
           <img class="fruition" src="images/fruitionlanding.png" alt="Fruition Student Loans responsive dashboard">
-      </div>
-      <div class="project-1-text">
-        <h4 class="h4-landing">Product Design & Branding</h4>
-        <h2>Fruition</h2>
-        <p>A responsive web app that provides borrowers  loan tracking, 1-on-1 counseling, and a path out of debt.</p>
-        <a href="fruition.html"><button type="button" class="fruition-btn">Read Case Study</button></a>
-      </div>
-      </section>
+     </div>
+     <div class="project-1-text">
+          <h4 class="h4-landing">Product Design & Branding</h4>
+          <h2>Fruition</h2>
+          <p>A responsive web app that provides borrowers with loan tracking, 1-on-1 counseling, and a path out of debt.</p>
+          <a href="fruition.html"><button type="button" class="fruition-btn">Read Case Study</button></a>
+     </div>
+  </section>
 
 
-      <section class="project-2">
+  <section class="project-2">
       <div class="project-2-img">
-        <a href="fruition.html"><img class="fruition" src="images/spherelanding.png" alt="Fruition Student Loans responsive dashboard">
-        </a>
+          <a href="fruition.html"><img class="fruition" src="images/spherelanding.png" alt="Fruition Student Loans responsive dashboard"></a>
       </div>
       <div class="project-2-text">
-        <h4 class="h4-landing">Product Design & Branding</h4>
-        <h2>Sphere Pharmacy</h2>
-        <p>An iOS app that makes it easy to order prescriptions and improves patient adherence.</p>
-        <a href="sphere.html"><button type="button" class="sphere-btn">Read Case Study</button></a>
+          <h4 class="h4-landing">Product Design & Branding</h4>
+          <h2>Sphere Pharmacy</h2>
+          <p>An iOS app that makes it easy to order prescriptions and improves patient adherence.</p>
+          <a href="sphere.html"><button type="button" class="sphere-btn">Read Case Study</button></a>
       </div>
-      </section>
+  </section>
 
 
 <!-- Get in touch -->
 
-<section class="contact-me">
-  <div class="email">
-    <h2>Like what you see? Feel free to get in touch anytime</h2>
-    <a href="contact.html"><button type="button" class="prpl-btn">Contact</button></a>
-  </div>
-</section>
+  <section class="contact-me">
+      <div class="email">
+          <h2>Like what you see? Feel free to get in touch anytime.</h2>
+          <a href="contact.html"><button type="button" class="prpl-btn">Get In Touch</button></a>
+      </div>
+  </section>
 
 <!-- Footer -->
-  <footer class="cd-footer">
-<div class="footer-info">
-  <!-- Social Media Links -->
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-      <i class="fab fa-linkedin fa-4x" alt="LinkedIn icon"></i></a>
-      <a href="https://instagram.com/codyjdennis" target="_blank">
-        <i class="fab fa-dribbble-square fa-4x" alt="Dribbble icon"></i></a>
-    <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-      <i class="fab fa-github-square fa-4x" alt="Github icon"></i></a>
- <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-   <i class="fab fa-twitter-square fa-4x" alt="Twitter icon"></i></a>
-</div>
-
-<div>
-  <p><i class="fas fa-copyright"></i> 2018 | Designed and developed by Cody Dennis</p>
-</div><!-- end Social Links-->
-</div>
+<footer class="cd-footer">
+      <div class="footer-info"><!-- To wrap all content inside the footer -->
+      <div class="social-links"><!-- Font Awesome social media links -->
+        <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
+          <i class="fab fa-linkedin fa-4x" alt="LinkedIn icon"></i></a>
+        <a href="http://www.codydennis.dribbble.com/" target="_blank">
+          <i class="fab fa-dribbble-square fa-4x" alt="Dribbble icon"></i></a>
+        <a href="https://twitter.com/codyjdennis" target="_blank">
+          <i class="fab fa-twitter-square fa-4x" alt="Twitter icon"></i></a>
+        <a href="https://github.com/codydennis" target="_blank">
+          <i class="fab fa-github-square fa-4x" alt="Github icon"></i></a>
+     </div>
+     <div>
+        <p><i class="far fa-copyright"></i> 2018 | Designed & Developed by Cody Dennis</p>
+     </div><!-- end Social Links-->
+     </div><!-- End wrapping all content in footer -->
 </footer>
 
 </div> <!--CSS grid wrapper end -->
-  </body>
+</body>
 </html>
