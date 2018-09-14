@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #FFFFFF;
-  color: #12192F;
+  color: #1A264A;
   font-family: "ff-real-text-pro", Helvetica, sans-serif;
   margin: 0;
   overflow-y: hidden;
@@ -142,6 +142,10 @@ header {
   justify-content: space-between;
 }
 
+#navbar {
+   background-color: #A1572F;
+}
+
 
 .logo-container {
     margin-left: 1.5rem;
@@ -231,9 +235,7 @@ header {
   font-weight: 900;
   transition: 0.2s ease all;
 }
-.menu a:hover:before {
-  height: 100%;
-}
+
 
 #toggle {
   display: none;
@@ -293,6 +295,11 @@ header {
   color: #0B23FF;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+
+.nav-link.a {
+  color: #0B23FF;
+  font-weight: 900;
 }
 
 .nav-link:active {
@@ -783,33 +790,35 @@ textarea:focus {
 }
 
 .about-text {
-  margin: 0 1rem;
+  margin: 0 2rem;
+  padding-bottom: 5rem;
 }
 
-.ascent, .relief, .senna {
-  display: none;
+#reach-out {
+  color: #0B23FF;
+  text-decoration: none;
+}
+
+#reach-out:hover {
+  font-weight: 900;
+  transition: 0.3s ease all;
 }
 
 @media screen and (min-width:768px) {
  .about-me-image {
    grid-column: 2 / 6;
+   padding-top: 4rem;
  }
 
 .about-img {
   grid-column: 2 / 6;
   border-radius: 2rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  margin-top: 12rem;
 }
 
 
  .about-text {
    grid-column: 2 / 6;
- }
-
- .ascent, .relief, .senna {
-   display: block;
+   padding-top: 2rem;
  }
 }
 
@@ -818,10 +827,7 @@ textarea:focus {
 
 .about-text {
   margin: 0 2rem;
-}
-
-.about-text h2 {
-  padding-top: 2.1rem;
+  padding-bottom: 8rem;
 }
 
 .about-me-image {
@@ -833,20 +839,5 @@ textarea:focus {
   margin: 0;
 }
 
-.illo-1, .illo-2, .illo-3 {
-  border-radius: 2rem;
-  padding: 2rem 0;
-}
-
-.senna {
-  grid-column: 4 / 6;
-}
-
-.relief {
-  grid-column: 7 / 9;
-}
-.ascent{
-  grid-column: 10 / 12;
-}
 
 }
