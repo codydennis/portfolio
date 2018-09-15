@@ -816,24 +816,21 @@ textarea:focus {
 }
 
 .contactSend {
-  font-family: "ff-real-text-pro", Helvetica, sans-serif;
-  border: 0;
-  border-radius: 0.5rem;
+  /* border-bottom: none; */
+  border: 0.1rem solid rgba(182, 185, 169, 0.6);
   /* padding: 2rem 4rem; */
   text-transform: uppercase;
-  font-weight: 700;
   letter-spacing: 0.1rem;
-  height: 6rem;
-  background-color: #0B23FF;
-  color: #FFFFFF;
-  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(182, 185, 169, 0.4);
+  color: #505148;
 }
 
 .contactSend:hover {
-  background-color: #0015D1;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
+  background-color: #c5b725;
+  border: 0.05rem solid #DFD24E;
+  color: #fff;
 }
+
 
 
 @media screen and (min-width:768px) {
