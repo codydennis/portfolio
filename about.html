@@ -15,52 +15,55 @@
   </head>
 
   <body>
-    <div class="grid-wrapper"> <!-- CSS Grid wrapper start-->
+  <header class="header">
+        <div class="logo-container"> <!-- Centers logo in header -->
+          <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
+        </div>
+      <!-- Wraps mobile and tablet/desktop navs -->
+      <nav>
 
-      <header>
-      <div class="logo-container"> <!-- Centers logo and header -->
+      <!-- Divs to make hamburger button -->
+        <input id="toggle" type="checkbox"></input><!-- Enables hamburger menu to be clicked -->
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
 
-        <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
-      </div>
-<nav>
+        <!-- Hamburger menu -->
+      <div class="nav"><!-- Wraps entire mobile menu -->
+      <div class="nav-wrapper"><!-- Wraps menu links -->
+      <div class="menu"><!-- Menu -->
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/images/resume.pdf">Resume</a></li>
+         </ul>
+      </div><!-- END menu -->
+    </div><!-- END menu links wrap-->
+  </div><!-- END entire mobile menu wrap -->
 
-  <input id="toggle" type="checkbox"></input>
-    <label for="toggle" class="hamburger">
-      <div class="top-bun"></div>
-      <div class="meat"></div>
-      <div class="bottom-bun"></div>
-    </label>
-
-<div class="nav">
-  <div class="nav-wrapper">
-    <div class="menu">
-      <ul>
-      <li><a class="nav-link a" href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#">Resume</a></li>
-    </ul>
-    </div>
-  </div>
-</div>
-
+      <!-- tablet and desktop navigation -->
       <div class="nav-links">
-        <ul>
-          <li><a class="nav-link" href="index.html">Work</a></li>
-          <li><a class="nav-link a" href="about.html">About</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li><a class="nav-link" href="#">Resume</a></li>
-        </ul>
+          <ul>
+            <li><a class="nav-link" href="index.html">Work</a></li>
+            <li><a class="nav-link a" href="about.html">About</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="images/resume.pdf">Resume</a></li>
+          </ul>
       </div>
-      </nav>
-    </header>
+    </nav><!-- END all Navigation -->
+</header>
 
+
+<div class="grid-wrapper"> <!-- CSS Grid wrapper START-->
 
         <div class="about-me-image">
         <img class="about-img" src="images/portfolio_bio.jpg" alt="me" width="100%">
       </div>
       <div class="about-text">
-       <h2>Hello again! I'm <span class="intro-h1">Cody Dennis</span>, a product designer based in
+       <h2>Hey there! I'm <span class="intro-h1">Cody Dennis</span>, a product designer based in
          the San Francisco Bay Area.
        </h2>
        <p>I grew up in Los Angeles, and as a child, aspired to be a sports artist. Seeing artists who
