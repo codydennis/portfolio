@@ -315,6 +315,10 @@ header {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 }
 
 @media screen and (min-width:1224px) {
@@ -796,6 +800,10 @@ input:focus {
   margin-bottom: 2rem;
 }
 
+.contact-button {
+  width: 100%;
+}
+
 textarea {
   font-family: "ff-real-text-pro", Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -814,23 +822,6 @@ textarea {
 textarea:focus {
   border: .2rem solid #0B23FF;
 }
-
-.contactSend {
-  /* border-bottom: none; */
-  border: 0.1rem solid rgba(182, 185, 169, 0.6);
-  /* padding: 2rem 4rem; */
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  background-color: rgba(182, 185, 169, 0.4);
-  color: #505148;
-}
-
-.contactSend:hover {
-  background-color: #c5b725;
-  border: 0.05rem solid #DFD24E;
-  color: #fff;
-}
-
 
 
 @media screen and (min-width:768px) {
