@@ -1234,6 +1234,21 @@ font-size: 2rem;
 }
 
 
+/*** ADDED STYLES FOR FRUITION **/
+
+.project-hero-f {
+  background-image: linear-gradient(to bottom, rgb(20, 190, 108), rgb(0, 178, 139));
+  padding-top: 8rem;
+}
+
+@media screen and (min-width:768px) {
+
+.project-hero-f {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width:1224px) {
+
 
 
 }

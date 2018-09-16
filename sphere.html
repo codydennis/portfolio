@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -23,7 +23,7 @@
     </div>
   <nav>
 
-  <input id="toggle" type="checkbox"></input>
+  <input id="toggle" type="checkbox">
   <label for="toggle" class="hamburger">
     <div class="top-bun"></div>
     <div class="meat"></div>
@@ -60,12 +60,12 @@
 
     <section class="project-hero">
       <div class="project-img-mobile">
-      <h2>sphere</h2>
+      <img class="sphere-logo" src="images/sphere-logo.svg" alt="Sphere Pharmacy logo" />
       <img class="sphere" src="images/sphere_mobile.png" alt="Fruition Student Loans responsive dashboard">
       </a>
     </div>
         <div class="project-img">
-        <h2>sphere</h2>
+          <img class="sphere-logo" src="images/sphere-logo.svg" alt="Sphere Pharmacy logo" />
         <img class="sphere" src="images/sphere_casestudy.png" alt="Fruition Student Loans responsive dashboard">
       </div>
     </section>
@@ -76,8 +76,9 @@
 
     <p>Over the years I’ve had my share of poor experiences that resulted in missing medication.
     Misses which impacted tests months down the road. In early 2018 I took this on as a personal project to explore solutions that could repair the broken pharmacy experience.</p>
-  <a id="intro-btn1" href="#"><button type="button" class="prpl-btn">View Prototype</button></a>
-  <a id="intro-btn2" href="contact.html"><button type="button" id="secondary-btn" class="prpl-btn">View Redlines</button></a>
+    <a href="https://invis.io/UDMV5WP8M2F" target="_blank" id="intro-btn1" class="cs-button">View Prototype</a>
+    <a href="https://drive.google.com/drive/folders/16r7AvE4l4Ue6BxLlwQGWO_rpygryR2EW?usp=sharing" target="_blank" id="intro-btn2" class="cs-button">View Redlines</a>
+
  </div>
 
 
@@ -118,11 +119,11 @@
     <section class="problem-solution">
       <div class="problem">
       <h2>Problem</h2>
-     <p>Over <span class="bold">50%</span> of patients do not take their prescriptions, and 30% fail to fill them at all. Resulting in <span class="bold">30%-50%</span> of treatment failures, hospitalization, and 125,000 deaths per year. </p>
+     <p>Over <span class="bold">50%</span> of patients do not take their prescriptions, and <span class="bold">30%</span> fail to fill them at all. Resulting in <span class="bold">30%-50%</span> of treatment failures, hospitalization, and 125,000 deaths per year. </p>
       </div>
     <div class="solution">
     <h2>Solution</h2>
-    <p>Use of mobile pill reminders improves adherence by a minimum of <span class="bold">12.3%</span>. An efficient and transparent pharmacy results in an additional increase in adherence.</p>
+    <p>Use of mobile pill reminders improves adherence by a minimum of <span class="bold">12.3%</span>. An efficient and transparent pharmacy creates an additional increase in adherence.</p>
     </div>
     </section>
 
@@ -142,29 +143,35 @@
     <h2>84%</h2>
     <p>of respondents take generic or specialty prescriptions</p>
   </div>
+
   <div class="survey-data">
     <h2>67%</h2>
-    <p>forget to take their medication 3-4 times a month</p>
+    <p>forget to take their medication <span class="bold">3-4 times a month</span></p>
   </div>
+
   <div class="survey-data">
     <h2>55%</h2>
     <p>refill their medication online or via a phone call</p>
   </div>
+
   <div class="survey-data">
     <h2>58%</h2>
-    <p>worry about running out with one week or less remaining</p>
+    <p>worry about running out with <span class="bold">one week or less remaining</span></p>
   </div>
-  <div class="info-head">
+  <hr>
+  <div id="pharm" class="info-head">
     <h4>Most Used Pharmacies</h4>
   </div>
   <div class="survey-data">
     <h2>59%</h2>
     <p>CVS Pharmacy</p>
   </div>
+
   <div class="survey-data">
     <h2>35%</h2>
     <p>Walgreens</p>
   </div>
+
   <div class="survey-data">
     <h2>17%</h2>
   <p>Kaiser Permanente</p>
@@ -173,7 +180,7 @@
 
 <!-- Survey Button -->
   <div class="survey-btn">
-    <a href="contact.html"><button type="button" class="prpl-btn">View survey results</button></a>
+    <a href="https://docs.google.com/forms/d/1PnRiQpJbbgn3npvejcEoqnfw1M4BlVx__iEPpCdgI6Q/edit?usp=sharing" target="_blank" class="cs-button">View survey results</a>
   </div>
 
 <!-- Competitive Analysis -->
@@ -181,7 +188,7 @@
     <h2>Competitive Analysis & Target Market</h2>
     <p>CVS Pharmacy, Walgreens, and Kaiser Permanente market their apps to the growing senior population in
       the United States. However, recent findings suggest present-day solutions to mobile digital health does
-      not improve the health of seniors. According to research a younger is demographic is more likely to adopt
+      not improve the health of seniors. According to research a younger demographic is more likely to adopt
       health apps. Reducing Spheres target demographic to <span class="bold">25–45</span> allows for the adoption of the app in the short term
       while still positioning Sphere towards the growing senior population long term.</p>
   </div>
@@ -212,18 +219,18 @@
 
 <!-- Button for competitive analysis -->
   <div class="comp-btn">
-  <a href="contact.html"><button type="button" class="prpl-btn">See full analysis</button></a>
+    <a href="https://drive.google.com/drive/folders/1wDxAQZbHdLQ7k76v65ZDWpgFwcE9gD89?usp=sharing" target="_blank" class="cs-button">View full analysis</a>
   </div>
 
   <!-- User Personas -->
   <section class="discovery">
   <div class="persona-intro">
   <h2>User Personas</h2>
-  <p>I interviewed a group of participants from my survey to better understand their motivations,
-  goals, and frustrations. The primary user personas for Sphere were Madelyn S. and Nate V. The
-  final user persona is Sean, our free user. Sean only takes allergy medication and wants to set
-  pill reminders. The free persona was used to evaluate features used without an account. Providing
-  value to the user and building trust prior to gathering personal and private medical information.
+  <p>I interviewed a group of participants from my survey to understand their motivations, goals,
+    and frustrations better. The primary user personas for Sphere were Madelyn S. and Nate V. The
+    final user persona is Sean, our free user. Sean only takes allergy medication and wants to set
+    pill reminders. The free persona was used to evaluate features used without an account.
+    Helping to build trust before gathering personal and private medical information.
   </p>
   </div>
 
@@ -285,7 +292,7 @@
 
 <!-- Button for competitive analysis -->
 <div class="persona-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See full user personas</button></a>
+<a href="https://drive.google.com/open?id=1OQ1QcWdD2EDJDoMKvVMmt75H3GgtFeEC" target="_blank" class="cs-button">Full User Personas</a>
 </div>
 </section>
 <!-- END OF DISCOVERY -->
@@ -308,7 +315,7 @@ when necessary.
 
 <!--User Stories Button -->
 <div class="stories-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See all stories & flows</button></a>
+<a href="https://drive.google.com/drive/folders/1vdG8hIyheOIBvnF7LvJuOwfMH3JTowiS?usp=sharing" target="_blank" class="cs-button">All stories & Flows</a>
 </div>
 
 <!-- Sketching and Low Fidelity -->
@@ -322,23 +329,30 @@ and use Sphere as their pharmacy.
 </div>
 
 <div class="sketch-1">
-  <figure>
-<img src="images/sphere_sk1.jpg" alt="Nate V. user persona">
+<figure>
+<img src="images/sphere_sk1.jpg" class="img-shadow" alt="Sketches for Spheres homepage and dashboard">
 <figcaption>Sketches of today and prescriptions</figcaption>
 </figure>
 </div>
 
 <div class="sketch-2">
-  <figure>
-<img src="images/sphere_sk2.jpg" alt="Nate V. user persona">
+<figure>
+<img src="images/sphere_sk2.jpg" class="img-shadow" alt="Nate V. user persona">
 <figcaption>Sketches of onboarding screens</figcaption>
 </figure>
 </div>
 
-<div class="lofi-wires">
-  <figure>
-<img src="images/sphere_lofi.jpg" alt="Nate V. user persona">
-<figcaption>Lofi wireframes of screens above</figcaption>
+<div class="lofi-wires-mobile">
+<figure>
+<img src="images/sphere_lofi_mobile.jpg" class="img-shadow" alt="Nate V. user persona">
+<figcaption>Lofi wireframes of main navigation screens</figcaption>
+</figure>
+</div>
+
+<div class="lofi-wires-desktop">
+<figure>
+<img src="images/sphere_lofi.jpg" class="img-shadow" alt="Nate V. user persona">
+<figcaption>Lofi wireframes of main navigation screens</figcaption>
 </figure>
 </div>
 
@@ -358,7 +372,7 @@ is being used for.</li>
 </div>
 
 <div class="sketches-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See all sketches and lofi</button></a>
+<a href="https://drive.google.com/open?id=12ZoilFM7clmYIfN-M-1iSSGiQDCeXsMb" target="_blank" class="cs-button">All sketches & Lofi</a>
 </div>
 
 </section>
@@ -375,12 +389,12 @@ project forward.
 </div>
 
 <div class="hifi-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See all hifi wireframes</button></a>
+<a href="https://drive.google.com/open?id=12ZoilFM7clmYIfN-M-1iSSGiQDCeXsMb" target="_blank" class="cs-button">See all hifi wireframes</a>
 </div>
 
 <!-- A/B Testing on Sphere -->
 <div class="ab-testing">
-<h2>A/B Testing: Today and Prescriptions</h2>
+<h2>A/B Testing</h2>
 <p>I ran an A/B test on the Today and Prescriptions screens to assist in guiding the design of other
 aspects of the app. Option B was chosen 80% of the time, however, I took note of strong aspects of
 the white design along with issues I spotted to create a stronger more cohesive design. Some of the
@@ -392,13 +406,13 @@ highlights are below:
 <div class="hifi-1">
 <figure>
 <img src="images/sphere_white.jpg" alt="Sphere white version">
-<figcaption>Option A - <span class="negative-data">21%</span></figcaption>
+<figcaption class="test">Option A - <span class="negative-data">21%</span></figcaption>
 </figure>
 </div>
 <div class="hifi-2">
 <figure>
-<img src="images/sphere_blue.jpg" alt="Sphere blue version">
-<figcaption>Option B - <span class="positive-data">80%</span></figcaption>
+<img src="images/sphere_blue.jpg" alt="Sphere white version">
+<figcaption class="test">Option B - <span class="positive-data">80%</span></figcaption>
 </figure>
 </div>
 
@@ -420,29 +434,38 @@ highlights are below:
 </section>
 
 <div class="testing-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">View full A/B Results</button></a>
+<a href="https://app.usabilityhub.com/tests/4f3b1b243302/results/d3d6c9e3abac" target="_blank" class="cs-button">View full results</a>
 </div>
 
 <!-- Iteration -->
 <div class="iteration-intro">
-<h2>Iteration: Today, Prescriptions, and Onboarding</h2>
+<h2>Iteration</h2>
 <p>The iterated versions of the screens are below with the implemented changes to the card style and
-placement of the button layout. In addition, I started bringing more consistency to the onboarding
+placement of the button layout. I also started bringing more consistency to the onboarding
 experience by expanding the blue header to take the entire screen and utilizing the same H1 and
 paragraph text used throughout the application.
 </p>
 </div>
 
 <div class="iter-1">
-<img src="images/iter_onboard.jpg" alt="Sphere white version">
+<figure>
+<img src="images/iter_onboard.jpg" class="img-shadow" alt="Sphere white version">
+<figcaption>Second onboarding screen</figcaption>
+</figure>
 </div>
 
 <div class="iter-2">
-<img src="images/today_iter.jpg" alt="Sphere white version">
+<figure>
+<img src="images/today_iter.jpg" class="img-shadow" alt="Sphere white version">
+<figcaption>Revised Today screen</figcaption>
+<figure>
 </div>
 
 <div class="iter-3">
-<img src="images/script_iter.jpg" alt="Sphere white version">
+<figure>
+<img src="images/script_iter.jpg" class="img-shadow" alt="Sphere white version">
+<figcaption>Revised prescription screen</figcaption>
+</figure>
 </div>
 
 
@@ -454,7 +477,10 @@ paragraph text used throughout the application.
 </div>
 
 <div class="crit-submit">
-<img src="images/crit_submit.jpg" alt="Sphere white version">
+  <figure>
+  <figcaption class="test">Submitted to critique</figcaption>
+<img src="images/crit_submit.jpg" class="img-shadow" alt="Sphere white version">
+</figure>
 </div>
 
 <div class="crit-info">
@@ -474,12 +500,15 @@ paragraph text used throughout the application.
 Will it truncate or drop to two lines?</p>
 </div>
 <div class="crit-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See notes from critique</button></a>
+<a href="https://docs.google.com/document/d/1tlVyRM9qYsLOS1S7JR8BblHNANpwEzWPcZli_se0FPQ/edit" target="_blank" class="cs-button">View critique notes</a>
 </div>
 </div><!-- END Crit Info -->
 
 <div class="crit-revised">
-<img src="images/crit_revised.jpg" alt="Sphere white version">
+<figure>
+<figcaption class="test">Revised</figcaption>
+<img src="images/crit_revised.jpg" class="img-shadow" alt="Sphere white version">
+</figure>
 </div>
 
 <div class="crit-info-2">
@@ -499,7 +528,7 @@ Will it truncate or drop to two lines?</p>
 Will it truncate or drop to two lines?</p>
 </div>
 <div class="iteration-1-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See all iterations</button></a>
+<a href="https://drive.google.com/open?id=1Ag6mquJ7n0ACXVQYH8YWMfsRSmDAbHcW" target="_blank" class="cs-button">View all iterations</a>
 </div>
 </div><!-- END Crit Info -->
 </section>
@@ -520,35 +549,35 @@ with the rest of the application.</li>
 </div>
 
 <div class="iteration1">
-  <figure>
-<img class="" src="images/iteration1.jpg" alt="Nate V. user persona">
+<figure>
+<img src="images/iteration1.jpg" class="img-shadow" alt="Nate V. user persona">
 <figcaption>Adding a new medication</figcaption>
 </figure>
 </div>
 
 <div class="iteration2">
   <figure>
-<img class="" src="images/iteration2.jpg" alt="Nate V. user persona">
+<img class="" src="images/iteration2.jpg" class="img-shadow" alt="Nate V. user persona">
 <figcaption>Adding a pill reminder</figcaption>
 </figure>
 </div>
 
 <div class="iteration3">
   <figure>
-<img class="" src="images/iteration3.jpg" alt="Nate V. user persona">
+<img class="" src="images/iteration3.jpg" class="img-shadow" alt="Nate V. user persona">
 <figcaption>Transfering prescriptions to Sphere</figcaption>
  </figure>
 </div>
 
 <div class="iteration4">
   <figure>
-<img class="" src="images/iteration4.jpg" alt="Nate V. user persona">
+<img class="" src="images/iteration4.jpg" class="img-shadow" alt="Nate V. user persona">
 <figcaption>Adding and managing family members</figcaption>
  </figure>
 </div>
 
 <div class="iterations-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See all iterations</button></a>
+<a href="https://drive.google.com/open?id=1Ag6mquJ7n0ACXVQYH8YWMfsRSmDAbHcW" target="_blank" class="cs-button">View all iterations</a>
 </div>
 
 <section class="finishing-touches">
@@ -574,7 +603,7 @@ with the rest of the application.</li>
 </div>
 
 <div class="states-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See all states</button></a>
+<a href="https://drive.google.com/open?id=1Ov2F9n5dmgT2TgK2AFezuCAD2jbLK1im" target="_blank" class="cs-button">See all states</a>
 </div>
 
 </section>
@@ -602,11 +631,11 @@ success/error screens. The logo typeface is Futura while the product typeface al
 </div>
 
 <div class="styleguide-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">View full styleguide</button></a>
+<a href="https://drive.google.com/open?id=1TKngb4TnHecoOrjNpb-FyAEmETTMfqXg" target="_blank" class="cs-button">View full styleguide</a>
 </div>
 
 <div class="process-btn">
-<a href="contact.html"><button type="button" class="prpl-btn">See full logo process</button></a>
+<a href="" target="_blank" class="cs-button">View logo process</a>
 </div>
 
 <section class="conclusion">

@@ -425,14 +425,14 @@ a {
 }
 
 .mouse-icon {
-  height: 1.7rem;
-  width: 4.9rem;
+  height: 5rem;
+  width: 7rem;
 }
 
 .scroll {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 47%;
   margin-bottom: 1.5rem;
   display: block;
 }
@@ -582,6 +582,86 @@ a {
 
 /* Buttons */
 
+a {
+  text-decoration: none;
+}
+
+.button, .cs-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2rem 0;
+  width: 22.7rem;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #0B23FF;
+  border-radius: .5rem;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #0015D1;
+  transition: 0.3s ease-in-out;
+}
+
+.proj-btn {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 2rem 0;
+  width: 22.7rem;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: .5rem;
+  border: 0.2rem solid #FFFFFF;
+}
+
+.proj-btn:hover {
+  background-color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+}
+
+#sphere:hover {
+  color: #0777DC;
+}
+
+#fruition:hover {
+  color: #07B682;
+}
+
+.cs-button {
+  display: inline-block;
+  width: 100%;
+}
+
+.cs-button:hover, #intro-btn2:hover {
+  background-color: #0015D1;
+  color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+  border-color: #0015D1;
+}
+
+@media screen and (min-width:768px) {
+
+.button, .cs-button {
+  padding: 2.2rem 0;
+  font-size: 1.7rem;
+}
+
+.proj-btn {
+  padding: 2.2rem 0;
+  font-size: 1.7rem;
+}
+}
+/*
 button {
   height: 6rem;
   width: 25rem;
@@ -595,31 +675,13 @@ button {
   color: #fff;
 }
 
+
 button:hover {
   background-color: #0015D1;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-
-.fruition-btn, .sphere-btn {
-  color: #FFFFFF;
-  border: 0.2rem solid #FFFFFF;
-  background-color: transparent;
-  border-radius: .5rem;
-  box-shadow: none;
-  margin-top: 1rem;
-}
-
-.fruition-btn:hover, .sphere-btn:hover {
-  color: #07B682;
-  transition: 0.3s ease all;
-  background-color: #FFFFFF;
-  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
-}
-
-.sphere-btn:hover {
-  color: #0777DC;
-}
+*/
 
 /* NO MEDIA QUERIES FOR TABLET */
 
@@ -802,6 +864,20 @@ input:focus {
 
 .contact-button {
   width: 100%;
+}
+
+/* Styles for button on contact page */
+button {
+height: 6rem;
+ width: 25rem;
+ border-radius: .5rem;
+ border: 0;
+ box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+ background-color: #0B23FF;
+ font-size: 1.5rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ color: #fff;
 }
 
 textarea {
