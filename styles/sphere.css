@@ -33,10 +33,10 @@ figure {
 
 figcaption {
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.5rem;
   color: #5C5D6A;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
 
@@ -113,8 +113,11 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   margin-top: 0;
   margin-bottom: 0;
   line-height: 3rem;
-  list-style-type: none;
   padding: 0;
+}
+
+.project-info li {
+  list-style-type: none;
 }
 
 .project-info h4 {
@@ -269,9 +272,6 @@ hr {
   padding: 0 2rem;
 }
 
-.persona-btn {
-}
-
 .user-stories {
   margin-top: 0;
 }
@@ -279,6 +279,7 @@ hr {
 .user-stories ul {
   margin: 0;
   padding-left: 1.5rem;
+  list-style-type: disc;
 }
 
 .user-stories li {
@@ -423,6 +424,10 @@ hr {
   font-weight: 700;
 }
 
+.crit-info-2 > .info-detail h3 {
+  color: #00CF96;
+}
+
 .info-detail p {
   margin-left: 1rem;
 }
@@ -443,8 +448,7 @@ hr {
 }
 
 .iter-1 {
-  margin: 0 2rem;
-  padding: 0;
+  display: none;
 }
 
 .iter-2 {
@@ -480,7 +484,7 @@ hr {
 }
 
 .iteration1, .iteration2, .iteration3, .iteration4 {
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 
@@ -512,12 +516,13 @@ hr {
   background-color: #F7F9FF;
 }
 
+.state1, .state2, .state3, .state4 {
+  margin: 0 1rem;
+}
+
 .states-btn {
   margin: 0 2rem;
   padding-top: 3rem;
-}
-
-.identity {
 }
 
 .styleguide-btn {
@@ -564,7 +569,7 @@ figcaption {
   padding: 3rem 3rem;
 }
 
-.introduction, .project-info, .problem, .solution, .user-survey, .survey-insights, .survey-btn,
+.introduction, .problem, .solution, .user-survey, .survey-insights, .survey-btn,
 .comp-analysis, .comp-btn, .persona-intro, .persona-1, .persona-2, .user-stories, .sketching-intro, .lofi-testing
 .hifi-mockups, .ab-testing, .data-info, .testing-btn, .iteration-intro, .crit-iteration, .crit, .usability-testing,
 .conclusion {
@@ -572,7 +577,7 @@ figcaption {
   padding: 0;
 }
 
-.project-image{
+.project-image {
   display: block;
   grid-column: 2 / 6;
   width: 80%;
@@ -588,6 +593,11 @@ button {
   padding-bottom: 2rem;
   display: flex;
   border-radius: 1rem;
+  margin: 0 0 5rem 0;
+}
+
+.project-info h4 {
+  padding-top: 2rem;
 }
 
 .project-info ul {
@@ -607,8 +617,13 @@ button {
   width: 47%;
 }
 
+#intro-btn1 {
+  width: 48%;
+}
+
 #intro-btn2 {
   margin-left: 2rem;
+  width: 48%;
 }
 
 .project-info h4, .project-info ul {
@@ -637,6 +652,10 @@ button {
   padding: 4rem 0;
 }
 
+hr {
+  width: 85%;
+}
+
 .survey-btn {
   margin: 0;
 }
@@ -646,7 +665,12 @@ button {
 }
 
 .survey-insights div {
-  margin: 1rem 5rem;
+  margin: 1rem 8rem;
+}
+
+.survey-insights h4 {
+  text-align: left;
+  padding-left: 2rem;
 }
 
  .survey-data {
@@ -658,6 +682,7 @@ button {
 
 .info-head {
   padding-bottom: 1rem;
+  text-align: left;
 }
 
 .survey-btn {
@@ -674,7 +699,7 @@ button {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .comp-data {
@@ -688,7 +713,6 @@ button {
 }
 
 .comp-btn {
-  margin-bottom: 5rem;
   margin-top: 1rem;
 }
 
@@ -762,8 +786,10 @@ button {
   margin: 0 2rem;
 }
 
+
 .lofi-testing li{
   font-size: 1.7rem;
+  padding-left: 1rem;
 }
 
 .testing-btn {
@@ -773,11 +799,14 @@ button {
 
 .data-info {
   margin: 0;
+  padding: 2rem 0;
 }
 
 .hifi-mockups {
+  margin-left: 0;
   margin-top: 0;
 }
+
 .hifi-1 {
   grid-column: 1 / 4;
   margin-left: 2rem;
@@ -789,6 +818,9 @@ button {
   margin-right: 2rem;
 }
 
+.circle-dot {
+  display: none;
+}
 .hifi-btn {
   padding: 0;
 }
@@ -813,22 +845,22 @@ button {
   color: #FFF;
 }
 
-.circle-dot {
-  display: none;
+.crit-info-2 > .info-detail h3 {
+  background-color: #00CF96;
+  color: #FFFFFF;
 }
 
-.iter-1 {
-  grid-column: 1 / 3;
-  margin-left: 2rem;
-}
+
 
 .iter-2 {
-  grid-column: 3 / 5;
+  grid-column: 2 / 4;
+  margin: 2rem 0 2rem 0;
 }
 
 .iter-3 {
-  grid-column: 5 / -1;
-  margin-right: 2rem;
+  grid-column: 4 / 6;
+  margin-top: 3rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .crit-iteration {
@@ -837,8 +869,7 @@ button {
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
   grid-template-rows: auto;
   grid-column-gap: 2rem;
-  padding: 3rem 0;
-  margin: 4rem 0;
+  padding-bottom: 6rem;
 }
 
 .crit {
@@ -852,6 +883,7 @@ button {
 .crit-info {
   grid-column: 4 / 6;
   margin: 0;
+  padding-top: 5rem;
 }
 
 .crit-btn {
@@ -865,6 +897,18 @@ button {
 .crit-info-2 {
   grid-column: 4 / 6;
   margin: 0;
+}
+
+.crit-revised, .crit-info-2 {
+  padding-top: 6rem;
+}
+
+.crit-info > .info-detail {
+  padding-top: 1rem;
+}
+
+.crit-info-2 > .info-detail {
+  padding-top: 4rem;
 }
 
 .usability-testing {
@@ -965,6 +1009,7 @@ button {
   display: grid;
   grid-template-columns: 8rem repeat(4, 1fr) 8rem;
   grid-column-gap: 2rem;
+  margin-bottom: 0;
 }
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
@@ -1011,10 +1056,16 @@ button {
 .project-info {
   grid-column: 11 / 14;
   display: block;
+  margin-top: 3rem;
+}
+
+#intro-btn1 {
+  width: 37rem;
 }
 
 #intro-btn2 {
-  padding-left: 2rem;
+  margin-left: 2rem;
+  width: 37rem;
 }
 
 .problem-solution {
@@ -1026,14 +1077,28 @@ button {
   margin: 5rem 0;
 }
 
+.user-survey {
+  margin: 0;
+  padding-top: 2rem;
+}
+
 .survey-insights {
   grid-column: 3 / 13;
   border-radius: 1rem;
 }
 
 .survey-insights div {
-  margin-left: 10rem;
+  margin-left: 8rem;
   padding-bottom: 3rem
+}
+
+.info-head h4 {
+  padding-bottom: 0;
+  margin: 0;
+}
+
+hr {
+  width: 80%;
 }
 
 .comp-insights {
@@ -1045,6 +1110,14 @@ button {
   display: block;
   margin: 0;
   align-items: center;
+}
+
+.comp-data h2 {
+  padding-top: 0;
+}
+
+.data-icon {
+  margin-top: 5rem;
 }
 
 .discovery {
@@ -1071,6 +1144,14 @@ button {
   line-height: 3rem
 }
 
+.persona-info li, .quote {
+  font-size: 1.7rem;
+}
+
+.persona-btn {
+  padding-bottom: 3rem;
+}
+
 .user-stories li {
   font-size: 2rem;
 }
@@ -1091,6 +1172,11 @@ button {
   grid-column: 8 / -1;
 }
 
+.lofi-testing li {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
 .hifi-1 {
   grid-column: 2 / 8;
   margin-left: 0;
@@ -1104,13 +1190,16 @@ button {
 }
 
 .iter-1 {
+  display: block;
   grid-column: 3 / 6;
   margin: 0;
+  padding: 0;
 }
 
 .iter-2 {
   grid-column: 6 / 9;
   margin: 0;
+  padding: 0;
 }
 
 .iter-3 {
@@ -1187,6 +1276,7 @@ font-size: 2rem;
 
 .conclusion {
   grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
+
 }
 
 }
