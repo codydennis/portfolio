@@ -304,7 +304,9 @@ img {
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
 
-
+.project-img {
+  grid-column: 4 / 12;
+}
 .comp-insights {
   grid-column: 4 / 12;
   border-radius: 1rem;
