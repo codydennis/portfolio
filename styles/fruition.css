@@ -34,10 +34,8 @@ img {
 }
 
 .survey-insights {
-  margin: 0;
   background-color: #00B38A;
   color: #FFFFFF;
-  padding: 4rem 0;
 }
 
 .comp-insights {
@@ -141,6 +139,12 @@ img {
   padding-bottom: 2rem;
 }
 
+
+.crit-submit-2f, .crit-revised-f {
+  display: none;
+}
+
+
 .mobile-designs p {
   padding-bottom: 2rem;
 }
@@ -193,16 +197,6 @@ img {
   margin: 0 2rem
 }
 
-.discovery {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 8rem repeat(4, 1fr) 8rem;
-  grid-template-rows: auto;
-  grid-column-gap: 2rem;
-  padding: 3rem 0;
-}
-
-
 .user-stories li {
   font-size: 1.7rem;
 }
@@ -233,12 +227,8 @@ img {
   padding-top: 2rem;
 }
 
-.crit-submit, .crit-revised {
-  grid-column: 1 / 3;
-}
-
-.crit-submit-2, .crit-revised-2 {
-  grid-column: 3 / 4;
+.crit-submit-f, .crit-revised-2f {
+  grid-column: 2 / 4;
 }
 
 
@@ -272,83 +262,51 @@ img {
   padding: 2rem 0;
 }
 
+/* Placing other Fruition iterations on the grid */
+
 .status {
-  grid-column: 1 / -1;
+  grid-column: 1 / 4;
+  margin-left: 2rem;
+}
+
+.status-2 {
+  grid-column: 4 / -1;
+  margin-right: 2rem;
 }
 
 .meeting {
-  grid-column: 1 / -1;
+  grid-column: 1 / 4;
+  margin-left: 2rem;
+}
+
+.meeting-2 {
+  grid-column: 4 / -1;
+  margin-right: 2rem;
 }
 
 .add-loan {
-  grid-column: 1 / -1;
-}
-
-.finishing-touches {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 8rem repeat(4, 1fr) 8rem;
-  grid-template-rows: auto;
-  grid-column-gap: 2rem;
-  padding: 3rem 0;
-  margin: 4rem 0;
-}
-
-.finishing-intro {
-}
-
-.state1 {
   grid-column: 1 / 4;
   margin-left: 2rem;
 }
 
-.state2 {
+.add-loan-2 {
   grid-column: 4 / -1;
   margin-right: 2rem;
 }
 
-.state3 {
-  grid-column: 1 / 4;
-  margin-left: 2rem;
+.state1-f {
+  grid-column: 2 / 6;
 }
 
-.state4 {
-  grid-column: 4 / -1;
-  margin-right: 2rem;
+.state2-f {
+  grid-column: 2 / 6;
+  padding-top: 3rem;
 }
 
-.states-btn {
-}
 
-.identity {
-  margin-top: 0;
-}
-
-.logo-sketch {
+.logo-sketch-f {
   grid-column: 1 / -1;
   margin-left: 2rem;
-}
-
-.logo-final {
-  grid-column: 1 / -1;
-  margin: 0 2rem;
-}
-
-.styleguide-btn {
-  grid-column: 2 / 4;
-  margin: 2rem 0;
-}
-
-.process-btn {
-  grid-column: 4 / 6;
-  margin: 2rem 0;
-}
-
-.conclusion {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 8rem repeat(4, 1fr) 8rem;
-  grid-column-gap: 2rem;
 }
 
 }
@@ -357,69 +315,27 @@ img {
 
 @media screen and (min-width:1224px) {
 
-.grid-wrapper {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-  grid-column-gap: 2rem;
-}
+
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
-.problem, .solution, .user-survey, .comp-analysis, .target-analysis, .target-demo, .info-graph, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1,
-.hifi-mockups, .ab-testing-1, .ab-testing-2, .data-info, .iteration-intro, .crit, .mobile-designs, .usability-testing, .finishing-intro,
-.identity, .learn {
-  grid-column: 4 / 12;
-}
 
-/* ALL BUTTONS on the SAME COLUMN go here */
-.survey-btn, .comp-btn, .persona-btn, .stories-btn, .sketches-btn, .hifi-btn, .testing-btn, .iterations-btn, .mobile-design-btn, .states-btn {
-  grid-column: 6 / 10;
-}
-
-.project-hero {
-  grid-column: 1/ -1;
-}
-
-.project-img {
-  display: block;
-  width: 80%;
-  margin: auto;
-  padding: 3rem 0;
-}
-
-.introduction {
-  grid-column: 3 / 11;
-}
-
-.project-info {
-  grid-column: 11 / 14;
-  display: block;
-}
-
-#intro-btn2 {
-  padding-left: 2rem;
-}
-
-.problem-solution {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-  grid-column-gap: 2rem;
-  padding: 3rem 0;
-  margin: 5rem 0;
-}
-
-.survey-insights {
-  grid-column: 3 / 13;
-  border-radius: 1rem;
-}
-
-.survey-insights div {
-  margin-left: 10rem;
-  padding-bottom: 3rem
-}
+.comp-detail h3 {
+    background-color: #FFFFFF;
+    height: 3.5rem;
+    width: 3.5rem;
+    text-align: center;
+    line-height: 3.5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: #00B28B;
+    margin-bottom: 1rem;
+  }
 
 .comp-insights {
   grid-column: 4 / 12;
   border-radius: 1rem;
+  margin-bottom: 3rem;
 }
 
 .comp-data {
@@ -428,121 +344,97 @@ img {
   align-items: center;
 }
 
+#motive {
+  padding-top: 3rem;
+}
+
 .target-demo {
   border-radius: 1rem;
+  grid-column: 4 / 12;
 }
 
-.discovery {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
+.target-analysis {
+  margin-top: 6rem;
+  padding-bottom: 2rem;
 }
 
-/* rows and columns are within the discovery nested grid */
-.persona-1 {
-  grid-column: 3 / 8;
-  margin-left: 0;
-}
-
-.persona-2 {
-  grid-column: 8 / 13;
-  margin-right: 0;
-}
-
-.persona-1 h3, .persona-2 h3 {
+.target-analysis li {
   font-size: 2rem;
 }
 
-.bio-persona p {
-  font-size: 1.7rem;
-  line-height: 3rem
+.target-analysis ul {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.user-stories p {
-  padding: 1rem 0;
-}
-
-.sketching {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-  grid-template-rows: auto;
-}
 
 .sketching-intro p {
   padding-bottom: 2rem;
 
 }
 
-
-.sketch-1, .sketch-2 {
-  align-items: center;
+.sketch-1-f {
+  grid-column: 3 / 13;
 }
 
-.sketch-1 {
-  grid-column: 1 / 8;
+.lofi-wires-1-f {
+  grid-column: 3 / 13;
+  margin-right: 0;
 }
 
-.lofi-wires-1 {
-  grid-column: 8 / -1;
+.sketch-2-f {
+  grid-column: 3 / 13;
 }
 
-.sketch-2 {
-  grid-column: 1 / 8;
+.lofi-wires-2-f {
+  grid-column: 3 / 13;
 }
 
-.lofi-wires-2 {
-  grid-column: 8 / -1;
+.ab-testing-2 {
+  padding-bottom: 3rem;
 }
 
 
-.hifi-1 {
-  grid-column: 2 / 8;
-
-}
-
-.hifi-2 {
-  grid-column: 8 / 14;
-
-}
-
-.iter-1 {
-  grid-column: 1 / 5;
-  margin-left: 2rem;
-}
-
-.iter-2 {
-  grid-column: 5 / 10;
+.iter-1-f {
+  grid-column: 4 / 8;
   margin: 0;
+  padding-bottom: 2rem;
 }
 
-.iter-3 {
-  grid-column: 10 / -1;
-  margin-right: 2rem;
+.iter-2-f {
+  grid-column: 8 / 12;
+  margin: 0;
+  padding-bottom: 2rem;
 }
 
-.crit-iteration {
-    grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
+.iter-3-f {
+  grid-column: 4 / 12;
+  margin: 0;
+  padding: 0;
 }
 
-.crit-submit, .crit-revised {
+.crit-submit-f, .crit-revised-f {
+  display: block;
   grid-column: 2 / 5;
 }
 
-.crit-submit-2, .crit-revised-2 {
+.crit-submit-2f, .crit-revised-2f {
+  display: block;
   grid-column: 5 / 8;
 }
 
 .crit-info, .crit-info-2 {
- grid-column: 8 / 13;
+ grid-column: 9 / 13;
 }
 
 .mobile-landing {
-  grid-column: 3 / 7;
+  grid-column: 2 / 8;
 }
 
 .mobile-dashboard {
-  grid-column: 7 / 12;
+  grid-column: 8 / 13;
 }
-.usability-testing li {
-font-size: 2rem;
-}
+
 
 .iteration1, .iteration3 {
   grid-column: 2 / 8;
@@ -552,48 +444,56 @@ font-size: 2rem;
   grid-column: 8 / 14;
 }
 
-.finishing-touches {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-}
-.state1 {
-  grid-column: 2 / 8;
-  margin: 0;
+/* Placing other Fruition iterations on the grid */
+
+.status {
+  grid-column: 1 / 8;
+  margin-left: 2rem;
 }
 
-.state2 {
-  grid-column: 8 / 14;
-  margin: 0;
+.status-2 {
+  grid-column: 8 / -1;
+  margin-right: 2rem;
 }
 
-.state3 {
-  grid-column: 2 / 8;
-  margin: 0;
+.meeting {
+  grid-column: 1 / 8;
+  margin-left: 2rem;
 }
 
-.state4 {
-  grid-column: 8 / 14;
-  margin: 0;
+.meeting-2 {
+  grid-column: 8 / -1;
+  margin-right: 2rem;
 }
 
-.logo-sketch {
+.add-loan {
+  grid-column: 1 / 8;
+  margin-left: 2rem;
+}
+
+.add-loan-2 {
+  grid-column: 8 / -1;
+  margin-right: 2rem;
+}
+
+.state1-f {
+  grid-column: 1 / 8;
+  margin-left: 2rem;
+}
+
+.state2-f {
+  grid-column: 8 / -1;
+  margin-right: 2rem;
+  padding-top: 0;
+}
+
+
+.logo-sketch-f {
   grid-column: 2 / 14;
-}
-
-.logo-final {
-  grid-column: 2 / 14;
+  padding-bottom: 4rem;
+  margin: 0;
 }
 
 
-.styleguide-btn {
-  grid-column: 4 / 8;
-}
-
-.process-btn {
-  grid-column: 8 / 12;
-}
-
-.conclusion {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-}
 
 }

@@ -34,10 +34,8 @@ img {
 
 
 .survey-insights {
-  margin: 0;
   background-color: #0266D4;
   color: #FFFFFF;
-  padding: 4rem 0;
 }
 
 
@@ -263,15 +261,6 @@ img {
   margin-right: 2rem;
 }
 
-.finishing-touches {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 8rem repeat(4, 1fr) 8rem;
-  grid-template-rows: auto;
-  grid-column-gap: 2rem;
-  padding: 3rem 0;
-  margin: 4rem 0;
-}
 
 .finishing-intro {
 }
@@ -296,13 +285,6 @@ img {
   margin-right: 2rem;
 }
 
-.states-btn {
-}
-
-.identity {
-  margin-top: 0;
-}
-
 .logo-sketch {
   grid-column: 1 / 4;
   margin-left: 2rem;
@@ -313,117 +295,15 @@ img {
   margin-right: 2rem;
 }
 
-.logo-final {
-  grid-column: 1 / -1;
-  margin: 0 2rem;
-}
-
-.styleguide-btn {
-  grid-column: 2 / 4;
-  margin: 2rem 0;
-}
-
-.process-btn {
-  grid-column: 4 / 6;
-  margin: 2rem 0;
-}
-
-.conclusion {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 8rem repeat(4, 1fr) 8rem;
-  grid-column-gap: 2rem;
-  margin-bottom: 0;
-}
-
-/* ALL PARAGRAPHS on SAME COLUMN go here */
-.introduction, .project-info, .problem, .solution, .user-survey, .comp-analysis, .persona-intro, .user-stories, .sketching-intro, .lofi-testing,
-.hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .usability-testing, .finishing-intro, .identity, .learn {
-  grid-column: 2 / 6;
-}
-
 }
 
 /* LAPTOP CONTENT */
 
 @media screen and (min-width:1224px) {
 
-.grid-wrapper {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-  grid-column-gap: 2rem;
-}
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
-.problem, .solution, .user-survey, .comp-analysis, .info-graph, .persona-intro, .user-stories, .sketching-intro, .lofi-testing,
-.hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .usability-testing, .finishing-intro,
-.identity, .learn {
-  grid-column: 4 / 12;
-}
 
-/* ALL BUTTONS on the SAME COLUMN go here */
-.survey-btn, .comp-btn, .persona-btn, .stories-btn, .sketches-btn, .hifi-btn, .testing-btn, .iterations-btn, .states-btn {
-  grid-column: 6 / 10;
-}
-
-.project-hero {
-  grid-column: 1/ -1;
-}
-
-.project-img {
-  width: 90%;
-}
-
-.introduction {
-  grid-column: 3 / 11;
-}
-
-.project-info {
-  grid-column: 11 / 14;
-  display: block;
-  margin-top: 3rem;
-}
-
-#intro-btn1 {
-  width: 37rem;
-}
-
-#intro-btn2 {
-  margin-left: 2rem;
-  width: 37rem;
-}
-
-.problem-solution {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-  grid-column-gap: 2rem;
-  padding: 3rem 0;
-  margin: 5rem 0;
-}
-
-.user-survey {
-  margin: 0;
-  padding-top: 2rem;
-}
-
-.survey-insights {
-  grid-column: 3 / 13;
-  border-radius: 1rem;
-}
-
-.survey-insights div {
-  margin-left: 8rem;
-  padding-bottom: 3rem
-}
-
-.info-head h4 {
-  padding-bottom: 0;
-  margin: 0;
-}
-
-hr {
-  width: 80%;
-}
 
 .comp-insights {
   grid-column: 4 / 12;
@@ -444,45 +324,9 @@ hr {
   margin-top: 5rem;
 }
 
-.discovery {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-}
-
 /* rows and columns are within the discovery nested grid */
-.persona-1 {
-  grid-column: 3 / 8;
-  margin-left: 0;
-}
 
-.persona-2 {
-  grid-column: 8 / 13;
-  margin-right: 0;
-}
-
-.persona-1 h3, .persona-2 h3 {
-  font-size: 2rem;
-}
-
-.bio-persona p {
-  font-size: 1.7rem;
-  line-height: 3rem
-}
-
-.persona-info li, .quote {
-  font-size: 1.7rem;
-}
-
-.persona-btn {
-  padding-bottom: 3rem;
-}
-
-.user-stories li {
-  font-size: 2rem;
-}
-
-.sketching {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-}
+/* keep sketches seperate */
 
 .sketch-1, .sketch-2 {
   align-items: center;
@@ -501,18 +345,7 @@ hr {
   line-height: 3.5rem;
 }
 
-.hifi-1 {
-  grid-column: 2 / 8;
-  margin-left: 0;
-
-}
-
-.hifi-2 {
-  grid-column: 8 / 14;
-  margin-right: 0;
-
-}
-
+/* Sphere specific */
 .iter-1 {
   display: block;
   grid-column: 3 / 6;
@@ -531,20 +364,12 @@ hr {
   margin: 0;
 }
 
-.crit-iteration {
-    grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-}
-
 .crit-submit, .crit-revised {
   grid-column: 3 / 8;
 }
 
 .crit-info, .crit-info-2 {
- grid-column: 8 / 13;
-}
-
-.usability-testing li {
-font-size: 2rem;
+ grid-column: 9 / 13;
 }
 
 .iteration1, .iteration3 {
@@ -555,9 +380,7 @@ font-size: 2rem;
   grid-column: 8 / 14;
 }
 
-.finishing-touches {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-}
+/* Sphere specific */
 .state1 {
   grid-column: 2 / 8;
   margin: 0;
@@ -584,23 +407,6 @@ font-size: 2rem;
 
 .logo-digital {
   grid-column: 8 / 14;
-}
-
-.logo-final {
-  grid-column: 2 / 14;
-}
-
-.styleguide-btn {
-  grid-column: 4 / 8;
-}
-
-.process-btn {
-  grid-column: 8 / 12;
-}
-
-.conclusion {
-  grid-template-columns: minmax(5rem, auto) repeat(12, [row] 8rem) minmax(5rem, auto);
-
 }
 
 }
