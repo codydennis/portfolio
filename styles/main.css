@@ -139,7 +139,7 @@ li {
 /* Sticky Navigation - Outside Grid Wrapper */
 
 header {
-  padding: 1.5rem 0.4rem;
+  padding: 1.7rem 0.4rem;
   background-color: rgba(255, 255, 255, 0.93);
   border-top: 0.6rem solid #0CBEA9;
   box-shadow: 0 0 0 0.1rem rgba(0,0,0,0.05),0 0 0.5rem 0 rgba(0,0,0,0.1);
@@ -157,7 +157,7 @@ header {
 
 
 .logo-container {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 .cd-logo {
@@ -168,9 +168,8 @@ header {
 /* Hamburger Menu */
 .hamburger {
   position: absolute;
-  top: 5rem;
+  top: 1.9rem;
   right: 3.5rem;
-  margin-top: -3.4rem;
   width: 2rem;
   height: 4.5rem;
   z-index: 2;
@@ -191,7 +190,7 @@ header {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 191, 169, 0.98), rgba(63, 165, 216, 0.98));
+  background-color: rgba(11, 35, 255, 0.96);
   top: -100%; left: 0; right: 0; bottom: 0;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
@@ -217,7 +216,7 @@ header {
 
 .menu {
   text-align: left;
-  margin-left: 10%;
+  margin-left: 2rem;
   font-weight: 700;
 }
 
@@ -247,6 +246,10 @@ header {
   transition: 0.3s ease all;
 }
 
+.far.fa-file-pdf {
+  padding-right: .5rem;
+}
+
 
 #toggle {
   display: none;
@@ -265,7 +268,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -0.5rem;
+  margin-top: -0.45rem;
   background-color: white
 }
 
@@ -282,24 +285,37 @@ Animations
 @media screen and (min-width:768px) {
 
 header {
-  padding: 2rem 0.4rem;
+  padding: 1.7rem 0rem;
 }
 
 
 .nav-link {
-  padding: 2.1rem;
+  padding: 2.2rem;
   text-decoration: none;
   color: #80889E;
+  transition: 0.3s ease-in-out;
   }
 
-  .nav-links li {
-    display: inline-block;
+  .nav-link.a {
+    color: #0B23FF;
+    font-weight: 900;
   }
+
+  .nav-link:active {
+    color: #0B23FF;;
+    cursor: pointer;
+  }
+
 
 .nav-links {
   display: block;
   font-size: 1.7rem;
   font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links li {
+  display: inline-block;
 }
 
 .nav-link:hover {
@@ -308,15 +324,6 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-.nav-link.a {
-  color: #0B23FF;
-  font-weight: 900;
-}
-
-.nav-link:active {
-  color: #0B23FF;;
-  cursor: pointer;
-}
 
 .far.fa-file-pdf {
   padding-right: .5rem;
@@ -417,6 +424,7 @@ a {
 #subhead {
   color: #454F69;
   line-height: 3rem;
+  padding-top: 0.5rem;
 }
 
 /* Style to not display the mouse icon */
@@ -426,6 +434,10 @@ a {
 
 @media screen and (min-width:768px) {
 
+  #subhead {
+    padding-top: 0;
+  }
+
 .hero {
   grid-column: 2 / 6;
   position: relative;
@@ -434,6 +446,7 @@ a {
 .hero-content {
   text-align: center;
   margin: 0;
+  padding: 0;
 }
 
 .mouse-icon {
@@ -444,7 +457,7 @@ a {
 .scroll {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 49%;
   margin-bottom: 1.5rem;
   display: block;
 }
@@ -462,6 +475,8 @@ a {
 
 .hero-content {
   grid-column: 3 / 13;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #subhead {
@@ -473,6 +488,10 @@ a {
   grid-column: 7 / 9;
   text-align: center;
   bottom: 0;
+}
+
+.scroll {
+  left: 49.5%;
 }
 
 
@@ -541,7 +560,7 @@ a {
 .project-1, .project-2 {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(1rem,10rem) repeat(10, 1fr) minmax(1rem,10rem);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-column-gap: 2rem;
   padding: 20rem 0;
@@ -553,6 +572,7 @@ a {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
   margin-left: 10rem;
+  margin-right: 0;
 }
 
 .project-1-img, .project-2-img {
@@ -563,6 +583,7 @@ a {
 }
 
 }
+
 
 
 /* END DESIGN PROJECTS */
@@ -612,6 +633,8 @@ a {
   background-color: #0B23FF;
   border-radius: .5rem;
   box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+
 }
 
 .button:hover {
@@ -634,6 +657,7 @@ a {
   background-color: transparent;
   border-radius: .5rem;
   border: 0.2rem solid #FFFFFF;
+  transition: 0.3s ease-in-out;
 }
 
 .proj-btn:hover {
@@ -643,10 +667,12 @@ a {
 
 #sphere:hover {
   color: #0777DC;
+  transition: 0.3s ease-in-out;
 }
 
 #fruition:hover {
   color: #07B682;
+  transition: 0.3s ease-in-out;
 }
 
 .cs-button {
@@ -657,7 +683,7 @@ a {
 .cs-button:hover, #intro-btn2:hover {
   background-color: #0015D1;
   color: #FFFFFF;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   border-color: #0015D1;
 }
 
@@ -671,6 +697,7 @@ button {
   background-color: #0B23FF;
   border-radius: .5rem;
   box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
 
 }
 
@@ -684,8 +711,8 @@ button:hover {
 @media screen and (min-width:768px) {
 
 .button, .cs-button {
-  padding: 2.2rem 0;
-  font-size: 1.5rem;
+  padding: 2.5rem 0;
+  font-size: 1.7rem;
 }
 
 .proj-btn {
@@ -723,8 +750,9 @@ footer p {
 }
 
 .social-links a {
-  padding: 0 0.8rem;
+  padding: 0 0.6rem;
   color: #0B23FF;
+  transition: 0.3s ease-in-out;
 }
 
 .social-links a:hover {
@@ -1008,7 +1036,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 .comp-analysis, .comp-data, .target-analysis, .persona-intro, .persona-1, .persona-2, .user-stories, .lofi-testing, .sketching-intro, .usability-testing-1,
  .hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .crit-info, .crit-info-2, .usability-testing,
  .mobile-designs, .finishing-intro, .identity, .styleguide-btn, .process-btn, .learn {
-  margin: 3rem 2.5rem;
+  margin: 3rem 2rem;
 }
 
 #intro-btn1 {
@@ -1062,20 +1090,25 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 .user-survey {
   padding-top: 2rem;
 }
+
 .problem-solution {
   background-color: #F7F9FF;
   padding: 2rem 0;
 }
 
-.survey-insights h2, .survey-insights p {
-  margin: 0;
-}
-
 .survey-data {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
+}
+
+.survey-data h2 {
+  margin: 0.2rem;
+}
+.survey-data p {
+  line-height: 2.5rem;
+  margin: 0;
 }
 
 .survey-insights {
@@ -1125,7 +1158,8 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 .persona-1 ul, .persona-2 ul {
   font-weight: 300;
   margin: 0;
-  padding: 0 3rem;
+  padding-left: 3rem;
+  padding-right: 1.5rem;
 }
 
 .persona-1 li, .persona-2 li {
@@ -1148,7 +1182,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 }
 
 .bio-persona p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding-left: 2rem;
 }
 
@@ -1167,6 +1201,11 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
 .user-stories {
   margin-top: 0;
+}
+
+#flow {
+  margin-top: 0;
+  padding-bottom: 2rem;
 }
 
 .user-stories ul {
@@ -1194,12 +1233,20 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   background-color: #F7F9FF;
 }
 
+.sketching-intro p {
+  margin-bottom: 2rem;
+}
+
 .sketch-1, .sketch-2, .lofi-wires-mobile, .lofi-wires-1, .lofi-wires-2 {
   margin: 0 2rem;
 }
 
+.hifi-mockups {
+  margin-bottom: 1rem;
+}
+
 .hifi-1, .hifi-2 {
-  margin: 1rem 1rem;
+  margin: 1rem 2rem
 }
 
 .data-info {
@@ -1268,6 +1315,10 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 }
 
 
+.logo-final {
+  margin: 0 2rem;
+}
+
 .styleguide-btn {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1333,7 +1384,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     display: block;
     width: 100%;
     margin: auto;
-    padding: 3rem 3rem;
+    padding: 6rem 0rem;
   }
 
   .project-info {
@@ -1369,10 +1420,12 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     width: 48%;
   }
 
-  #intro-btn2 {
+  #intro-btn2, #intro-btn2-f {
     margin-left: 2rem;
     width: 48%;
   }
+
+
 
   .project-info h4, .project-info ul {
     margin-left: 2rem;
@@ -1392,13 +1445,13 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
   .user-survey {
     margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   .survey-insights {
     grid-column: 1 / -1;
     padding: 4rem 0;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
 
@@ -1424,7 +1477,6 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
 .comp-analysis {
   padding-top: 5rem;
-  padding-bottom: 2rem;
 }
   .info-head {
     padding-bottom: 1rem;
@@ -1438,7 +1490,8 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-template-columns: 8rem repeat(4, 1fr) 8rem;
     grid-template-rows: auto;
     grid-column-gap: 2rem;
-    padding: 3rem 0;
+    padding: 6rem 0;
+    margin-top: 10rem;
   }
 
 /* rows and columns are within the discovery nested grid */
@@ -1448,7 +1501,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
   .persona-1, .persona-2 {
     margin-top: 0;
-    box-shadow: 0 1rem 2rem 0 rgba(207, 213, 230, 0.50)
+    margin-bottom: 2rem;
   }
 
   .persona-1 {
@@ -1460,6 +1513,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-column: 4 / -1;
     margin-right: 2rem;
   }
+
 
   .user-stories li {
     font-size: 1.7rem;
@@ -1482,6 +1536,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   .hifi-mockups {
     margin-left: 0;
     margin-top: 0;
+    padding-bottom: 2rem;
   }
 
   .ab-testing-1 {
@@ -1539,7 +1594,8 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-template-columns: 8rem repeat(4, 1fr) 8rem;
     grid-template-rows: auto;
     grid-column-gap: 2rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
   }
 
   .crit {
@@ -1677,6 +1733,10 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-column: 11 / 14;
     display: block;
     margin-top: 3rem;
+  }
+
+  .project-img {
+    padding-bottom: 8rem;
   }
 
   #intro-btn1 {

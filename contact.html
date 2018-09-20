@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cody Dennis | Product Designer</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126109804-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126109804-1');
+    </script>
+
     <!-- main stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -60,15 +70,14 @@
 
 
 <div class="grid-wrapper"> <!-- CSS Grid wrapper START-->
+
   <div class="say-hello">
             <h1 class="contact-header">Say <span class="intro-h1">hello</span></h1>
             <p>I'd love to hear from you! To get in touch, fill out the form or email me at <a href="malito:hello@codydennis.design">hello@codydennis.design</a>.</p>
           </div>
 
           <div class="contactForm">
-            <div class="">
-              <form action="https://formspree.io/hello@codydennis.design"
-            method="POST">
+              <form action="https://formspree.io/hello@codydennis.design" method="POST">
                 <div>
                   <input type="text" name="name" placeholder="Your name" autocomplete="off">
                 </div>
@@ -76,7 +85,7 @@
                   <input type="email" name="_replyto" placeholder="Your email" autocomplete="off">
                 </div>
                 <div class="letterForm">
-                  <textarea type="text" name="message" placeholder="Your message" ></textarea>
+                  <textarea name="message" placeholder="Your message" ></textarea>
                 </div>
                 <div>
                   <button type="submit" class="contact-button">Send Message</button>
@@ -92,17 +101,19 @@
           grid wrapper and stuck it to the bottom using position absolute and does not cover content on
           mobile -->
 
+      
+          <!-- Footer -->
           <footer class="footer">
                 <div class="footer-info"><!-- To wrap all content inside the footer -->
                 <div class="social-links"><!-- Font Awesome social media links -->
                   <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-                    <i class="fab fa-linkedin fa-4x" alt="LinkedIn icon"></i></a>
-                  <a href="http://www.codydennis.dribbble.com/" target="_blank">
-                    <i class="fab fa-dribbble-square fa-4x" alt="Dribbble icon"></i></a>
+                    <i class="fab fa-linkedin fa-4x"></i></a>
+                  <a href="http://codydennis.dribbble.com/" target="_blank">
+                    <i class="fab fa-dribbble-square fa-4x"></i></a>
                   <a href="https://twitter.com/codyjdennis" target="_blank">
-                    <i class="fab fa-twitter-square fa-4x" alt="Twitter icon"></i></a>
+                    <i class="fab fa-twitter-square fa-4x"></i></a>
                   <a href="https://github.com/codydennis" target="_blank">
-                    <i class="fab fa-github-square fa-4x" alt="Github icon"></i></a>
+                    <i class="fab fa-github-square fa-4x"></i></a>
                </div>
                <div>
                   <p><i class="far fa-copyright"></i> 2018 | Designed & Developed by Cody Dennis</p>

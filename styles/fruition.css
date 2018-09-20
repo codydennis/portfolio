@@ -50,7 +50,7 @@ img {
 }
 
 .comp-detail {
-  margin: 2rem 0;
+  padding: 2.5rem 0;
   display: flex;
   align-items: baseline;
 }
@@ -70,6 +70,7 @@ img {
     border-radius: 50%;
     color: #00B28B;
     margin-bottom: 1rem;
+    font-weight: 700;
   }
 
 
@@ -86,7 +87,7 @@ img {
 .target-data {
   text-align: center;
   line-height: 3rem;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 .target-analysis ul {
@@ -114,11 +115,17 @@ img {
   height: 6rem;
 }
 
+.sketch-1-f, .sketch-2-f, .lofi-wires-1-f, .lofi-wires-2-f {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 /* Similar to sphere, but slight difference */
-
+.usability-testing-1 {
+  padding-top: 3rem;
+}
 .usability-testing-1 ul {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.3rem;
 }
 
 .usability-testing-1 li {
@@ -129,23 +136,45 @@ img {
 
 /* Dashboard and Landing Page Testing */
 
+.ab-testing-1 {
+  padding-top: 1;
+}
+
+.ab-testing-1 p, .ab-testing-2 p {
+  margin-bottom: 2rem;
+}
 
 .ab-testing-2 {
   margin: 0 2rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .ab-2-intro {
   padding-bottom: 2rem;
 }
 
+.iter-1-f, .iter-2-f, .iter-3-f {
+  margin: 0 2rem;
+}
 
+.crit-submit-f, .crit-revised-2f {
+  margin: 0 2rem;
+}
 .crit-submit-2f, .crit-revised-f {
   display: none;
 }
 
+.status, .status-2, .meeting, .meeting-2, .add-loan, .add-loan-2, .state1-f, .state2-f {
+  margin: 0 2rem;
+}
+
 
 .mobile-designs p {
+  padding-bottom: 2rem;
+}
+
+.logo-sketch-f {
+  margin: 0 2rem;
   padding-bottom: 2rem;
 }
 
@@ -155,12 +184,11 @@ img {
 
 
 
-
 .comp-insights {
   grid-column: 1 / -1;
   grid-template-rows: auto;
   text-align: center;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .comp-detail {
@@ -184,13 +212,14 @@ img {
 }
 
 .target-analysis {
-  margin-top: 0;
+  padding-top: 6rem;
 }
 
 .target-demo {
   grid-column: 1 / -1;
   justify-content: center;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .target-data {
@@ -204,6 +233,8 @@ img {
 /* Unique placement of sketches and wireframes in this case study */
 .sketch-1-f, .sketch-2-f, .lofi-wires-1-f, .lofi-wires-2-f {
   grid-column: 2 / 6;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .usability-testing-1 li{
@@ -211,6 +242,14 @@ img {
   padding-bottom: 2rem;
 }
 
+.ab-testing-2 {
+  padding-top: 8rem;
+}
+
+.iter-1-f, .iter-2-f, .iter-3-f {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .iter-1-f {
   grid-column: 2 / 4;

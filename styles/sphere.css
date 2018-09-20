@@ -121,6 +121,15 @@ img {
   margin: 0 1rem;
 }
 
+.logo-digital, .logo-sketch {
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+}
+
+.logo-sketch {
+}
+
+
 
 /* TABLET CONTENT */
 @media screen and (min-width:768px) {
@@ -132,9 +141,8 @@ img {
 
 .project-img {
   display: block;
-  width: 100%;
+  width: 90%;
   margin: auto;
-  padding: 3rem 3rem;
 }
 
 
@@ -238,8 +246,10 @@ img {
 }
 
 .usability-testing ul {
-  padding: 2rem 0;
+  padding: 2rem 0 2rem 1rem;
 }
+
+
 
 .iteration1 {
   grid-column: 1 / 4;
@@ -304,9 +314,7 @@ img {
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
 
-.project-img {
-  grid-column: 4 / 12;
-}
+
 .comp-insights {
   grid-column: 4 / 12;
   border-radius: 1rem;

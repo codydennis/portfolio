@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cody Dennis | Product Designer</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126109804-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126109804-1');
+    </script>
+
     <!-- main stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -74,7 +84,7 @@
     <p>Over the years I’ve had my share of poor experiences that resulted in missing medication.
     Misses which impacted tests months down the road. In early 2018 I took this on as a personal project to explore solutions that could repair the broken pharmacy experience.</p>
     <a href="https://invis.io/UDMV5WP8M2F" target="_blank" id="intro-btn1" class="cs-button">View Desktop Prototype</a>
-    <a href="https://invis.io/UDMV5WP8M2F" target="_blank" id="intro-btn2" class="cs-button">View Mobile Prototype</a>
+    <a href="https://invis.io/UDMV5WP8M2F" target="_blank" id="intro-btn2-f" class="cs-button">View Mobile Prototype</a>
  </div>
 
 
@@ -336,7 +346,7 @@ handled content well and could be swapped in and out easily.
 </div>
 
 <!--User Stories Button -->
-<div class="study-btn">
+<div class="study-btn" id="flow">
     <a href="https://drive.google.com/drive/folders/1wDxAQZbHdLQ7k76v65ZDWpgFwcE9gD89?usp=sharing" target="_blank" class="cs-button">All stories & Flows</a>
 </div>
 
@@ -437,14 +447,14 @@ is being used for.</li>
 <!-- A/B Images -->
 <div class="hifi-1">
 <figure>
-<img src="images/lofi1_b.jpg" class="img-shadow" alt="Fruition dashboard option A">
+<img src="images/lofi1_b.jpg" alt="Fruition dashboard option A">
 <figcaption class="test">Option A - <span class="positive-data">69%</span></figcaption>
 </figure>
 </div>
 
 <div class="hifi-2">
 <figure>
-<img src="images/lofi1_a.jpg" class="img-shadow" alt="Fruition dashboard option b">
+<img src="images/lofi1_a.jpg" alt="Fruition dashboard option b">
 <figcaption class="test">Option B - <span class="negative-data">31%</span></figcaption>
 </figure>
 </div>
@@ -485,21 +495,21 @@ is being used for.</li>
 
 <div class="iter-1-f">
 <figure>
-<img src="images/dashboard_oa.jpg" class="img-shadow" alt="Sphere white version">
+<img src="images/dashboard_oa.jpg" alt="Sphere white version">
   <figcaption class="test">Option A - <span class="positive-data">42%</span></figcaption>
 </figure>
 </div>
 
 <div class="iter-2-f">
 <figure>
-<img src="images/dashboard_ob.jpg" class="img-shadow" alt="Sphere white version">
+<img src="images/dashboard_ob.jpg" alt="Sphere white version">
 <figcaption class="test">Option B - <span class="negative-data">29%</span></figcaption>
 </figure>
 </div>
 
 <div class="iter-3-f">
 <figure>
-<img src="images/dashboard_oc.jpg" class="img-shadow" alt="Sphere white version">
+<img src="images/dashboard_oc.jpg" alt="Sphere white version">
 <figcaption class="test">Option C - <span class="negative-data">29%</span></figcaption>
 </figure>
 </div>
@@ -542,14 +552,14 @@ is being used for.</li>
 <div class="crit-submit-f">
 <figure>
 <figcaption class="test">Option A - <span class="positive-data">57%</span></figcaption>
-<img src="images/hifi_landing_a.jpg" class="img-shadow" alt="Sphere white version">
+<img src="images/hifi_landing_a.jpg" alt="Sphere white version">
 </figure>
 </div>
 
 <div class="crit-submit-2f">
 <figure>
 <figcaption class="test">Option B - <span class="negative-data">43%</span></figcaption>
-<img src="images/hifi-landing-b.jpg" class="img-shadow" alt="Sphere white version">
+<img src="images/hifi-landing-b.jpg" alt="Sphere white version">
 </figure>
 </div>
 
@@ -577,14 +587,14 @@ is being used for.</li>
 <div class="crit-revised-f">
 <figure>
 <figcaption class="test">Submitted to Critique</span></figcaption>
-<img src="images/mockup_a.jpg" class="img-shadow" alt="Sphere white version">
+<img src="images/mockup_a.jpg" alt="Sphere white version">
 </figure>
 </div>
 
 <div class="crit-revised-2f">
 <figure>
 <figcaption class="test">Revised</span></figcaption>
-<img src="images/mockup_b.jpg" class="img-shadow" alt="Sphere white version">
+<img src="images/mockup_b.jpg" alt="Sphere white version">
 </figcaption>
 </div>
 
@@ -729,7 +739,7 @@ is being used for.</li>
 </div>
 
 <div class="logo-sketch-f">
-<img src="images/fruition_logo_sketches.jpg" class="img-shadow" alt="Nate V. user persona">
+<img src="images/fruition_logo_sketches.jpg" alt="Nate V. user persona">
 </div>
 
 
@@ -738,7 +748,7 @@ is being used for.</li>
 </div>
 
 <div class="styleguide-btn">
-  <a href="https://invis.io/UDMV5WP8M2F" target="_blank" class="cs-button">View full styleguide</a>
+  <a href="https://invis.io/UDMV5WP8M2F" target="_blank" class="cs-button">View styleguide</a>
 </div>
 
 <div class="process-btn">
@@ -772,25 +782,25 @@ and launch on-time and within budget.
 </section>
 
 <!-- Footer -->
-  <footer class="cd-footer">
-<div class="footer-info">
-  <!-- Social Media Links -->
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-      <i class="fab fa-linkedin fa-4x" alt="LinkedIn icon"></i></a>
-      <a href="https://instagram.com/codyjdennis" target="_blank">
-        <i class="fab fa-dribbble-square fa-4x" alt="Dribbble icon"></i></a>
-    <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-      <i class="fab fa-github-square fa-4x" alt="Github icon"></i></a>
- <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-   <i class="fab fa-twitter-square fa-4x" alt="Twitter icon"></i></a>
-</div>
-
-<div>
-  <p><i class="fas fa-copyright"></i> 2018 | Designed and developed by Cody Dennis</p>
-</div><!-- end Social Links-->
-</div>
+<footer>
+      <div class="footer-info"><!-- To wrap all content inside the footer -->
+      <div class="social-links"><!-- Font Awesome social media links -->
+        <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
+          <i class="fab fa-linkedin fa-4x"></i></a>
+        <a href="http://codydennis.dribbble.com/" target="_blank">
+          <i class="fab fa-dribbble-square fa-4x"></i></a>
+        <a href="https://twitter.com/codyjdennis" target="_blank">
+          <i class="fab fa-twitter-square fa-4x"></i></a>
+        <a href="https://github.com/codydennis" target="_blank">
+          <i class="fab fa-github-square fa-4x"></i></a>
+     </div>
+     <div>
+        <p><i class="far fa-copyright"></i> 2018 | Designed & Developed by Cody Dennis</p>
+     </div><!-- end Social Links-->
+     </div><!-- End wrapping all content in footer -->
 </footer>
+
+</div><!--end grid wrapper-->
 
 </body>
 </html>
