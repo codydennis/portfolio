@@ -98,7 +98,7 @@ li {
 
   h3 {
     font-size: 2.2rem;
-    line-height: 3.5rem;
+    line-height: 2rem;
   }
 
 
@@ -119,7 +119,6 @@ li {
   h2 {
     font-size: 3.2rem;
     font-weight: 800;
-    line-height: 4rem;
   }
 
   h3 {
@@ -527,6 +526,7 @@ a {
   padding-top: 0;
 }
 
+
 /* TABLET */
 @media screen and (min-width:768px) {
 
@@ -546,6 +546,10 @@ a {
   grid-column: 2 / 6;
   margin: 3rem 10rem;
   padding-top: 0;
+}
+
+.project-1-text h2, .project-2-text h2 {
+line-height: 4rem;
 }
 
 }
@@ -622,7 +626,7 @@ a {
 .button, .cs-button {
   display: inline-block;
   cursor: pointer;
-  padding: 2rem 0;
+  padding: 2.3rem 0;
   width: 22.7rem;
   color: #FFF;
   text-align: center;
@@ -631,11 +635,12 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
   background-color: #0B23FF;
+  border: 0.2rem solid #0B23FF;
   border-radius: .5rem;
   box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
-
 }
+
 
 .button:hover {
   background-color: #0015D1;
@@ -732,6 +737,9 @@ button {
   width: 21.7rem;
 }
 
+.proj-btn {
+  padding: 2.5rem 0;
+}
 }
 
 /* END Buttons */
@@ -1034,7 +1042,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
 .introduction, .project-info, .problem, .solution, .info-list, .user-survey, .survey-insights div, .study-btn, .testing-btn,
 .comp-analysis, .comp-data, .target-analysis, .persona-intro, .persona-1, .persona-2, .user-stories, .lofi-testing, .sketching-intro, .usability-testing-1,
- .hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .crit-info, .crit-info-2, .usability-testing,
+ .usability-testing-2, .hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .crit-info, .crit-info-2, .usability-testing,
  .mobile-designs, .finishing-intro, .identity, .styleguide-btn, .process-btn, .learn {
   margin: 3rem 2rem;
 }
@@ -1158,7 +1166,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 .persona-1 ul, .persona-2 ul {
   font-weight: 300;
   margin: 0;
-  padding-left: 3rem;
+  padding-left: 3.5rem;
   padding-right: 1.5rem;
 }
 
@@ -1188,7 +1196,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
 .vertical-line {
   border-left: .3rem solid #0980E1;
-  margin: 2rem;
+  margin: 2.5rem;
 }
 
 .quote {
@@ -1319,6 +1327,10 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   margin: 0 2rem;
 }
 
+.testing-btn {
+  margin: 0;
+}
+
 .styleguide-btn {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1341,7 +1353,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
 
   .introduction, .project-info, .problem, .solution, .user-survey, .survey-insights, .study-btn, .testing-btn,
-  .comp-analysis, .persona-intro, .persona-1, .persona-2, .user-stories, .sketching-intro, .lofi-testing
+  .comp-analysis, .persona-intro, .persona-1, .persona-2, .user-stories, .lofi-testing
   .hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit-iteration, .crit, .mobile-designs, .usability-testing,
   .conclusion {
     margin: 3rem 0;
@@ -1349,7 +1361,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   }
 
   /* ALL PARAGRAPHS on SAME COLUMN go here */
-  .introduction, .project-info, .problem, .solution, .user-survey, .comp-analysis, .target-analysis, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1,
+  .introduction, .project-info, .problem, .solution, .user-survey, .comp-analysis, .target-analysis, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1, .usability-testing-2,
   .hifi-mockups, .lofi-testing, .ab-testing, .ab-testing-1, .ab-testing-2, .data-info, .iteration-intro, .crit, .mobile-designs, .usability-testing, .finishing-intro, .identity, .learn {
     grid-column: 2 / 6;
   }
@@ -1528,6 +1540,10 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     margin: 4rem 0;
   }
 
+  .sketching-intro {
+    margin-bottom: 0;
+  }
+
   .data-info {
     margin: 0;
     padding: 2rem 0;
@@ -1537,6 +1553,11 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     margin-left: 0;
     margin-top: 0;
     padding-bottom: 2rem;
+  }
+
+  .lofi-testing {
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .ab-testing-1 {
@@ -1633,6 +1654,10 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     padding-top: 4rem;
   }
 
+  .usability-testing {
+    padding-top: 6rem;
+  }
+
 
   .crit-iteration {
     grid-column: 1 / -1;
@@ -1692,7 +1717,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 @media screen and (min-width:1224px) {
 
 
-  .problem, .solution, .user-survey, .comp-analysis, .comp-insights, .target-analysis, .target-demo, .info-graph, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1, .lofi-testing,
+  .problem, .solution, .user-survey, .comp-analysis, .comp-insights, .target-analysis, .target-demo, .info-graph, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1, .usability-testing-2, .lofi-testing,
   .hifi-mockups, .ab-testing, .ab-testing-1, .ab-testing-2, .data-info, .iteration-intro, .crit, .mobile-designs, .usability-testing, .finishing-intro,
   .identity, .learn {
     grid-column: 4 / 12;
@@ -1775,7 +1800,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   }
 
   .comp-analysis {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
 
   .info-head h4 {
@@ -1835,9 +1860,6 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
       grid-template-columns: 1fr repeat(12, [row] 8rem) 1fr;
   }
 
-  .usability-testing li {
-  font-size: 2rem;
-  }
 
   .finishing-touches {
     grid-template-columns: 1fr repeat(12, [row] 8rem) 1fr;

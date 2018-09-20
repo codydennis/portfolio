@@ -65,7 +65,7 @@ img {
 }
 
 .data-icon {
-  width: 4.5rem;
+  width: 4.4rem;
   height: 6rem;
 }
 
@@ -313,7 +313,15 @@ img {
 
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
+#sphere-img {
+  margin: auto;
+  padding-left: 1rem;
+}
 
+.sphere-logo {
+  padding-right: 2rem;
+  width: 15rem;
+}
 
 .comp-insights {
   grid-column: 4 / 12;
@@ -348,6 +356,16 @@ img {
 
 .sketch-2 {
   grid-column: 8 / -1;
+}
+
+.usability-testing li {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  padding-left: 1rem;
+}
+
+.usability-testing ul {
+  padding-left: 2rem;
 }
 
 .lofi-testing li {
