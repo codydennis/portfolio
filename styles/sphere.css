@@ -65,7 +65,7 @@ img {
 }
 
 .data-icon {
-  width: 4.4rem;
+  width: 4.5rem;
   height: 6rem;
 }
 
@@ -121,15 +121,6 @@ img {
   margin: 0 1rem;
 }
 
-.logo-digital, .logo-sketch {
-  margin: 0 2rem;
-  padding-bottom: 2rem;
-}
-
-.logo-sketch {
-}
-
-
 
 /* TABLET CONTENT */
 @media screen and (min-width:768px) {
@@ -141,8 +132,9 @@ img {
 
 .project-img {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  padding: 3rem 3rem;
 }
 
 
@@ -246,10 +238,8 @@ img {
 }
 
 .usability-testing ul {
-  padding: 2rem 0 2rem 1rem;
+  padding: 2rem 0;
 }
-
-
 
 .iteration1 {
   grid-column: 1 / 4;
@@ -313,16 +303,10 @@ img {
 
 
 /* ALL PARAGRAPHS on SAME COLUMN go here */
-#sphere-img {
-  margin: auto;
-  padding-left: 1rem;
-}
 
-.sphere-logo {
-  padding-right: 2rem;
-  width: 15rem;
+.project-img {
+  grid-column: 4 / 12;
 }
-
 .comp-insights {
   grid-column: 4 / 12;
   border-radius: 1rem;
@@ -356,16 +340,6 @@ img {
 
 .sketch-2 {
   grid-column: 8 / -1;
-}
-
-.usability-testing li {
-  font-size: 2rem;
-  line-height: 3.5rem;
-  padding-left: 1rem;
-}
-
-.usability-testing ul {
-  padding-left: 2rem;
 }
 
 .lofi-testing li {

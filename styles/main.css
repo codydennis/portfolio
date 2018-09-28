@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #FFFFFF;
-  color: #1A264A;
+  color: #0E1527;
   font-family: "ff-real-text-pro", Helvetica, sans-serif;
   margin: 0;
   overflow-y: hidden;
@@ -49,7 +49,7 @@ h1 {
 h2 {
   font-size: 2.6rem;
   line-height: 3rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 h3 {
@@ -92,7 +92,6 @@ li {
 
   h2 {
     font-size: 2.8rem;
-    font-weight: 800;
     line-height: 3rem;
   }
 
@@ -118,7 +117,6 @@ li {
 
   h2 {
     font-size: 3.2rem;
-    font-weight: 800;
   }
 
   h3 {
@@ -1020,6 +1018,12 @@ figcaption {
 box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 }
 
+.positive-data {
+  color: #16C29C;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
 .negative-data {
   color: #D57173;
   font-weight: 900;
@@ -1030,10 +1034,14 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   font-weight: 700;
 }
 
-.positive-data {
-  color: #16C29C;
-  font-weight: 900;
-  font-size: 2rem;
+.ver-a {
+  color: #D57173;
+  font-weight: 800;
+}
+
+.ver-b {
+   color: #16C29C;
+   font-weight: 800;
 }
 
 /* styles for bolder captions */
@@ -1048,8 +1056,8 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
 /* MOBILE FIRST */
 
-.introduction, .project-info, .problem, .solution, .info-list, .user-survey, .survey-insights div, .study-btn, .testing-btn,
-.comp-analysis, .comp-data, .target-analysis, .persona-intro, .persona-1, .persona-2, .user-stories, .lofi-testing, .sketching-intro, .usability-testing-1,
+.introduction, .project-info, .problem, .solution, .info-list, .user-survey, .survey-insights div, .study-btn, .study-btn-a, .study-btn-b, .testing-btn,
+.comp-analysis, .comp-data, .target-analysis, .persona-intro, .persona-1, .persona-2, .user-stories, .flows-img, .lofi-testing, .sketching-intro, .usability-testing-1,
  .usability-testing-2, .hifi-mockups, .ab-testing, .data-info, .iteration-intro, .crit, .crit-info, .crit-info-2, .usability-testing,
  .mobile-designs, .finishing-intro, .identity, .styleguide-btn, .process-btn, .learn {
   margin: 3rem 2rem;
@@ -1072,6 +1080,18 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   transition: 0.3s ease all;
   box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
 }
+
+.cs-link {
+  color: #1A264A;
+  border-bottom: 0.2rem solid #0B23FF;
+  transition: 0.3s ease-in-out;
+}
+
+.cs-link:hover {
+  color: #0B23FF;
+  transition: 0.3s ease-in-out;
+}
+
 
 .introduction p {
   margin-bottom: 2rem;
@@ -1369,7 +1389,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   }
 
   /* ALL PARAGRAPHS on SAME COLUMN go here */
-  .introduction, .project-info, .problem, .solution, .user-survey, .comp-analysis, .target-analysis, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1, .usability-testing-2,
+  .introduction, .project-info, .problem, .solution, .user-survey, .comp-analysis, .target-analysis, .persona-intro, .user-stories, .flows-img, .sketching-intro, .usability-testing-1, .usability-testing-2,
   .hifi-mockups, .lofi-testing, .ab-testing, .ab-testing-1, .ab-testing-2, .data-info, .iteration-intro, .crit, .mobile-designs, .usability-testing, .finishing-intro, .identity, .learn {
     grid-column: 2 / 6;
   }
@@ -1379,6 +1399,18 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-column: 3 / 5;
     padding-top: 1rem;
     margin: 0;
+  }
+
+  .study-btn-a {
+    grid-column: 2 / 4;
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .study-btn-b {
+    grid-column: 4 / 6;
+    margin: 0;
+    padding-top: 3rem;
   }
 
   .testing-btn {
@@ -1543,8 +1575,9 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 8rem repeat(4, 1fr) 8rem;
+    background-color: #F7F9FF;
     grid-column-gap: 2rem;
-    padding: 3rem 0;
+    padding: 3rem 0 6rem 0;
     margin: 4rem 0;
   }
 
@@ -1731,9 +1764,22 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-column: 4 / 12;
   }
 
+  figcaption {
+    line-height: 2.5rem;
+  }
+
   .study-btn {
    grid-column: 6 / 10;
   }
+
+  .study-btn-a {
+    grid-column: 4 / 8;
+  }
+
+  .study-btn-b {
+    grid-column: 8 / 12;
+  }
+
 
   .testing-btn {
    grid-column: 8 / 13;

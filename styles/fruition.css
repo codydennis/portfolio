@@ -115,6 +115,11 @@ img {
   height: 6rem;
 }
 
+.user-flow {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .sketch-1-f, .sketch-2-f, .lofi-wires-1-f, .lofi-wires-2-f {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -234,12 +239,22 @@ img {
   font-size: 1.7rem;
 }
 
+.user-flow {
+  grid-column: 2 / 6;
+  margin-left: 0;
+  margin-right: 0;
+}
 /* Unique placement of sketches and wireframes in this case study */
 .sketch-1-f, .sketch-2-f, .lofi-wires-1-f, .lofi-wires-2-f {
   grid-column: 2 / 6;
   padding-top: 3rem;
   margin-left: 0;
   margin-right: 0;
+}
+
+.usability-testing-1 {
+  padding-top: 3rem;
+  margin: 0;
 }
 
 .usability-testing-1 li{
@@ -302,7 +317,8 @@ img {
 }
 
 .usability-testing {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .usability-testing ul {
@@ -421,6 +437,9 @@ img {
   padding-bottom: 3rem;
 }
 
+.flows-img {
+  grid-column: 3 / 13;
+}
 
 .sketching-intro p {
   padding-bottom: 2rem;
