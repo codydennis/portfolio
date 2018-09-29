@@ -147,6 +147,12 @@ img {
   margin-bottom: 2rem;
 }
 
+.flows-img {
+  grid-column: 2 / 6;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .comp-data {
   display: flex;
   flex-direction: column;
@@ -306,6 +312,7 @@ img {
 
 .project-img {
   grid-column: 4 / 12;
+  width: 80%;
 }
 .comp-insights {
   grid-column: 4 / 12;
@@ -324,6 +331,10 @@ img {
 
 .data-icon {
   margin-top: 5rem;
+}
+
+.flows-img {
+  grid-column: 3 / 13;
 }
 
 /* rows and columns are within the discovery nested grid */
@@ -345,6 +356,10 @@ img {
 .lofi-testing li {
   font-size: 2rem;
   line-height: 3.5rem;
+}
+
+.usability-testing li {
+  font-size: 2rem;
 }
 
 /* Sphere specific */

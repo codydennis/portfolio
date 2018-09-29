@@ -299,7 +299,7 @@ header {
   }
 
   .nav-link:active {
-    color: #0B23FF;;
+    color: #0B23FF;
     cursor: pointer;
   }
 
@@ -688,6 +688,7 @@ a {
   color: #FFFFFF;
   transition: 0.5s ease-in-out;
   border-color: #0015D1;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -718,6 +719,12 @@ button:hover {
   font-size: 1.7rem;
 }
 
+
+.cs-button {
+  background-color: transparent;
+  color: #0B23FF;
+  box-shadow: none;
+}
 .proj-btn {
   padding: 2.2rem 0;
   font-size: 1.7rem;
@@ -1065,14 +1072,23 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 
 #intro-btn1 {
   margin-bottom: 2rem;
+  background-color: #0B23FF;
+  color: #FFFFFF;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
-#intro-btn2 {
-  background-color: transparent;
-  border: 0.2rem solid rgb(11, 35, 255);
-  box-shadow: none;
-  color: rgb(11, 35, 255);
+#intro-btn1:hover, #intro-btn2-f:hover {
+  background-color: #0015D1;
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease all;
 }
+
+  #intro-btn2-f {
+  background-color: #0B23FF;
+  color: #FFFFFF;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
 
 #secondary-btn:hover {
   background-color: #0015D1;
@@ -1082,8 +1098,8 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 }
 
 .cs-link {
-  color: #1A264A;
-  border-bottom: 0.2rem solid #0B23FF;
+  color: #0E1527;
+  text-decoration: underline;
   transition: 0.3s ease-in-out;
 }
 
@@ -1658,6 +1674,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     grid-column-gap: 2rem;
     padding-bottom: 4rem;
     padding-top: 4rem;
+    margin-top: 8rem;
   }
 
   .crit {

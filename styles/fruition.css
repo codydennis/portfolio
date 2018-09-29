@@ -239,7 +239,7 @@ img {
   font-size: 1.7rem;
 }
 
-.user-flow {
+.flows-img {
   grid-column: 2 / 6;
   margin-left: 0;
   margin-right: 0;
@@ -338,31 +338,38 @@ img {
 .status {
   grid-column: 1 / 4;
   margin-left: 2rem;
+  padding-bottom: 3rem;
+  border: 0.1rem solid #F8F9FD;
 }
 
 .status-2 {
   grid-column: 4 / -1;
   margin-right: 2rem;
+  padding-bottom: 3rem;
 }
 
 .meeting {
   grid-column: 1 / 4;
   margin-left: 2rem;
+  padding-bottom: 3rem;
 }
 
 .meeting-2 {
   grid-column: 4 / -1;
   margin-right: 2rem;
+  padding-bottom: 3rem;
 }
 
 .add-loan {
   grid-column: 1 / 4;
   margin-left: 2rem;
+  padding-bottom: 3rem;
 }
 
 .add-loan-2 {
   grid-column: 4 / -1;
   margin-right: 2rem;
+  padding-bottom: 3rem;
 }
 
 .state1-f {
