@@ -1077,6 +1077,15 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
+#intro-bt1-s {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #0B23FF;
+  color: #FFFFFF;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+
 #intro-btn1:hover, #intro-btn2-f:hover {
   background-color: #0015D1;
   color: rgb(255, 255, 255);
@@ -1321,6 +1330,10 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
   font-weight: 700;
 }
 
+.info-detail > .changes {
+  color: #00CF96;
+}
+
 .crit-info-2 > .info-detail h3 {
   color: #00CF96;
 }
@@ -1493,12 +1506,19 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     width: 48%;
   }
 
+  #intro-btn1-s {
+    background-color: #0B23FF;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+  }
+
 
 
   .project-info h4, .project-info ul {
     margin-left: 2rem;
     margin-bottom: 0;
   }
+
 
   .problem-solution {
     grid-column: 1 / -1;
@@ -1641,6 +1661,11 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     display: none;
   }
 
+  .info-detail > .changes {
+    background-color: #00CF96;
+    color: #FFFFFF;
+}
+
   .test {
     font-size: 2rem;
     font-weight: 900;
@@ -1775,7 +1800,7 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
 @media screen and (min-width:1224px) {
 
 
-  .problem, .solution, .user-survey, .comp-analysis, .comp-insights, .target-analysis, .target-demo, .info-graph, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1, .usability-testing-2, .lofi-testing,
+  .introduction, .project-info, .problem, .solution, .user-survey, .comp-analysis, .comp-insights, .target-analysis, .target-demo, .info-graph, .persona-intro, .user-stories, .sketching-intro, .usability-testing-1, .usability-testing-2, .lofi-testing,
   .hifi-mockups, .ab-testing, .ab-testing-1, .ab-testing-2, .data-info, .iteration-intro, .crit, .mobile-designs, .usability-testing, .finishing-intro,
   .identity, .learn {
     grid-column: 4 / 12;
@@ -1821,27 +1846,23 @@ box-shadow: 0 1rem 2rem 0 rgb(207, 213, 230)
     padding: 3rem 0;
   }
 
-  .introduction {
-    grid-column: 3 / 11;
-  }
-
-  .project-info {
-    grid-column: 11 / 14;
-    display: block;
-    margin-top: 3rem;
-  }
-
   .project-img {
     padding-bottom: 8rem;
   }
 
   #intro-btn1 {
-    width: 37rem;
+    width: 38rem;
+    margin-top: 1rem;
   }
 
   #intro-btn2 {
     margin-left: 2rem;
-    width: 37rem;
+    width: 38rem;
+  }
+
+  .introduction {
+    padding-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   .problem-solution {
