@@ -31,10 +31,6 @@ img {
   display: none;
 }
 
-#intro-bt1-s {
-  width: 100%;
-}
-
 .sphere-logo {
   width: 11rem;
   margin-bottom: 2rem;
@@ -133,11 +129,6 @@ img {
 /* TABLET CONTENT */
 @media screen and (min-width:768px) {
 
-
-  #intro-bt1-s {
-    width: 100%;
-    background-color: #0B23FF;
-  }
 
 .project-img-mobile {
   display: none;
