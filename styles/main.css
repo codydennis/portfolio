@@ -154,12 +154,14 @@ h1 {
   line-height: 3.8rem;
   margin-bottom: 0;
   padding-bottom: 1rem;
+  text-align: left;
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   line-height: 3rem;
   font-family: 'Calibre Semibold';
+  text-align: left;
 }
 
 h3 {
@@ -168,6 +170,7 @@ h3 {
   line-height: 3rem;
   text-align: left;
   font-family: 'Calibre Regular';
+  text-align: left;
 }
 
 h4 {
@@ -176,17 +179,20 @@ h4 {
   font-weight: 700;
   color: #0CBEA9;
   font-family: 'Calibre Semibold';
+  text-align: left;
 }
 
 .h4-landing {
-  color: #FFFFFF;
+  color: #FFFFFF
+  text-align: left;
 }
 
 p {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
   font-family: 'Calibre Regular';
+  text-align: left;
 }
 
 li {
@@ -204,7 +210,6 @@ li {
   h1 {
     font-size: 5.4rem;
     line-height: 6.5rem;
-    text-align: left;
   }
 
   h2 {
@@ -219,7 +224,7 @@ li {
 
 
   p {
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 3rem;
   }
 }
@@ -233,17 +238,17 @@ li {
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 4.4rem;
 
   }
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 4rem;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 3.5rem;
   }
 
@@ -255,7 +260,7 @@ li {
 
 header {
   padding: 1.7rem 0.4rem;
-  background-color: rgba(255, 255, 255, 0.90);
+  background-color: rgba(255, 255, 255, 0.97);
   display: flex;
   align-items: center;
   z-index: 1;
@@ -281,10 +286,10 @@ header {
 /* Hamburger Menu */
 .hamburger {
   position: absolute;
-  top: 1.9rem;
+  top: 1.3rem;
   right: 3.5rem;
   width: 2rem;
-  height: 4.5rem;
+  height: 4.4rem;
   z-index: 2;
 }
 
@@ -303,10 +308,10 @@ header {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(235,87,87, 0.96);
+  background-color: rgba(0,125,140, 0.98);
   top: -100%; left: 0; right: 0; bottom: 0;
   overflow: hidden;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in;
   transform: translate(0, -100%);
 }
 
@@ -319,7 +324,7 @@ header {
 
 .menu ul {
   padding: 0;
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 
 .menu li {
@@ -333,30 +338,21 @@ header {
   font-weight: 700;
 }
 
+a {
+  color: #007D8C;
+  font-family: 'Calibre Medium';
+}
+
 .menu a {
   position: relative;
   text-decoration: none;
   color: #FFF;
-  font-size: 1.7rem;
+  font-size: 2rem;
   display: inline-block;
-  margin-top: 2rem;
-  transition: color 0.2s ease-in-out;
+  margin-top: 3rem;
+  transition: 0.2s ease-in-out;
+  font-family: 'Calibre Regular';
   letter-spacing: 0.1rem;
-}
-
-.menu a:before {
-  content: '';
-  height: 0;
-  position: absolute;
-  width: 0.4rem;
-  background-color: white;
-  left: -0.5em;
-  transition: all 0.2s ease-in-out;
-}
-.menu a:hover {
-  color: white;
-  font-weight: 900;
-  transition: 0.3s ease all;
 }
 
 .far.fa-file-pdf {
@@ -401,6 +397,10 @@ header {
   padding: 1.7rem 0rem;
 }
 
+.logo-container {
+    margin-left: 10rem;
+}
+
 
 .nav-link {
   font-family: 'Calibre Regular';
@@ -427,6 +427,7 @@ header {
   display: block;
   font-size: 1.7rem;
   transition: 0.3s ease-in-out;
+  margin-right: 10rem;
 }
 
 .nav-links li {
@@ -455,16 +456,6 @@ a {
 
 }
 
-@media screen and (min-width:1224px) {
-
-  .logo-container {
-      margin-left: 10rem;
-  }
-
-  .nav-links {
-    margin-right: 10rem;
-  }
-}
 
 /* END NAVIGATION STYLES and MEDIA QUERIES */
 
@@ -524,10 +515,6 @@ a {
 
 .intro-h1, .intro-h3 {
   color: #EB5757;
-}
-
-.intro-h3 {
-  font-weight: 700;
 }
 
 .hero-content {
@@ -633,15 +620,33 @@ a {
   color: #FFFFFF;
 }
 
-.project-1, .project-2, .contact-me{
-  padding: 10rem 0rem;
-  text-align: center;
+.project-1, .project-2{
+  padding: 5rem 0rem;
+}
+
+.contact-me {
+  margin: 4rem 0rem;
 }
 
 .project-1-text, .project-2-text {
   grid-column: 2 / 6;
   margin: 3rem 2rem 0 2rem;
   padding-top: 0;
+}
+
+.proj-btn {
+  display: inline-block;
+cursor: pointer;
+margin-top: 1rem;
+padding: 1rem 0;
+width: 5rem;
+height: 5rem;
+color: #FFF;
+background-color: transparent;
+border-radius: 10rem;
+border: 0.2rem solid #FFFFFF;
+
+
 }
 
 
@@ -774,34 +779,12 @@ a:hover {
 
 .proj-btn {
   display: inline-block;
+  font-size: 2rem;
   cursor: pointer;
-  margin-top: 0.5rem;
-  padding: 2rem 0;
-  width: 15rem;
-  color: #FFF;
-  text-align: center;
-  font-size: 2.4rem;
-  font-family: 'Calibre Semibold';
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 10rem;
-  border: 0.2rem solid #FFFFFF;
-  transition: 0.2s ease-in-out;
 }
 
-.proj-btn:hover {
-  background-color: #FFFFFF;
-  transition: 0.3s ease-in-out;
-}
-
-#sphere:hover {
-  color: #0777DC;
-  transition: 0.3s ease-in-out;
-}
-
-#fruition:hover {
-  color: #07B682;
-  transition: 0.3s ease-in-out;
+.fal fa-arrow-circle-right {
+  color: white;
 }
 
 .cs-button {
@@ -842,7 +825,6 @@ button:hover {
 
 .button, .cs-button {
   padding: 2.5rem 0;
-  font-size: 1.7rem;
 }
 
 
@@ -852,10 +834,23 @@ button:hover {
   box-shadow: none;
 }
 .proj-btn {
-  padding: 2.2rem 0;
-  font-size: 1.7rem;
+  display: inline-block;
+cursor: pointer;
+margin-top: 1rem;
+padding: 1rem 0;
+width: 5rem;
+height: 5rem;
+color: #FFF;
+text-align: center;
+font-size: 2rem;
+font-weight: 700;
+white-space: nowrap;
+background-color: transparent;
+border-radius: 10rem;
+border: 0.2rem solid #FFFFFF;
+transition: 0.3s ease-in-out;
 }
-}
+
 
 /* NO MEDIA QUERIES FOR TABLET */
 
@@ -869,7 +864,7 @@ button {
 }
 
 .proj-btn {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 }
 
