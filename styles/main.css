@@ -159,7 +159,7 @@ h1 {
 h2 {
   font-size: 2.6rem;
   line-height: 3rem;
-  font-weight: 900;
+  font-family: 'Calibre Semibold';
 }
 
 h3 {
@@ -167,6 +167,7 @@ h3 {
   font-weight: 300;
   line-height: 3rem;
   text-align: left;
+  font-family: 'Calibre Regular';
 }
 
 h4 {
@@ -174,6 +175,7 @@ h4 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #0CBEA9;
+  font-family: 'Calibre Semibold';
 }
 
 .h4-landing {
@@ -184,11 +186,13 @@ p {
   font-size: 1.7rem;
   font-weight: 300;
   line-height: 3rem;
+  font-family: 'Calibre Regular';
 }
 
 li {
   line-height: 3rem;
   list-style-type: disc;
+  font-family: 'Calibre Semibold';
 }
 
 @media screen and (min-width:768px)
@@ -230,6 +234,7 @@ li {
 
   h2 {
     font-size: 3.2rem;
+
   }
 
   h3 {
@@ -298,7 +303,7 @@ header {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(11, 35, 255, 0.96);
+  background-color: rgba(235,87,87, 0.96);
   top: -100%; left: 0; right: 0; bottom: 0;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
@@ -398,6 +403,8 @@ header {
 
 
 .nav-link {
+  font-family: 'Calibre Regular';
+  color: #818181;
   padding: 2.2rem;
   text-decoration: none;
   color: #312E2E;
@@ -419,7 +426,6 @@ header {
 .nav-links {
   display: block;
   font-size: 1.7rem;
-  font-weight: 600;
   transition: 0.3s ease-in-out;
 }
 
@@ -511,7 +517,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  height: 100vh;
+  height: 90vh;
   align-content: center;
 
 }
@@ -532,9 +538,10 @@ a {
 }
 
 #subhead {
-  color: #454F69;
+  color: #4F4F4F;
   line-height: 3rem;
   padding-top: 0.5rem;
+  font-family: 'Calibre Regular';
 }
 
 /* Style to not display the mouse icon */
@@ -617,12 +624,12 @@ a {
 
 /* MOBILE */
 .project-1 {
-    background-image: linear-gradient(to bottom, rgb(20, 190, 108), rgb(0, 178, 139));
+    background-color: #1c1c1c;
     color: #FFFFFF;
 }
 
 .project-2 {
-  background-image: linear-gradient(to bottom, rgb(0, 96, 208), rgb(10, 132, 227));
+  background-color: #0052B3;
   color: #FFFFFF;
 }
 
@@ -676,7 +683,7 @@ line-height: 4rem;
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: 2fr;
   grid-column-gap: 2rem;
   padding: 20rem 0;
   margin: 0;
@@ -724,15 +731,22 @@ line-height: 4rem;
 .contact-me > form {
   width: 20rem;
 }
-}
-
 /* END GET IN TOUCH SECTION */
 
 /* Buttons */
 
 a {
   text-decoration: none;
+  font-family: 'Calibre Medium';
+  color: #007D8C;
 }
+
+a:hover {
+  text-decoration: underline;
+  color: ##005C68;
+}
+
+
 
 .button, .cs-button {
   display: inline-block;
@@ -761,19 +775,18 @@ a {
 .proj-btn {
   display: inline-block;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 2rem 0;
-  width: 22.7rem;
+  width: 15rem;
   color: #FFF;
   text-align: center;
-  font-size: 1.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-family: 'Calibre Semibold';
   white-space: nowrap;
   background-color: transparent;
-  border-radius: .5rem;
+  border-radius: 10rem;
   border: 0.2rem solid #FFFFFF;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .proj-btn:hover {
@@ -877,7 +890,7 @@ footer p {
 
 .social-links a {
   padding: 0 0.6rem;
-  color: #0B23FF;
+  color: #0B23
   transition: 0.3s ease-in-out;
 }
 
