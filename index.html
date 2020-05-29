@@ -19,7 +19,6 @@
     <!-- main stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/gxy1tee.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <!-- Favicon -->
@@ -29,7 +28,7 @@
   <body>
   <header class="header">
         <div class="logo-container"> <!-- Centers logo in header -->
-          <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
+          <a href="index.html" id="text-logo">cd</a>
         </div>
       <!-- Wraps mobile and tablet/desktop navs -->
       <nav>
@@ -61,7 +60,6 @@
           <ul>
             <li><a class="nav-link a" href="index.html">Work</a></li>
             <li><a class="nav-link" href="about.html">About</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
             <li><a class="nav-link" href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
           </ul>
       </div>
@@ -73,67 +71,42 @@
       <!-- Hero -->
   <section class="hero">
       <div class="hero-content">
-           <h1>Hello! I'm <span class="intro-h1">Cody</span>,</h1>
-           <h3 id="subhead">a <span class="intro-h3">product designer</span> based in the <span class="intro-h3">San Francisco Bay Area</span>. I refine complex problems into simple and enjoyable digital experiences. </h3>
+           <h1>Hello! I'm <span class="intro-h1">Cody﻿</span> — a <span class="intro-h1">product designer</span> based in <span class="intro-h1">San Francisco.</span></h1>
      </div>
+
 
      <div class="scroll"><!-- Hero Mouse Icon -->
           <img class="mouse-icon" src="images/mouse.svg" alt="mouse icon"/>
      </div>
 
+
   </section><!-- End Hero -->
 
-  <section class="project-1">
+
+<div class="project-1-text">
+  <h2>Fruition <span class="arrow-link">➝</span></h3>
+  <p class="project-sub">May - Sep 2018</p>
+  <p>A responsive web application that provides borrowers with loan tracking, 1-on-1 counseling, and a path out of debt.</p>
+</div>
      <div class="project-1-img">
-          <img class="fruition" src="images/fruitionlanding.png" alt="Fruition Student Loans responsive dashboard">
+      <a href="fruition.html">
+          <img class="project-details" src="images/fruition_green.jpg" alt="Fruition Student Loans responsive dashboard">
+     </a>
      </div>
-     <div class="project-1-text">
-          <h4 class="h4-landing">Product Design & Branding</h4>
-          <h2>Fruition</h2>
-          <p>A responsive web app that provides borrowers with loan tracking, 1-on-1 counseling, and a path out of debt.</p>
-            <a href="fruition.html" id="fruition" class="proj-btn">Read Case Study</a>
+
+
+     <div class="project-2-text">
+       <h2>Sphere <span class="arrow-link">➝</span></h3>
+       <p class="project-sub">May - Sep 2018</p>
+       <p>A responsive web application that provides borrowers with loan tracking, 1-on-1 counseling, and a path out of debt.</p>
      </div>
-  </section>
+          <div class="project-2-img">
+            <a href="sphere.html">
+               <img class="project-details" src="images/Sphere_project.jpg" alt="Fruition Student Loans responsive dashboard">
+            </a>
+          </div>
 
-
-  <section class="project-2">
-      <div class="project-2-img">
-          <a href="fruition.html"><img class="fruition" src="images/spherelanding.png" alt="Fruition Student Loans responsive dashboard"></a>
-      </div>
-      <div class="project-2-text">
-          <h4 class="h4-landing">Product Design & Branding</h4>
-          <h2>Sphere Pharmacy</h2>
-          <p>An iOS app that makes it easy to order prescriptions and improves patient adherence.</p>
-          <a href="sphere.html" id="sphere" class="proj-btn">Read Case Study</a>
-      </div>
-  </section>
-
-
-<!-- Get in touch -->
-
-  <section class="contact-me">
-      <div class="email">
-          <h2>Like what you see? Feel free to get in touch anytime.</h2>
-          <a href="contact.html" class="button">Get In Touch</a>
-      </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-        <div class="footer-info"><!-- To wrap all content inside the footer -->
-        <div class="social-links"><!-- Font Awesome social media links -->
-          <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-            <i class="fab fa-linkedin fa-4x"></i></a>
-          <a href="http://codydennis.dribbble.com/" target="_blank">
-            <i class="fab fa-dribbble-square fa-4x"></i></a>
-          <a href="https://twitter.com/codyjdennis" target="_blank">
-            <i class="fab fa-twitter-square fa-4x"></i></a>
-       </div>
-       <div>
-          <p><i class="far fa-copyright"></i> 2018 | Designed & Developed by Cody Dennis</p>
-       </div><!-- end Social Links-->
-       </div><!-- End wrapping all content in footer -->
-  </footer>
+</section>
 
   </div> <!--CSS grid wrapper end -->
 </body>
