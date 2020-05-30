@@ -19,17 +19,16 @@
     <!-- main stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/gxy1tee.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <!-- Favicon -->
-      <link rel="icon" type="image/png" href="images/favicon.png">
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
+  </head>
   <body>
   <header class="header">
         <div class="logo-container"> <!-- Centers logo in header -->
-          <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
+          <a href="index.html" id="text-logo">cd</a>
         </div>
       <!-- Wraps mobile and tablet/desktop navs -->
       <nav>
@@ -50,7 +49,7 @@
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
+            <li><a href="images/codydennis_resume.pdf" target="_blank" ><i class="far fa-file-pdf"></i>Resume</a></li>
          </ul>
       </div><!-- END menu -->
     </div><!-- END menu links wrap-->
@@ -61,54 +60,44 @@
           <ul>
             <li><a class="nav-link" href="index.html">Work</a></li>
             <li><a class="nav-link a" href="about.html">About</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-            <li><a class="nav-link" href="images/codydennis_resume.pdf" target="_blank" ><i class="far fa-file-pdf"></i>Resume</a></li>
+            <li><a class="nav-link" href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
           </ul>
       </div>
     </nav><!-- END all Navigation -->
-</header>
+  </header>
 
+<div class="grid-wrapper-about"> <!-- CSS Grid wrapper START-->
 
-<div class="grid-wrapper"> <!-- CSS Grid wrapper START-->
+  <div class="about-intro">
+<h1>Hello! I'm<span class="intro-h1"> Cody</span>.</h1>
+  </div>
 
-        <div class="about-me-image">
-        <img class="about-img" src="images/portfolio_bio.jpg" alt="me">
-      </div>
-      <div class="about-text">
-       <h2>Hey there! I'm <span class="intro-h1">Cody Dennis</span>, a product designer based in
-         the San Francisco Bay Area.</h2>
-       <p>I grew up in Los Angeles, and as a child, aspired to be a sports artist. Seeing artists who
-         showed their process and developed their own websites led me to my initial experience of web design. In middle school, I taught myself design tools, front-end languages, and launched my first website. Although my passion remained with illustration, from that point on, I had the heart of a designer.
-      </p>
-       <p>In 2011, I moved to the Bay Area to pursue illustration at California of College of the Arts.
-          During my sophomore year, I realized my approach to problem-solving and finding solutions drew
-          parallels to design. My best illustrations were always process-driven, graphical, and had a clear
-          understanding of the reader.</p>
-          <p>My most recent role focused on machine learning guided me to other passions for business,
-            psychology, and discovery of the field of product design. I'm enthusiastic about undertaking
-            complex problems with meaningful goals. Creating functional and enjoyable digital products
-             by bringing my love for learning, understanding people, and collaborating with teams.</p>
-             <p>If you’re interested in working together please feel free to <a id="reach-out" href="contact.html">reach out</a>.</p>
-      </div>
+  <div class="about-me-image">
+       <img class="about-img" src="images/portfolio_bio.jpg" alt="me">
+     </div>
 
-<!-- Footer -->
-  <footer class="cd-footer">
-<div class="footer-info">
-  <!-- Social Media Links -->
+  <div class="about-content">
+<h2>A product designer based in the San Francisco Bay Area.</h2>
+<p>I grew up in Los Angeles, and as a child, aspired to be a sports artist. Seeing artists who showed their process and developed their own websites led me to my initial experience of web design. In middle school, I taught myself design tools, front-end languages, and launched my first website. Although my passion remained with illustration, from that point on, I had the heart of a designer.</p>
+
+<p>In 2011, I moved to the Bay Area to pursue illustration at California of College of the Arts. During my sophomore year, I realized my approach to problem-solving and finding solutions drew parallels to design. My best illustrations were always process-driven, graphical, and had a clear understanding of the reader.</p>
+
+<p>My most recent role focused on machine learning guided me to other passions for business, psychology, and discovery of the field of product design. I'm enthusiastic about undertaking complex problems with meaningful goals. Creating functional and enjoyable digital products by bringing my love for learning, understanding people, and collaborating with teams.</p>
+
+<p>If you’re interested in working together please feel free to reach out.</p>
+  </div>
+
+  <!--Footer-->
   <div class="social-links">
-    <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-      <i class="fab fa-linkedin fa-4x"></i></a>
-      <a href="http://codydennis.dribbble.com/" target="_blank">
-        <i class="fab fa-dribbble-square fa-4x"></i></a>
-    <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-      <i class="fab fa-github-square fa-4x"></i></a>
-</div>
+  <p id="footer-email">hello@codydennis.design</p>
+  </div>
 
-<div>
-  <p><i class="fas fa-copyright"></i> 2018 | Designed and developed by Cody Dennis</p>
-</div><!-- end Social Links-->
-</div>
-</footer>
+
+  <div class="footer-info">
+  <p>© 2020 Cody Dennis</p>
+  </div>
+
+
 
 
 </div> <!--CSS grid wrapper end -->

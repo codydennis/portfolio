@@ -20,771 +20,117 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/fruition.css">
-    <link rel="stylesheet" href="https://use.typekit.net/gxy1tee.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!-- Favicon -->
-      <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
-
   <body>
-    <header>
-    <div class="logo-container"> <!-- Centers logo and header -->
+  <header class="header">
+        <div class="logo-container"> <!-- Centers logo in header -->
+          <a href="index.html" id="text-logo">cd</a>
+        </div>
+      <!-- Wraps mobile and tablet/desktop navs -->
+      <nav>
 
-      <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
-    </div>
-  <nav>
+      <!-- Divs to make hamburger button -->
+        <input id="toggle" type="checkbox"><!-- Enables hamburger menu to be clicked -->
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
 
-  <input id="toggle" type="checkbox">
-  <label for="toggle" class="hamburger">
-    <div class="top-bun"></div>
-    <div class="meat"></div>
-    <div class="bottom-bun"></div>
-  </label>
+        <!-- Hamburger menu -->
+      <div class="nav"><!-- Wraps entire mobile menu -->
+      <div class="nav-wrapper"><!-- Wraps menu links -->
+      <div class="menu"><!-- Menu -->
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="images/codydennis_resume.pdf" target="_blank" ><i class="far fa-file-pdf"></i>Resume</a></li>
+         </ul>
+      </div><!-- END menu -->
+    </div><!-- END menu links wrap-->
+  </div><!-- END entire mobile menu wrap -->
 
-  <div class="nav">
-  <div class="nav-wrapper">
-  <div class="menu">
-    <ul>
-    <li><a href="index.html">Work</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
-  </ul>
-  </div>
-  </div>
-  </div>
-
-    <div class="nav-links">
-      <ul>
-        <li><a class="nav-link" href="index.html">Work</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="nav-link" href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
-      </ul>
-    </div>
-    </nav>
+      <!-- tablet and desktop navigation -->
+      <div class="nav-links">
+          <ul>
+            <li><a class="nav-link" href="index.html">Work</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
+          </ul>
+      </div>
+    </nav><!-- END all Navigation -->
   </header>
 
+<div class="grid-wrapper-cs"> <!-- CSS Grid wrapper START-->
 
-    <div class="grid-wrapper">
-
-    <section class="project-hero">
-        <div class="project-img">
-        <img class="fruition-logo" src="images/fruition-logo.svg" alt="Sphere Pharmacy logo" />
-        <img class="sphere" src="images/fruitionlanding.png" alt="Fruition Student Loans responsive dashboard">
-      </div>
-    </section>
-
-    <div class="introduction">
-    <h2>Summary</h2>
-    <p>Fruition is a responsive web application focused on educating borrowers through the entire student loan
-      lifecycle. The product provides a loan dashboard, counseling, and personalized roadmap which allows
-      borrowers to make informed decisions, reduce debt, and plan a brighter future.</p>
-    <a href="https://invis.io/X3N7ZWPHAFU" target="_blank" id="intro-btn1" class="cs-button">View Desktop Prototype</a>
-    <a href="https://invis.io/N8NFE9G9ATF" target="_blank" id="intro-btn2-f" class="cs-button">View Mobile Prototype</a>
-   </div>
-
-
-<!-- Project Info -->
-    <div class="project-info">
-      <div class="roles">
-    <h4>Roles</h4>
-    <ul>
-      <li>Product Design</li>
-      <li>Branding & Identity</li>
-    </ul>
+  <div class="problem">
+<h2>Problem</h2>
+<p>Over 60% of borrowers lack confidence in their knowledge of student loans. Misinformation
+  and biased counseling are leading borrowers further into debt.</p>
   </div>
-  <div class="timeframe">
-    <h4>Timeframe & Type</h4>
-    <ul>
-      <li>12 Weeks, Part-Time</li>
-      <li>Personal Project</li>
-    </ul>
+
+  <div class="solution">
+<h2>Solution</h2>
+<p>Educate borrowers through the entire loan lifecycle to allow for more informed decisions and a
+  brighter future.</p>
   </div>
-  <div class="deliverables">
-    <h4>Deliverables</h4>
-    <ul>
-    <li>User Survey</li>
-    <li>User Personas</li>
-    <li>Competitive Analysis</li>
-    <li>User Stories</li>
-    <li>User Flows</li>
-    <li>Wireframes</li>
-    <li>Mockups</li>
-    <li>User Testing</li>
-    <li>Prototypes</li>
-    <li>Branding</li>
-    <li>Design System</li>
-    </ul>
+
+  <div class="user-survey">
+  <h2>User survey</h2>
+  <p>I gathered data from a survey of 340 borrowers. The core group of borrowers, age 25 to 34,
+    consistently cite poor counseling, inexperience, and pressures to attend college as their
+    reasons for taking on student debt. Close to 90% want the option of having unbiased counseling
+     through student loans.</p>
+  </div>
+
+  <!-- Survey data -->
+  <section class="insights">
+    <div class="info-head">
+      <p class="insights-title">Key Insights<p>
     </div>
-  </div>
-
-<!-- Problem and Solution-->
-    <section class="problem-solution">
-      <div class="problem">
-      <h2>Problem</h2>
-     <p><a href="https://studentloanhero.com/featured/survey-majority-student-loan-borrowers-know-interest-forgiveness-works/" class="cs-link" target="_blank">Over <span class="bold">60%</span> of borrowers</a> lack confidence in their knowledge of student loans. Misinformation
-       and biased counseling are leading borrowers further into debt.</p>
-      </div>
-    <div class="solution">
-    <h2>Solution</h2>
-    <p>Educate borrowers through the entire loan lifecycle to allow for more informed decisions and a brighter future.</p>
+    <div class="insights-data">
+      <h2>45%</h2>
+      <p>do not understand student loans</p>
+    </div>
+    <div class="insights-data">
+      <h2>59%</h2>
+      <p>debt is from a bachelors degree</p>
+    </div>
+    <div class="insights-data">
+      <h2>$801</h2>
+      <p>average monthly payment</p>
+    </div>
+    <div class="insights-data">
+      <h2>$50K</h2>
+      <p>to $100K average total debt</p>
+    </div>
+    <div class="insights-data">
+    <p><a href="https://docs.google.com/document/d/19Nl5yjmjzeYfjeupH1tLV6FLFQXCmSwy_lKJZTYtbto/edit" target="_blank">View survey & insights</a>
     </div>
     </section>
 
-<!-- User Survey -->
-    <div class="user-survey">
-    <h2>User Survey</h2>
-    <p>I gathered data from a survey of <span class="bold">340 borrowers</span>.
-      The core group of borrowers, age <span class="bold">25 to 34</span>, consistently cite poor counseling,
-      inexperience, and pressures to attend college as their reasons
-      for taking on student debt. Close to <span class="bold">90%</span> want the option of having unbiased
-      counseling through student loans.</p>
-    </div>
-
-<!-- Survey data -->
-<section class="survey-insights">
-  <div class="info-head">
-    <h4>Key Insights</h4>
-  </div>
-  <div class="survey-data">
-    <h2>45%</h2>
-    <p>do not understand student loans</p>
-  </div>
-  <div class="survey-data">
-    <h2>59%</h2>
-    <p>debt is from a bachelors degree</p>
-  </div>
-  <div class="survey-data">
-    <h2>$801</h2>
-    <p>average monthly payment</p>
-  </div>
-  <div class="survey-data">
-    <h2>$50K</h2>
-    <p>to $100K average total debt</p>
-  </div>
-  <div class="info-head">
-    <h4>TOP LOAN SERVICERS</h4>
-  </div>
-  <div class="survey-data">
-    <h2>22%</h2>
-    <p>Navient</p>
-  </div>
-  <div class="survey-data">
-    <h2>22%</h2>
-    <p>Great Lakes</p>
-  </div>
-  <div class="survey-data">
-    <h2>36%</h2>
-  <p>Sallie Mae</p>
-  </div>
-  </section>
-
-<!-- Survey Button -->
-<div class="study-btn">
-  <a href="https://docs.google.com/document/d/19Nl5yjmjzeYfjeupH1tLV6FLFQXCmSwy_lKJZTYtbto/edit?usp=sharing" target="_blank" class="cs-button">View survey results</a>
-</div>
-
-  <div class="comp-analysis">
-    <h2>Competitive Analysis</h2>
-    <p>Alongside the servicers above I analyzed <span class="bold">Student Loan Hero</span> <a href="https://www.bizjournals.com/austin/news/2018/07/13/lendingtree-to-buy-austins-student-loan-hero-for.html" class="cs-link" target="_blank">(recently acquired by LendingTree)</a>,<span class="bold"> Unbury.me</span>, <span class="bold">Tuition.io</span>,
-      and <span class="bold">Intuit Mint</span>. Three findings stood out to me:</p>
-  </div>
-
-  <!-- Competitive Analysis Insights -->
-  <section class="comp-insights">
-    <div class="comp-data">
-      <div class="comp-detail">
-      <h3>1</h3>
-      <p><span class="key-li">Underdeveloped -</span> Solves only a small portion of the problem. (Unbury.me)
-      </p>
-     </div>
-      <div class="comp-detail" id="motive">
-      <h3>2</h3>
-      <p><span class="key-li">Business Model -</span> Sustained through an ad-based model causing a cluttered product
-        or limiting itself through exclusive partnerships with employers. (Student Loan Hero and Tuition.io)
-     </p>
-    </div>
-    <div class="comp-detail" id="motive">
-    <h3>3</h3>
-    <p><span class="key-li">Motivations -</span> Loan servicers are motivated by collecting interest and comissions.
-   </p>
-  </div>
-    </div>
-  </section>
-
-  <div class="study-btn">
-    <a href="https://docs.google.com/document/d/1bIoEdhV1cpsqkxd2CkzouZegeu2-H_LyRMVLokX7LPo/edit?usp=sharing" target="_blank" class="cs-button">View full analysis</a>
-  </div>
-
-  <div class="target-analysis">
-    <h2>Target Demographic</h2>
-    <p>According to the <a href="https://www.federalreserve.gov/econresdata/consumers-and-mobile-financial-services-report-201603.pdf" class="cs-link" target="_blank">2016 Consumers and Mobile Financial Services</a> report by the Federal Reserve, adoption of
-      financial apps is highest by a young educated demographic. However, with 44 million borrowers the data only provided a vague understanding of a possible target.
-      To have a more precise target demographic, I wanted to answer two questions:</p>
-      <ul>
-        <li>What state had the highest average and percentage of grads with debt? </li>
-        <li>What schools in that state ranked highest in those two categories?</li>
-    </ul>
-    <p>Through an <a href="https://lendedu.com/blog/average-student-loan-debt-statistics" class="cs-link" target="_blank">annual report by LendEDU</a>, it turned out that <span class="bold">Pennsylvania</span> is ranked number one in both categories.
-      During this project, the highest ranked colleges in Pennsylvania were Lincoln University,
-      Penn State Hazleton, and Penn State Greater Allegheny.
-    </p>
+  <!--Footer-->
+  <div class="social-links">
+  <p id="footer-email">hello@codydennis.design</p>
   </div>
 
 
-<!-- Competitive Analysis Insights -->
-  <section class="target-demo">
-    <div class="target-data">
-      <img class="student-icon" src="images/student.png" alt="senior icon" />
-      <h2>18-28 yr olds</h2>
-      <p><span class="bold">highest adoption</span> of financial apps</p>
-    </div>
-    <div class="target-data">
-      <img class="money-icon" src="images/money.png" alt="senior icon" />
-      <h2>$50K-$100K</h2>
-      <p>projeced salary <span class="bold">increases adoption</span></p>
-    </div>
-  </section>
-
-<!-- Button for competitive analysis -->
-    <div class="study-btn">
-      <a href="https://docs.google.com/document/d/1gqYIxvQI6pS1BO5XkQAyBd4TMZ39o6CTh_HoWGv4Ig4/edit?usp=sharing" target="_blank" class="cs-button">View full analysis</a>
-    </div>
-
-    <!-- User Personas -->
-    <section class="discovery">
-    <div class="persona-intro">
-    <h2>User Personas</h2>
-    <p>I <a href="https://docs.google.com/document/d/1ggUX0ASU8JrFEoEeNJBAYDQNEPBJoW6XGjU3vc-z0P0/edit?usp=sharing" class="cs-link" target="_blank">interviewed participants</a> from Pennsylvania followed by states ranked
-      2-10, such as New Hampshire, Delaware, and Connecticut. In short, the majority of borrowers want a product focused on loan counseling and
-      details of their student loans. The two personas below show each end of the
-      target demographic.
-    </p>
-    </div>
-
-    <!-- Persona #1 -->
-    <div class="persona-1">
-    <img class="persona-img" src="images/nicole.jpg" alt="Nicole T. user persona">
-    <div class="bio-persona">
-    <h3>Nicole T.</h3>
-    <p>Educational, Planning, Freshman</p>
-    <p>18 years old, PT Tailor</p>
-    <p>Penn St. Greater Allegheny, $40K in debt</p>
-    </div>
-    <div class="persona-info">
-    <h3>Goals</h3>
-    <ul>
-    <li>Easy to understand loan education in one place</li>
-    <li>Help with researching colleges, FAFSA, and costs</li>
-    <li>Want to understand options for paying down loans</li>
-    </ul>
-    <div class="vertical-line">
-    <p class="quote">"I wish I had more help with my college path and loans. I worry that made the wrong choices."</p>
-    </div>
-    <h3>Frustrations</h3>
-    <ul>
-    <li>Didn't know what she wanted to do</li>
-    <li>Rushed into loans with little education</li>
-    <li>Doesn't know how to manage loans</li>
-    </ul>
-    </div>
-    </div>
-
-    <!-- Persona #2 -->
-    <div class="persona-2">
-    <img class="persona-img" src="images/jack.jpg" alt="Jack M. user persona">
-    <div class="bio-persona">
-    <h3>Jack M.</h3>
-    <p>Involved, Refinance, Working</p>
-    <p>28 years old, Software Developer</p>
-    <p>Lincoln University, $90K in debt</p>
-    </div>
-    <div class="persona-info">
-    <h3>Goals</h3>
-    <ul>
-      <li>Roadmap or action items with incentives</li>
-      <li>Dashboard showing details such as interest, credit score, and monthly payment</li>
-      <li>Graphs and visuals update based on life events</li>
-    </ul>
-    <div class="vertical-line">
-    <p class="quote">"Student loans are a huge burden and hold me back from
-    reaching other life goals."</p>
-    </div>
-    <h3>Frustrations</h3>
-    <ul>
-    <li>Finance apps have lousy UI and auto-categorization</li>
-    <li>Lenders and finance apps don’t see the big picture</li>
-    <li>Struggle with sticking to a payoff plan</li>
-    </ul>
-    </div>
-    </div>
-
-    <!-- Button for competitive analysis -->
-    <div class="study-btn">
-      <a href="https://drive.google.com/open?id=1_54Hw4vjxPrzDatpodzyt74X5GUv83do" target="_blank" class="cs-button">View full personas</a>
-    </div>
-
-    </section>
-    <!-- END OF DISCOVERY -->
-
-<!--User Stories and Flows-->
-<div class="user-stories">
-<h2>User Stories and Flows</h2>
-<p>After developing <a href="https://docs.google.com/spreadsheets/d/1F7k0bW9MfmPl1qdDvhj1ObSW6Bu9hhXzW5YoLV2qS8A/edit?usp=sharing" class="cs-link" target="_blank">user stories</a>, I created seven user flows and a sitemap focused around the roadmap, counseling,
-  and dashboard. The direction research took me meant the product would require a much larger team of counselors,
-  writers, and finance professionals. I understood my job would be to create a reusable and straightforward design
-  that made content easy to implement and consume.
-</p>
-</div>
-
-<div class="flows-img">
-<figure>
-<img class="user-flow" src="images/userflow_fruition.jpg" alt="Fruition dashboard option A">
-<figcaption>Flow for a checkpoint on finding scholarships</figcaption>
-</figure>
-</div>
-
-<!--User Stories Button -->
-<div class="study-btn" id="flow">
-    <a href="https://drive.google.com/open?id=1NhPhOdgKpS9gLSGIVLPpZ0ax56AZTQpo" target="_blank" class="cs-button">All Stories & Flows</a>
-</div>
-
-<!-- Sketching and Low Fidelity -->
-<section class="sketching">
-<div class="sketching-intro">
-<h2>Sketching and Low-Fidelity</h2>
-<p>Before sketching, I considered a mobile-first or desktop-first approach.
-  Although mobile-first is my preferred method, the limitations it posed for core
-  features would make most of the product unusable on mobile. For that reason and a short timeframe,
-  I prioritized desktop for the MVP while working on mobile at the same time.
-</p>
-
-</div>
-
-<div class="sketch-1-f">
-<figure>
-<img src="images/fruition_sk1.jpg" alt="Sketch of dashboard with vertical navigation">
-<figcaption>Sketch of the dashboard</figcaption>
-</figure>
-</div>
-
-<div class="sketch-2-f">
-  <figure>
-<img src="images/fruition_sk2.jpg" alt="Sketches of the Fruition landing page">
-<figcaption>Sketches of the landing page</figcaption>
-</figure>
-</div>
-
-
-<div class="lofi-wires-1-f">
-<figure>
-<img src="images/fruition_lofi1.png" alt="Lofi wireframe of the Fruition dashboard">
-<figcaption>Low-fidelity wireframe of the dashboard</figcaption>
-</figure>
-</div>
-
-<div class="lofi-wires-2-f">
-<figure>
-<img src="images/fruition_lofi2.png" alt="Lofi wireframe of landing page">
-<figcaption>Two low-fidelity wireframes of the landing page</figcaption>
-</figure>
-</div>
-
-<!-- User Testing -->
-<div class="usability-testing-1">
-  <h2>Usability Testing</h2>
-<p>I facilitated usability testing on low-fidelity wireframes. At this point, the design lacked vital information
-  that users need while navigating Fruition.</p>
-<ul>
-<li><span class="key-li">Clearer pricing -</span> Landing page didn't communicate that the product is free.</li>
-<li><span class="key-li">Labeling -</span> Users are confused by navigation labels "Loan Education" and "Chat".</li>
-<li><span class="key-li">Crumbs -</span> Articles need to show how the user got there.</li>
-<li><span class="key-li">Set A Meeting -</span> Users are worried about overlapping times when choosing a counselor.</li>
-</ul>
-</div>
-
-<div class="study-btn-a">
-<a href="https://drive.google.com/open?id=1hCJyBK4f7R_f_xdD9_nV3pKznMZC4SQ2" target="_blank" class="cs-button">All Sketches & Lofi</a>
-</div>
-
-<div class="study-btn-b">
-<a href="https://docs.google.com/document/d/1S1uEGkGg6tIF5ok7yceWro4LkIl6229DxfSg51sFIWM/edit?usp=sharing" target="_blank" class="cs-button">View usability results</a>
-</div>
-
-</section>
-
-<!-- END User Testing Section -->
-
-<div class="hifi-mockups">
-<h2>High Fidelity & Mockups</h2>
-<p>Moving into high-fidelity wireframes, I focused on the two most viewed pages of Fruition: the landing page and
-  dashboard. I used the decisions and iterations made on these screens to guide the interface of the roadmap, messages,
-  articles, and profile.
-</p>
-</div>
-
-<div class="study-btn">
-<a href="https://drive.google.com/drive/folders/123T7pte6L4038GrCUqfqJ1pXi-tz4vXH?usp=sharing" target="_blank" class="cs-button">See all hifi wireframes</a>
-</div>
-
-<!-- A/B Testing on Sphere -->
-<div class="ab-testing-1">
-<h2>Dashboard</h2>
-<p><span class="bold">Ascend was a temporary name</span>  I gave the product while running five tests on the dashboard. An initial A/B test on navigation showed a preference
-  for the horizontal navigation bar shown below. Through this test and a design critique I found four main preferences and issues:
-</p>
-</div>
-
-<!-- A/B Images -->
-<div class="hifi-1">
-<figure>
-<img src="images/lofi1_b.jpg" alt="Fruition dashboard option A">
-<figcaption class="test">Option A - <span class="positive-data">69%</span></figcaption>
-</figure>
-</div>
-
-<div class="hifi-2">
-<figure>
-<img src="images/lofi1_a.jpg" alt="Fruition dashboard option b">
-<figcaption class="test">Option B - <span class="negative-data">31%</span></figcaption>
-</figure>
-</div>
-
-  <section class="data-info">
-    <div class="info-detail">
-    <h3>1<span class="circle-dot">.</span></h3>
-    <p><span class="key-li">F-Pattern -</span> Users preferred the natural direction of Option A and were more
-      comfortable with small cards on the left.</p>
-   </div>
-    <div class="info-detail">
-    <h3>2<span class="circle-dot">.</span></h3>
-    <p><span class="key-li">Button -</span> Easy to find, and I began to use its placement on every page with primary buttons.</p>
+  <div class="footer-info">
+  <p>© 2020 | Designed and developed by Cody Dennis</p>
   </div>
-  <div class="info-detail">
-  <h3>3<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Graph -</span> In critique, a senior designer mentioned this graph was not
-    informative and needed refinement. </p>
-</div>
-<div class="info-detail">
-<h3>4<span class="circle-dot">.</span></h3>
-<p><span class="key-li">Progress -</span> Meter was generic and the lack of information confused users.</p>
-</div>
-</section>
-
-<div class="study-btn">
-<a href="https://app.usabilityhub.com/tests/8eb464e5b753/results/af4d75474666" target="_blank" class="cs-button">View full results</a>
-</div>
-
-<!-- Iteration -->
-<div class="ab-testing-2">
-<h2>Dashboard: Iteration</h2>
-<p>While working through iterations, I struggled to balance the navigation bar with active data.
-  I ran three inconclusive colors tests. The fourth and final test below led to a more precise direction for the dashboard.
-</p>
-</div>
-
-<div class="iter-1-f">
-<figure>
-<img src="images/dashboard_oa.jpg" alt="Dashboard Option A">
-  <figcaption class="test">Option A - <span class="positive-data">42%</span></figcaption>
-</figure>
-</div>
-
-<div class="iter-2-f">
-<figure>
-<img src="images/dashboard_ob.jpg" alt="Dashboard Option B">
-<figcaption class="test">Option B - <span class="negative-data">29%</span></figcaption>
-</figure>
-</div>
-
-<div class="iter-3-f">
-<figure>
-<img src="images/dashboard_oc.jpg" alt="Dashboard Option 3">
-<figcaption class="test">Option C - <span class="negative-data">29%</span></figcaption>
-</figure>
-</div>
-
-<section class="data-info">
-  <div class="ab-2-intro">
-  <p>Although Option A won the preference test, feedback from users and designers swayed my
-    choice to <span class="bold">Option C</span>. The dark and neutral navigation bar anchored the page better than A or B
-    and allowed the data to come forward. I also made the following changes to the dashboard based on user feedback.
-  </p>
-  </div>
-  <div class="info-detail">
-  <h3 class="changes">1<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Credit Rating -</span> Redesigned the credit section to be more organized and informative.</p>
- </div>
-  <div class="info-detail">
-  <h3 class="changes">2<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Line Graph -</span> Enabled users to hover over specific dates and provide a tangible indicator of progress. </p>
-</div>
-</section>
-
-<div class="study-btn">
-<a href="https://app.usabilityhub.com/tests/d26bc541f3ab/results/ce60a7d88189" target="_blank" class="cs-button">View full test</a>
-</div>
 
 
-<!-- Critique Iteration -->
-<section class="crit-iteration"><!-- Nested grid  here -->
-<div class="crit">
-<h2>Landing Page</h2>
-<p>While the dashboard was evolving, I ran an A/B test on the landing page wireframes.
-   The results and written feedback showed a preference for specific aspects of Option A
-   that B didn’t provide as effectively.
-</p>
-</div>
-
-<div class="crit-submit-f">
-<figure>
-<figcaption class="test">Option A - <span class="positive-data">57%</span></figcaption>
-<img src="images/hifi_landing_a.jpg" alt="Sphere white version">
-</figure>
-</div>
-
-<div class="crit-submit-2f">
-<figure>
-<figcaption class="test">Option B - <span class="negative-data">43%</span></figcaption>
-<img src="images/hifi-landing-b.jpg" alt="high fidelity landing page">
-</figure>
-</div>
-
-<div class="crit-info">
-  <div class="info-detail">
-  <h3>1<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">CTA Form -</span> The shorter form performed the same job as longer forms.</p>
- </div>
-  <div class="info-detail">
-  <h3>2<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Personalized Path -</span>Users consistently stated they liked having more detail in each roadmap section.
-    With an option to click and read more.</p>
-</div>
-<div class="info-detail">
-<h3>3<span class="circle-dot">.</span></h3>
-<p><span class="key-li">Testimonials -</span>Users preferred having only two testimonials.</p>
-</div>
-
-<div class="testing-btn">
-<a href="https://app.usabilityhub.com/tests/28daafca571c/results" target="_blank" class="cs-button">View test results</a>
-</div>
-</div><!-- END Crit Info -->
 
 
-<div class="crit-revised-f">
-<figure>
-<figcaption class="test">Submitted to critique</figcaption>
-<img src="images/mockup_a.jpg" alt="Landing page submitted to critiique">
-</figure>
-</div>
-
-<div class="crit-revised-2f">
-<figure>
-<figcaption class="test">Revised</figcaption>
-<img src="images/mockup_b.jpg" alt="Landing page mockup B">
-</figcaption>
-</div>
-
-<div class="crit-info-2">
-  <div class="info-detail">
-  <h3>1<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Hero -</span> Dropped hero down to fill 80% - 90% of users viewport.
-    Allowing users to concentrate on content.</p>
- </div>
-  <div class="info-detail">
-  <h3>2<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Personalized Path -</span> Created more space between each element.</p>
-</div>
-<div class="info-detail">
-<h3>3<span class="circle-dot">.</span></h3>
-<p><span class="key-li">Other changes -</span>  Altered spacing and placement of bump in the hero, about, and resources page.</p>
-</div>
-
-<div class="testing-btn">
-<a href="https://www.figma.com/file/TJoUTDqQ3aY7Ha3HM380zQpS/Frution-Iterations-Before-and-After?node-id=0%3A1" target="_blank" class="cs-button">View all iterations</a>
-</div>
-</div><!-- END Crit Info -->
-</section>
-<!-- END Crit Iteration -->
-
-<div class="mobile-designs">
-<h2>Mobile</h2>
-<p>Designing for mobile and desktop at the same time was very challenging.
-   Tests I was running on the desktop version of Fruition always made mobile inconsistent and fixing them
-    required more time than I had available.
-</p>
-<p>To improve consistency and make better use of my time, I had to rethink my approach.
-  While bringing mobile up to speed, each decision I made had to work at scale.
-  Flows were restructured to look and behave the same, and if I hid any information on mobile,
-  I made it obvious to find. Sticking to these principles resulted in very consistent outcomes in final usability tests
-  and a more enjoyable experience for users.
-</p>
-</div>
-
-<div class="mobile-landing">
-<img src="images/landing-mobile.png" alt="Sphere white version">
-</div>
-
-<div class="mobile-dashboard">
-<img src="images/mobile-dashboard.png" alt="Sphere white version">
-</div>
-
-<div class="study-btn">
-  <a href="https://www.figma.com/file/gKdHUX7xN9HITyvSUVXwWM2U/Mobile-Designs?node-id=0%3A1" target="_blank" class="cs-button">View mobile designs</a>
-</div>
 
 
-<!-- Usability Testing -->
+</div> <!--CSS grid wrapper end -->
 
-<div class="usability-testing-2">
-<h2>Usability testing & iterations</h2>
-<p>With little time left, the goal was to make sure users could complete tasks with as little hiccups as possible and
-  then launch, test, and iterate more accurately. These are some of the changes I made from the second round of usability tests.</p>
-</div>
-
-<div class="status">
-<figure>
-<img src="images/loanstatus.jpg" alt="Set a status before">
-<figcaption><span class="ver-a">Status before:</span> Choosing a status while onboarding confused users about its impact on their roadmap.</figcaption>
-</figure>
-</div>
-
-<div class="status-2">
-<figure>
-<img src="images/loanstatus2.jpg" alt="Set a status after">
-<figcaption><span class="ver-b">Status after:</span> Placed on the dashboard which increased users confidence in its impact and ability to change it.</figcaption>
-</figure>
-</div>
-
-<div class="meeting">
-  <figure>
-<img src="images/setmeeting.jpg" alt="Set Meeting Before">
-<figcaption><span class="ver-a">Set a meeting before:</span> Choosing a counselor first made users concerned about overlapping times.</figcaption>
-</figure>
-</div>
-
-<div class="meeting-2">
-  <figure>
-<img src="images/setmeeting2.jpg" alt="Set Meeting After">
-<figcaption><span class="ver-b">Set a meeting after:</span> Users now scroll or search for their topic and get paired automatically with a counselor. </figcaption>
-</figure>
-</div>
-
-<div class="add-loan">
-  <figure>
-<img src="images/addloan.jpg" alt="Add Loan Before">
-<figcaption><span class="ver-a">Add loan before:</span> Poor experience scrolling to find a servicer in a modal. </figcaption>
- </figure>
-</div>
-
-<div class="add-loan-2">
-  <figure>
-<img src="images/addloan2.jpg" alt="Nate V. user persona">
-<figcaption><span class="ver-b">Add loan after:</span> Condensed to mainly focus on "Big 3" loan servicers which covers 95% of users.</figcaption>
- </figure>
-</div>
-
-<div class="study-btn">
-  <a href="https://drive.google.com/drive/folders/1mybao3lDg6zTxQuLzHWWkfb0HvNWUZ5z" target="_blank" class="cs-button">View Test & Iterations</a>
-</div>
-
-<section class="finishing-touches">
-<div class="finishing-intro">
-<h2>Unhappy states and blankstates</h2>
-<p>Throughout the project, I made sure I was designing for empty states and error states. Backed by research
-  like the optimal placement for input feedback in responsive applications.</p>
-</div>
-
-<div class="state1-f">
-<figure>
-<img src="images/inputerror.jpg" class="img-shadow" alt="Nate V. user persona">
-<figcaption>Input feedback</figcaption>
-</figure>
-</div>
-
-<div class="state2-f">
-<figure>
-<img src="images/frution_blankstate.jpg" class="img-shadow" alt="Nate V. user persona">
-<figcaption>Welcome blankstate</figcaption>
-</figure>
-</div>
-
-<div class="study-btn">
-  <a href="https://drive.google.com/open?id=1Z76Eo__NVxtWspa0-iLavRgr2k2tCMPl" target="_blank" class="cs-button">See all states</a>
-</div>
-
-</section>
-
-<!-- Logo Design and Identity -->
-<div class="identity">
-<h2>Logo Design</h2>
-<p>The branding for Fruition came later in the process of this project. I started sketching ideas
-  related to students and the loan process but struggled with its form. After some thorough
-  analog and digital sketching, I landed on a graduation cap made out of two F’s. The wordmark uses the same typography found inside the application. I put together a style guide detailing its proper use and other aspects
-   of the Fruition system.
-</p>
-</div>
-
-<div class="logo-sketch-f">
-<img src="images/fruition_logo_sketches.jpg" alt="Nate V. user persona">
-</div>
-
-
-<div class="logo-final">
-<img src="images/fruition_finallogo.jpg" alt="Nate V. user persona">
-</div>
-
-<div class="styleguide-btn">
-  <a href="https://drive.google.com/file/d/1XMEgXXI565wW8CchYkOCgeuLLoSb9__9/view?usp=sharing" target="_blank" class="cs-button">View styleguide</a>
-</div>
-
-<div class="process-btn">
-  <a href="https://drive.google.com/open?id=14Q8f9JPVprvH9cip8iKARK8JqwMEKmVc" target="_blank" class="cs-button">View Full Process</a>
-</div>
-
-<section class="conclusion">
-<div class="learn">
-<h2>What I Learned</h2>
-<p>
-Since mobile-first is a relatively new approach, I learned so much about the challenges companies have trying to scale down their products.
-It's one thing trying to distill the product down to make it usable on mobile and an entirely different one being mobile-first
- while ensuring the product can accommodate a multi-device future.
-</p>
-<p>
-I also learned a lot about managing a broad scope. After interviews with users, it was so easy for the project to get out of
- hand by focusing on unnecessary features. By saying no and always coming back to core features that were defined through
-  interviews, personas, and stories, I was able to zero in on the solution.
-</p>
-<p>
-Lastly, what I learned about managing scope taught me a lot about reaching "good enough" on a large project. With little time, it's so essential knowing where to
-focus your efforts and when to stop. Part of what helped me is leaning on user research and a team (design community)
-to work my way out of challenges. While Fruition has a long way to go, it's absolutely a solid jumping off point and always better
-than an unfinished "perfect" project.
-</p>
-</div>
-</section>
-
-<!-- Footer -->
-<footer>
-      <div class="footer-info"><!-- To wrap all content inside the footer -->
-      <div class="social-links"><!-- Font Awesome social media links -->
-        <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-          <i class="fab fa-linkedin fa-4x"></i></a>
-        <a href="http://codydennis.dribbble.com/" target="_blank">
-          <i class="fab fa-dribbble-square fa-4x"></i></a>
-        <a href="https://twitter.com/codyjdennis" target="_blank">
-          <i class="fab fa-twitter-square fa-4x"></i></a>
-     </div>
-     <div>
-        <p><i class="far fa-copyright"></i> 2018 | Designed & Developed by Cody Dennis</p>
-     </div><!-- end Social Links-->
-     </div><!-- End wrapping all content in footer -->
-</footer>
-
-</div><!--end grid wrapper-->
-
-</body>
+  </body>
 </html>
