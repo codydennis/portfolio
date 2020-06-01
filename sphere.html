@@ -19,691 +19,372 @@
     <!-- main stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/sphere.css">
-    <link rel="stylesheet" href="https://use.typekit.net/gxy1tee.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!-- Favicon -->
-      <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
-
   <body>
-    <header>
-    <div class="logo-container"> <!-- Centers logo and header -->
+  <header class="header">
+        <div class="logo-container"> <!-- Centers logo in header -->
+          <a href="index.html" id="text-logo">cd</a>
+        </div>
+      <!-- Wraps mobile and tablet/desktop navs -->
+      <nav>
 
-      <a href="index.html"><img class="cd-logo" src="images/site-logo.svg" alt="Cody Dennis Product Design"></a>
-    </div>
-  <nav>
+      <!-- Divs to make hamburger button -->
+        <input id="toggle" type="checkbox"><!-- Enables hamburger menu to be clicked -->
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
 
-  <input id="toggle" type="checkbox">
-  <label for="toggle" class="hamburger">
-    <div class="top-bun"></div>
-    <div class="meat"></div>
-    <div class="bottom-bun"></div>
-  </label>
+        <!-- Hamburger menu -->
+      <div class="nav"><!-- Wraps entire mobile menu -->
+      <div class="nav-wrapper"><!-- Wraps menu links -->
+      <div class="menu"><!-- Menu -->
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="images/codydennis_resume.pdf" target="_blank" ><i class="far fa-file-pdf"></i>Resume</a></li>
+         </ul>
+      </div><!-- END menu -->
+    </div><!-- END menu links wrap-->
+  </div><!-- END entire mobile menu wrap -->
 
-  <div class="nav">
-  <div class="nav-wrapper">
-  <div class="menu">
-    <ul>
-    <li><a href="index.html">Work</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
-  </ul>
-  </div>
-  </div>
-  </div>
-
-    <div class="nav-links">
-      <ul>
-        <li><a class="nav-link" href="index.html">Work</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="nav-link" href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
-      </ul>
-    </div>
-    </nav>
+      <!-- tablet and desktop navigation -->
+      <div class="nav-links">
+          <ul>
+            <li><a class="nav-link" href="index.html">Work</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="images/codydennis_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i>Resume</a></li>
+          </ul>
+      </div>
+    </nav><!-- END all Navigation -->
   </header>
 
+<div class="grid-wrapper-cs"> <!-- CSS Grid wrapper START-->
 
-
-    <div class="grid-wrapper">
-
-    <section class="project-hero">
-      <div class="project-img-mobile">
-      <img class="sphere-logo" src="images/sphere-logo.svg" alt="Sphere Pharmacy logo" />
-      <img class="sphere" src="images/sphere_mobile.png" alt="Fruition Student Loans responsive dashboard">
-    </div>
-        <div class="project-img" id="sphere-img">
-          <img class="sphere-logo" src="images/sphere-logo.svg" alt="Sphere Pharmacy logo" />
-        <img class="sphere" src="images/sphere_casestudy.png" alt="Fruition Student Loans responsive dashboard">
-      </div>
-    </section>
-
-    <div class="introduction">
-    <h2>Summary</h2>
-    <p>Complex prescription apps are contributing to epidemic levels of non-adherence. Sphere Pharmacy is designed to see a measurable increase in adherence and improvement in patient health.</p>
-
-    <p>Over the years I’ve had my share of poor experiences with the pharmacy industry. Between late deliveries, lack of communication and long wait times, I was frustrated. In late 2017 I took
-      this on as a personal project to explore solutions that could repair the broken pharmacy experience.</p>
-    <a href="https://invis.io/UDMV5WP8M2F" target="_blank" id="intro-btn1-s" class="cs-button">View Prototype</a>
-    <a href="https://drive.google.com/drive/folders/16r7AvE4l4Ue6BxLlwQGWO_rpygryR2EW?usp=sharing" target="_blank" id="redlines" class="cs-button">View Redlines</a>
-
- </div>
-
-
-<!-- Project Info -->
-    <div class="project-info">
-      <div class="roles">
-    <h4>Roles</h4>
-    <ul>
-      <li>Product Design</li>
-      <li>Branding & Identity</li>
-    </ul>
+<section class="intro-cs" id="sphere-cs">
+  <div class="intro-content">
+    <h1>Sphere</h1>
+    <h4 class="case-sub">JANUARY - APRIL 2018 • PERSONAL PROJECT</h4>
+    <p>Complex prescription apps are contributing to epidemic levels of non-adherence.
+      Sphere Pharmacy is designed to see a measurable increase in adherence and improvement
+      in patient health.</p>
   </div>
-  <div class="timeframe">
-    <h4>Timeframe & Type</h4>
-    <ul>
-      <li>12 weeks, Part-Time</li>
-      <li>Personal Project</li>
-    </ul>
+  <div class="fruition-final">
+    <img class="cs-intro-img" src="images/sphere_cs.png" alt="A sketched user flow on student scholarships">
   </div>
-  <div class="deliverables">
-    <h4>Deliverables</h4>
-    <ul>
-    <li>User Survey</li>
-    <li>User Personas</li>
-    <li>Competitive Analysis</li>
-    <li>User Stories</li>
-    <li>User Flows</li>
-    <li>Wireframes</li>
-    <li>Mockups</li>
-    <li>User Testing</li>
-    <li>Prototypes</li>
-    <li>Branding</li>
-    </ul>
-    </div>
-  </div>
-
-<!-- Problem and Solution-->
-    <section class="problem-solution">
-      <div class="problem">
-      <h2>Problem</h2>
-     <p>Over <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3068890/" class="cs-link" target="_blank"><span class="bold">50%</span> of patients</a> do not take their prescriptions, and <a href="http://annals.org/aim/article-abstract/1852865/incidence-determinants-primary-nonadherence-prescribed-medication-primary-care-cohort-study?doi=10.7326%2fM13-1705" class="cs-link" target="_blank"><span class="bold">30%</span> fail to fill them</a> at all. Resulting in <span class="bold">30%-50%</span> of treatment failures, hospitalization, and 125,000 deaths per year. </p>
-      </div>
-    <div class="solution">
-    <h2>Solution</h2>
-    <p>Use of mobile pill reminders <a href="https://www.mobihealthnews.com/content/walgreens-pill-reminder-activity-tracking-both-improved-medication-adherence-study" class="cs-link" target="_blank">improves adherence by a minimum of <span class="bold">12.3%</span></a>. An efficient and transparent pharmacy creates an additional increase in patient adherence.</p>
-    </div>
-    </section>
-
-<!-- User Survey -->
-    <div class="user-survey">
-    <h2>User Survey</h2>
-    <p>Research gathered from my survey of <span class="bold">55 participants</span>, and supplemental studies show the average American takes <a href="https://www.huffingtonpost.com/2013/06/19/prescription-drugs-prevalence-americans_n_3466801.html" class="cs-link" target="_blank">at least <span class="bold">one prescription</span></a>, is non-adherent <span class="bold">1–4 times a month</span>,
-      prefers non-physical contact with pharmacists, and wants clear communication during the order process.</p>
-    </div>
-
-<!-- Survey data -->
-<section class="survey-insights">
-  <div class="info-head">
-    <h4>Key Insights</h4>
-  </div>
-  <div class="survey-data">
-    <h2>84%</h2>
-    <p>of respondents take generic or specialty prescriptions</p>
-  </div>
-
-  <div class="survey-data">
-    <h2>67%</h2>
-    <p>forget to take their medication <span class="bold">3-4 times a month</span></p>
-  </div>
-
-  <div class="survey-data">
-    <h2>55%</h2>
-    <p>refill their medication online or via a phone call</p>
-  </div>
-
-  <div class="survey-data">
-    <h2>58%</h2>
-    <p>worry about running out with <span class="bold">one week or less remaining</span></p>
-  </div>
-  <div id="pharm" class="info-head">
-    <h4>Most Used Pharmacies</h4>
-  </div>
-  <div class="survey-data">
-    <h2>59%</h2>
-    <p>CVS Pharmacy</p>
-  </div>
-
-  <div class="survey-data">
-    <h2>35%</h2>
-    <p>Walgreens</p>
-  </div>
-
-  <div class="survey-data">
-    <h2>17%</h2>
-  <p>Kaiser Permanente</p>
-  </div>
-  </section>
-
-<!-- Survey Button -->
-  <div class="study-btn">
-    <a href="https://docs.google.com/forms/d/1PnRiQpJbbgn3npvejcEoqnfw1M4BlVx__iEPpCdgI6Q/edit?usp=sharing" target="_blank" class="cs-button">View survey results</a>
-  </div>
-
-<!-- Competitive Analysis -->
-  <div class="comp-analysis">
-    <h2>Competitive Analysis & Target Market</h2>
-    <p><span class="bold">CVS Pharmacy</span>, <span class="bold">Walgreens</span>, and <span class="bold">Kaiser Permanente</span> market their apps to the growing senior population in
-      the United States. However, recent findings suggest present-day solutions to mobile digital health <a href="https://www.mobihealthnews.com/content/senior-citizens-less-likely-use-digital-health-tools-jama-study-finds" class="cs-link" target="_blank">does
-      not improve the health of seniors</a>. According to research, a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4704953/" class="cs-link" target="_blank">younger demographic</a> is more likely to adopt
-      health apps. Reducing Spheres target demographic to <span class="bold">25–45</span> allows for the adoption of the app in the short term
-      while still positioning Sphere towards the growing senior population long term.</p>
-  </div>
-
-<!-- Competitive Analysis Insights -->
-  <section class="comp-insights">
-    <div class="comp-data">
-      <img class="senior-icon" src="images/senior.png" alt="senior icon" />
-      <h2>75 Million</h2>
-      <p>seniors by <span class="bold">2020</span></p>
-    </div>
-    <div class="comp-data">
-      <img class="senior-icon" src="images/senior.png" alt="senior icon" />
-      <h2>112 Million</h2>
-      <p>seniors by <span class="bold">2050</span></p>
-    </div>
-    <div class="comp-data">
-      <img class="data-icon" src="images/cellphone.png" alt="senior icon" />
-      <h2>42%</h2>
-      <p>of seniors own a smartphone</p>
-    </div>
-    <div class="comp-data">
-      <img class="data-icon" src="images/script.png" alt="senior icon" />
-      <h2>8%</h2>
-      <p>of seniors refill online or mobile</p>
-    </div>
-  </section>
-
-<!-- Button for competitive analysis -->
-  <div class="study-btn">
-    <a href="https://drive.google.com/drive/folders/1wDxAQZbHdLQ7k76v65ZDWpgFwcE9gD89?usp=sharing" target="_blank" class="cs-button">View full analysis</a>
-  </div>
-
-  <!-- User Personas -->
-  <section class="discovery">
-  <div class="persona-intro">
-  <h2>User Personas</h2>
-  <p>I <a href="https://docs.google.com/document/d/1bOgC5YpyMLpu1rDuMrfaAL0MoDdM3-UmGCri94s5E3Q/edit?usp=sharing" class="cs-link" target="_blank">interviewed a group of participants</a> from my survey to understand their motivations, goals,
-    and frustrations better. The primary user personas for Sphere were Madelyn S. and Nate V. The
-    final user persona is Sean, our free user. Sean takes the occasional allergy pill and wants to set reminders.
-    The free persona was used to evaluate the features used without an account.
-    Helping to build trust before gathering personal and private medical information.
-  </p>
-  </div>
-
-  <!-- Persona #1 -->
-  <div class="persona-1">
-  <img class="persona-img" src="images/madelyns.jpg" alt="Madely S. user persona">
-  <div class="bio-persona">
-  <h3>Madelyn S.</h3>
-  <p>Organize - Relief</p>
-  <p>45 years old, Accountant</p>
-  </div>
-  <div class="persona-info">
-  <h3>Goals</h3>
-  <ul>
-  <li>Daily pill reminder</li>
-  <li>Smoother refill process that finishes quickly</li>
-  <li>Notified when ready and shipment tracking</li>
-  </ul>
-  <div class="vertical-line">
-  <p class="quote">"A smooth refill process that finished quickly would let me spend more quality
-  time with my daughter."</p>
- </div>
-  <h3>Frustrations</h3>
-  <ul>
-  <li>Having to call the pharmacy for a refill is a pain</li>
-  <li>Long waits in person or on hold over the phone</li>
-  <li>Worried that medication won't arrive on time</li>
-  </ul>
-  </div>
-  </div>
-
-  <!-- Persona #2 -->
-  <div class="persona-2">
-  <img class="persona-img" src="images/natev.jpg" alt="Madely S. user persona">
-  <div class="bio-persona">
-  <h3>Nate V.</h3>
-  <p>Automate - Forget</p>
-  <p>33 years old, Designer</p>
-  </div>
-  <div class="persona-info">
-  <h3>Goals</h3>
-  <ul>
-    <li>Easy to set up and low matinence</li>
-    <li>Timely reminders</li>
-    <li>Monthly automated refills</li>
-  </ul>
-  <div class="vertical-line">
-  <p class="quote">"I would love to have my medications refilled on their own and only
-    have to change minor things like my account settings."</p>
- </div>
-  <h3>Frustrations</h3>
-  <ul>
-  <li>Constant notifications by text, phone, and email</li>
-  <li>Very hard to remember when to refill and pickup</li>
-  <li>Other mobile pharmacy apps are hard to use</li>
-  </ul>
-  </div>
-  </div>
-
-<!-- Button for competitive analysis -->
-<div class="study-btn">
-<a href="https://drive.google.com/open?id=1OQ1QcWdD2EDJDoMKvVMmt75H3GgtFeEC" target="_blank" class="cs-button">View Full Personas</a>
-</div>
 </section>
-<!-- END OF DISCOVERY -->
 
-<!--User Stories and Flows-->
-<div class="user-stories">
-<h2>User Stories and Flows</h2>
-<p>To simplify processes for pharmacy patients, I asked myself two essential questions:</p>
-  <ul>
-    <li>What was keeping people from using health products?</li>
-    <li>For people who once used them, why did they stop?</li>
-</ul>
-<p>
-A <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4704953/" class="cs-link" target="_blank">study conducted by the NCBI</a> discovered time to manually enter data, hidden costs, and apps being
-confusing to use as the top reasons for non-use or discontinuing use. Therefore, I created <a href="https://docs.google.com/spreadsheets/d/1UYbkjOgx-IzfriJQtTDM0wzOB4K6c9oZdJflnNBG1Tg/edit?usp=sharing" class="cs-link" target="_blank">user stories</a>
-and <a href="https://drive.google.com/file/d/1M2vKyqkisgUxrixX5_WeqKXnzlPBpWQ2/view?usp=sharing" class="cs-link" target="_blank">flows</a> with a goal of reducing processes down to the bare minimum. Adding on carefully and only
-when necessary.
-</p>
+  <div class="problem">
+<h2>Problem</h2>
+<p>Over <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3068890/" target="_blank">50% of patients</a>
+  do not take their prescriptions, and <a href="https://www.acpjournals.org/doi/10.7326/M13-1705?doi=10.7326%2FM13-1705&" target="_blank">30% fail to fill</a>
+  them at all. Resulting in 30%-50% of treatment failures, hospitalization, and 125,000 deaths per year.</p>
+  </div>
+
+  <div class="solution">
+<h2>Solution</h2>
+<p>Use of mobile pill reminders <a href="https://www.mobihealthnews.com/content/walgreens-pill-reminder-activity-tracking-both-improved-medication-adherence-study" target="_blank">improves adherence by a minimum of 12.3%</a>
+  . An efficient and transparent
+  pharmacy creates an additional increase in patient adherence.</p>
+  <hr class="intro-line">
+  </div>
+
+
+  <div class="user-survey">
+  <h2>User survey</h2>
+  <p>Research gathered from my survey of 55 participants, and supplemental studies show the average
+    American takes <a href="https://www.huffpost.com/entry/prescription-drugs-prevalence-americans_n_3466801" target="_blank">at least one prescription</a>, is non-adherent 1–4 times a month, prefers non-physical
+    contact with pharmacists, and wants clear communication during the order process.</p>
+  </div>
+
+  <!-- Survey data -->
+  <section class="insights">
+    <div class="info-head">
+      <p class="insights-title">Key Insights<p>
+    </div>
+    <div class="insights-data">
+      <h2>84%</h2>
+      <p>of respondents take generic or specialty prescriptions</p>
+    </div>
+    <div class="insights-data">
+      <h2>67%</h2>
+      <p>forget to take their medication 3-4 times a month</p>
+    </div>
+    <div class="insights-data">
+      <h2>55%</h2>
+      <p>refill their medication online or via a phone call</p>
+    </div>
+    <div class="insights-data">
+      <h2>58%</h2>
+      <p>worry about running out with one week or less remaining</p>
+    </div>
+    <div class="insights-data">
+    <p><a href="https://docs.google.com/forms/d/1PnRiQpJbbgn3npvejcEoqnfw1M4BlVx__iEPpCdgI6Q/edit" target="_blank">View survey <i class="fas fa-external-link-alt"></i></a>
+    </div>
+    </section>
+
+
+    <div class="comp-analysis">
+    <h2>Competitive Analysis</h2>
+    <p>CVS Pharmacy, Walgreens, and Kaiser Permanente market their apps to the growing senior population
+      in the United States. However, recent findings suggest present-day solutions to mobile digital
+      health <a href="https://www.mobihealthnews.com/content/senior-citizens-less-likely-use-digital-health-tools-jama-study-finds" target="_blank">does not improve the health of seniors</a>. According to research, a younger demographic is
+      more likely to adopt health apps. Reducing Spheres target demographic to 25–45 allows for the
+      adoption of the app in the short term while still positioning Sphere towards the growing senior
+      population long term.</p>
+    </div>
+
+    <section class="insights">
+      <div class="info-head">
+        <p class="insights-title">TAKEAWAYS<p>
+      </div>
+      <div class="insights-data">
+        <h2>75 million</h2>
+        <p>seniors by 2020</p>
+      </div>
+      <div class="insights-data">
+        <h2>112 million</h2>
+        <p>seniors by 2050</p>
+      </div>
+      <div class="insights-data">
+        <h2>42%</h2>
+        <p>of seniors own a smartphone</p>
+      </div>
+      <div class="insights-data">
+        <h2>8%</h2>
+        <p>of seniors refill online or on mobile</p>
+      </div>
+      <div class="insights-data">
+      <p><a href="https://drive.google.com/drive/folders/1wDxAQZbHdLQ7k76v65ZDWpgFwcE9gD89" target="_blank">Read full analysis <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      </section>
+
+<section class="section-1">
+  <div class="low-fi">
+  <h2>User personas </h2>
+  <p>I interviewed a group of participants from my survey to understand their motivations, goals, and
+    frustrations better. The primary user personas for Sphere were Madelyn S. and Nate V. The final
+    user persona is Sean, our free user. Sean takes the occasional allergy pill and wants to set reminders.
+     The free persona was used to evaluate the features used without an account. Helping to build trust
+      before gathering personal and private medical information.</p>
+  <p><a href="https://docs.google.com/document/d/1bOgC5YpyMLpu1rDuMrfaAL0MoDdM3-UmGCri94s5E3Q/edit" target="_blank">View personas <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+
+  <div class="stories">
+  <h2>User stories and flows </h2>
+  <p>To simplify processes for pharmacy patients, I asked myself two essential questions: What was keeping
+    people from using health products? For people who once used them, why did they stop?
+    A study conducted by the NCBI discovered time to manually enter data, hidden costs, and apps being
+    confusing to use as the top reasons for non-use or discontinuing use. Therefore, I created user
+    stories and flows with a goal of reducing processes down to the bare minimum. Adding on carefully
+    and only when necessary.</p>
+          <p><a href="https://drive.google.com/drive/folders/1vdG8hIyheOIBvnF7LvJuOwfMH3JTowiS" target="_blank">View stories and flows <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+
+
+  <div class="flow-img">
+  <img class="cs-img" src="images/sphere_userflow.jpg" alt="A sketched user flow on student scholarships">
 </div>
 
-<div class="flows-img">
-<figure>
-<img class="user-flow" src="images/sphere_userflow.jpg" alt="Fruition dashboard option A">
-<figcaption>Sketched flow for refilling a prescription</figcaption>
-</figure>
-</div>
 
-<!--User Stories Button -->
-<div class="study-btn" id="flow">
-<a href="https://drive.google.com/drive/folders/1vdG8hIyheOIBvnF7LvJuOwfMH3JTowiS?usp=sharing" target="_blank" class="cs-button">All stories & Flows</a>
-</div>
-
-<!-- Sketching and Low Fidelity -->
-<section class="sketching">
-<div class="sketching-intro">
-<h2>Sketching and Low-Fidelity</h2>
+<div class="sketch">
+<h2>Sketching and low-fidelity</h2>
 <p>Giving users the ability to experience pill reminders without an account would help build trust.
-  However, if one of the most straightforward features didn’t work correctly, there would be no
-  reason to onboard and use Sphere as their pharmacy.
-</p>
+   However, if one of the most straightforward features didn’t work correctly, there would be no
+   reason to onboard and use Sphere as their pharmacy.</p>
+        <p><a href="https://drive.google.com/drive/folders/12ZoilFM7clmYIfN-M-1iSSGiQDCeXsMb" target="_blank">Sketches and wireframes <i class="fas fa-external-link-alt"></i></a></p>
 </div>
 
-<div class="sketch-1">
-<figure>
-<img src="images/sphere_sk1.jpg" alt="Sketches for Spheres homepage and dashboard">
-<figcaption>Sketches of today and prescriptions</figcaption>
-</figure>
+<div class="cs-img-2">
+<img class="cs-img" src="images/sphere_sk1.jpg" alt="A sketched user flow on student scholarships">
 </div>
 
-<div class="sketch-2">
-<figure>
-<img src="images/sphere_sk2.jpg" alt="Nate V. user persona">
-<figcaption>Sketches of onboarding screens</figcaption>
-</figure>
+<div class="cs-img-2">
+<img class="cs-img" src="images/sphere_sk2.jpg" alt="A sketched user flow on student scholarships">
 </div>
 
-<div class="lofi-wires-mobile">
-<figure>
-<img src="images/sphere_lofi_mobile.jpg" alt="Nate V. user persona">
-<figcaption>Lofi wireframes of main navigation screens</figcaption>
-</figure>
+<div class="cs-img-2">
+<img class="cs-img" src="images/sphere_lofi.jpg" alt="A sketched user flow on student scholarships">
 </div>
 
-<div class="lofi-wires-desktop">
-<figure>
-<img src="images/sphere_lofi.jpg" alt="Nate V. user persona">
-<figcaption>Lofi wireframes of main navigation screens</figcaption>
-</figure>
-</div>
-
-
-<!-- User Testing -->
-<div class="lofi-testing">
-<p>I gathered feedback from potential users on the low-fidelity versions of pill reminders, onboarding, and main navigation screens.</p>
-<ul>
-<li><span class="key-li">Foundation -</span> app relies on trust, timing, and managing expectations.</li>
-<li><span class="key-li">Reminder details -</span> frequency (daily/weekly), times per day, units (e.g.tablets
-capsules), and ability to mark as taken from their lock screen.</li>
-<li><span class="key-li">Security -</span> how Sphere is protecting their personal and medical information is being protected. Compliant with HIPPA.</li>
-<li><span class="key-li">Clear communication -</span> when pharmacists are available for live chat and what their camera
-is being used for.</li>
-</ul>
-</div>
-
-<div class="study-btn">
-<a href="https://drive.google.com/open?id=12ZoilFM7clmYIfN-M-1iSSGiQDCeXsMb" target="_blank" class="cs-button">All sketches & Lofi</a>
+<div class="usability-1">
+<h2>Low-fidelity testing</h2>
+<p>I gathered feedback from potential users on the low-fidelity versions of pill reminders,
+   onboarding, and main navigation screens.</p>
+<p><span class="highlight">1. Foundation</span> - app relies on trust, timing, and managing expectations.</p>
+<p><span class="highlight">2. Reminder details</span> - frequency (daily/weekly), times per day, units (e.g.tablets capsules), and ability to mark as taken from their lock screen.</p>
+<p><span class="highlight">3. Security</span> - how Sphere is protecting their personal and medical information is being protected. Compliant with HIPPA.</p>
+<p><span class="highlight">4. Clear communication</span> - when pharmacists are available for live chat and what their camera is being used for.</p>
+<p><a href="https://drive.google.com/drive/folders/12ZoilFM7clmYIfN-M-1iSSGiQDCeXsMb" target="_blank">Sketches & Lofi designs <i class="fas fa-external-link-alt"></i></a></p>
 </div>
 
 </section>
 
-<!-- END User Testing Section -->
-
-<div class="hifi-mockups">
-<h2>High-Fidelity & Mockups</h2>
-<p>One of the challenges I faced was the massive amount of medical information. For that reason,
-I dedicated most of my time to the information architecture above. I initiated that in the design
-phase by starting with black and white designs and moving quickly to color which helped drive the
-project forward.
-</p>
-</div>
-
-<div class="study-btn">
-<a href="https://drive.google.com/open?id=12ZoilFM7clmYIfN-M-1iSSGiQDCeXsMb" target="_blank" class="cs-button">See all hifi wireframes</a>
-</div>
-
-<!-- A/B Testing on Sphere -->
-<div class="ab-testing">
-<h2>A/B Testing</h2>
-<p>I ran an A/B test on the Today and Prescriptions screens to assist in guiding the design of other aspects of the app.
-   Although Option B was selected 80% of the time I took note of elements of the white design along with other issues
-   I spotted to create a stronger more cohesive design.
-
-</p>
-</div>
-
-<!-- A/B Images -->
-<div class="hifi-1">
-<figure>
-<img src="images/sphere_white.jpg" alt="Sphere white version">
-<figcaption class="test">Option A - <span class="negative-data">21%</span></figcaption>
-</figure>
-</div>
-<div class="hifi-2">
-<figure>
-<img src="images/sphere_blue.jpg" alt="Sphere white version">
-<figcaption class="test">Option B - <span class="positive-data">80%</span></figcaption>
-</figure>
-</div>
-
-  <section class="data-info">
-    <div class="info-detail">
-    <h3>1<span class="circle-dot">.</span></h3>
-    <p><span class="key-li">Cards -</span> Users preferred rounded cards for feeling more friendly and trustworthy.</p>
-   </div>
-    <div class="info-detail">
-    <h3>2<span class="circle-dot">.</span></h3>
-    <p><span class="key-li">Blue header -</span> Kept the page grounded with stronger hierarchy.</p>
+  <div class="hifi-mockups">
+  <h2>High fidelity</h2>
+  <p>One of the challenges I faced was the massive amount of medical information. For that reason, I
+    dedicated most of my time to the information architecture above. I initiated that in the design
+    phase by starting with black and white designs and moving quickly to color which helped drive
+    the project forward.</p>
+  <p><a href="https://drive.google.com/drive/folders/1jS-2H3yQlnPZ0p0v8XH_jkJ4IIA43E4J" target="_blank">Hifi designs <i class="fas fa-external-link-alt"></i></a></p>
   </div>
-  <div class="info-detail">
-  <h3>3<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Button layout -</span>Placement of buttons were more reachable touch targets but blocked
-     additional prescriptions from being displayed.</p>
-</div>
-</section>
 
-<div class="study-btn">
-<a href="https://app.usabilityhub.com/tests/4f3b1b243302/results/d3d6c9e3abac" target="_blank" class="cs-button">View full results</a>
-</div>
+  <div class="dashboard">
+  <h2>A/B Testing</h2>
+  <p>I ran an A/B test on the Today and Prescriptions screens to assist in guiding the design of other
+    aspects of the app. Although Option B was selected 80% of the time I took note of elements of the
+    white design along with other issues I spotted to create a stronger more cohesive design.</p>
+  <p><span class="highlight">1. Cards</span> - Users preferred rounded cards for feeling more friendly and trustworthy.</p>
+  <p><span class="highlight">2. Blue header</span> - Kept the page grounded with stronger hierarchy.</p>
+  <p><span class="highlight">3. Button layout</span> - Placement of buttons were more reachable touch targets but blocked additional prescriptions from being displayed.</p>
+  <p><a href="https://app.usabilityhub.com/tests/4f3b1b243302/results/d3d6c9e3abac" target="_blank">View full results <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
 
-<!-- Iteration -->
-<div class="iteration-intro">
-<h2>Iteration</h2>
-<p>I made revisions to the card style and placement of buttons. I also started bringing more consistency to the
-   onboarding experience by expanding the blue header to take the entire screen and utilizing the same heading and paragraph
-   style used throughout the application.
-</p>
-</div>
+  <div class="hifi-2">
+  <img class="cs-img" src="images/sphere_white.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="iter-1">
-<figure>
-<img src="images/iter_onboard.jpg" class="img-shadow" alt="Sphere onboarding">
-<figcaption>Second onboarding screen</figcaption>
-</figure>
-</div>
-
-<div class="iter-2">
-<figure>
-<img src="images/today_iter.jpg" class="img-shadow" alt="Sphere Today iteration">
-<figcaption>Revised Today screen</figcaption>
-<figure>
-</div>
-
-<div class="iter-3">
-<figure>
-<img src="images/script_iter.jpg" class="img-shadow" alt="Sphere prescription iteration">
-<figcaption>Revised prescription screen</figcaption>
-</figure>
-</div>
+  <div class="hifi-1">
+  <img class="cs-img" src="images/sphere_blue.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
 
-<!-- Critique Iteration -->
-<section class="crit-iteration"><!-- Nested grid  here -->
-<div class="crit">
-<h2>Design Critique and Iteration</h2>
-<p>I attended several critiques led by a senior designer. Although I iterated on issues from the previous
-  usability and A/B testing there were still major concerns with the prescriptions screen.</p>
-</div>
+  <div class="iteration">
+  <h2>Iteration</h2>
+  <p>I made revisions to the card style and placement of buttons. I also started bringing more consistency
+    to the onboarding experience by expanding the blue header to take the entire screen and utilizing
+    the same heading and paragraph style used throughout the application.</p>
+  <p><a href="https://drive.google.com/drive/folders/1Ag6mquJ7n0ACXVQYH8YWMfsRSmDAbHcW" target="_blank">View all iterations <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
 
-<div class="crit-submit">
-  <figure>
-  <figcaption class="test">Submitted to critique</figcaption>
-<img src="images/crit_submit.jpg" alt="Sphere white version">
-</figure>
-</div>
+  <div class="mock-1">
+  <img class="cs-img" src="images/today_iter.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="crit-info">
-  <div class="info-detail">
-  <h3>1<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Buttons -</span> No way for a user to add a new prescription to Sphere.</p>
- </div>
-  <div class="info-detail">
-  <h3>2<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Patient and doctor names -</span> Issue with perfect data. Half the content below the
-  prescription title would break the design. In addition, there might be an opportunity to group
-  patients.</p>
-</div>
-<div class="info-detail">
-<h3>3<span class="circle-dot">.</span></h3>
-<p><span class="key-li">Prescription names -</span>  Longer medication names will run into the status buttons.
-Will the prescriptions truncate or drop to two lines?</p>
-</div>
-<div class="testing-btn">
-<a href="https://docs.google.com/document/d/1tlVyRM9qYsLOS1S7JR8BblHNANpwEzWPcZli_se0FPQ/edit" target="_blank" class="cs-button">View critique notes</a>
-</div>
-</div><!-- END Crit Info -->
+  <div class="mock-2">
+  <img class="cs-img" src="images/script_iter.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="crit-revised">
-<figure>
-<figcaption class="test">Revised</figcaption>
-<img src="images/crit_revised.jpg" alt="Sphere white version">
-</figure>
-</div>
+  <section class="section-1">
+    <div class="landing">
+    <h2>Critique</h2>
+    <p>I attended several critiques led by a senior designer. Although I iterated on issues from
+       the previous usability and A/B testing there were still major concerns with the
+       prescriptions screen.</p>
+    <p><a href="https://figma.com/file/TJoUTDqQ3aY7Ha3HM380zQpS/Frution-Iterations%3A-Before-%26-After?node-id=0%3A1" target="_blank">View all changes <i class="fas fa-external-link-alt"></i></a></p>
+   </div>
 
-<div class="crit-info-2">
-  <div class="info-detail">
-  <h3>1<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Buttons -</span>Added new prescriptions tab and screen (see further below)</p>
- </div>
-  <div class="info-detail">
-  <h3>2<span class="circle-dot">.</span></h3>
-  <p><span class="key-li">Patient and doctor names -</span> Grouping of patient names on top of the cards. Moved patient and doctor
-    names to the prescription details screen. </p>
-</div>
-<div class="info-detail">
-<h3>3<span class="circle-dot">.</span></h3>
-<p><span class="key-li">Prescription names -</span>Longer prescription names drop to 2 lines and truncate beyond that.</p>
-</div>
-<div class="study-btn">
-<a href="https://drive.google.com/open?id=1Ag6mquJ7n0ACXVQYH8YWMfsRSmDAbHcW" target="_blank" class="cs-button">View all iterations</a>
-</div>
-</div><!-- END Crit Info -->
-</section>
-<!-- END Crit Iteration -->
+   <div class="landing-1">
+   <img class="cs-img" src="images/crit_submit.jpg" alt="A sketched user flow on student scholarships">
+   </div>
 
-<!-- Usability Testing -->
-<div class="usability-testing">
-<h2>Usability Testing & Iterations</h2>
-<p>I tested in person with potential patients in tandem with design critiques. I found a need for the following:</p>
-<ul>
-<li><span class="key-li">New medication -</span> Screen for information when adding new medications  </li>
-<li><span class="key-li">Consistent pill reminder -</span> Less jarring pill reminder screen integrated better
-with the rest of the application.</li>
-<li><span class="key-li">Errors -</span> A way to resolve mistakes when scanning prescriptions</li>
-<li><span class="key-li">Family -</span> Users are confused about family tab. Need a more specific flow for users to add and manage family members.</li>
-</ul>
-<p>Based on the feedback I received from the usability test I iterated on some of the screens below.</p>
-</div>
+   <div class="landing-2">
+   <img class="cs-img" src="images/crit_revised.jpg" alt="A sketched user flow on student scholarships">
+   </div>
 
-<div class="iteration1">
-<figure>
-<img src="images/iteration1.png" alt="Nate V. user persona">
-<figcaption>Adding a new medication</figcaption>
-</figure>
-</div>
+<div class="landing-results">
+  <p><span class="highlight">1. Buttons</span> - Added new prescriptions tab.</p>
+  <p><span class="highlight">2. Patient and doctor names</span> - Grouping of patient names on top of the cards. Moved patient and doctor names to the prescription details screen.</p>
+  <p><span class="highlight">3. Prescription names</span> - Longer prescription names drop to 2 lines and truncate beyond that.</p>
+   </div>
 
-<div class="iteration2">
-<figure>
-<img src="images/iteration2.png" alt="Nate V. user persona">
-<figcaption>Adding a pill reminder</figcaption>
-</figure>
-</div>
+  </section>
 
-<div class="iteration3">
-  <figure>
-<img src="images/iteration3.png" alt="Nate V. user persona">
-<figcaption>Transfering prescriptions to Sphere</figcaption>
-</figure>
-</div>
+  <div class="mobile">
+  <h2>Usability testing</h2>
+  <p>I ran an A/B test on the Today and Prescriptions screens to assist in guiding the design of other
+    aspects of the app. Although Option B was selected 80% of the time I took note of elements of the
+    white design along with other issues I spotted to create a stronger more cohesive design. Based on
+    the feedback I received from the usability test I iterated on some of the screens below.</p>
+  <p><span class="highlight">1. New medication</span> - Screen for information when adding new medications.</p>
+  <p><span class="highlight">2. Consistent pill reminder</span> - Less jarring pill reminder screen integrated better with the rest of the application.</p>
+  <p><span class="highlight">3. Errors</span> - A way to resolve mistakes when scanning prescriptions.</p>
+  <p><span class="highlight">4. Family</span> - Users are confused about family tab. Need a more specific flow for users to add and manage family members.</p>
+  <p><a href="https://app.usabilityhub.com/tests/4f3b1b243302/results/d3d6c9e3abac" target="_blank">View full results <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
 
-<div class="iteration4">
-<figure>
-<img src="images/iteration4.png" alt="Nate V. user persona">
-<figcaption>Adding and managing family members</figcaption>
-</figure>
-</div>
+  <div class="mobile-1">
+  <img class="cs-img" src="images/iteration1.png" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="study-btn">
-<a href="https://drive.google.com/open?id=1Ag6mquJ7n0ACXVQYH8YWMfsRSmDAbHcW" target="_blank" class="cs-button">View all iterations</a>
-</div>
+  <div class="mobile-2">
+  <img class="cs-img" src="images/iteration2.png" alt="A sketched user flow on student scholarships">
+  </div>
 
-<section class="finishing-touches">
-<div class="finishing-intro">
-<h2>Unhappy States, Blankstates, and Beyond</h2>
-<p>After resolving a majority of pain points, I was encouraged by senior designers to tackle success/error screens, input feedback, notifications, and blank states.
-  I also revised the order screen created illustrated icons used in the error and success states.</p>
-</div>
+  <div class="mobile-1">
+  <img class="cs-img" src="images/iteration3.png" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="state1">
-<figure>
-<img src="images/error.png" alt="Error and success screens">
-<figcaption>Scanning success and error</figcaption>
-</figure>
-</div>
+  <div class="mobile-2">
+  <img class="cs-img" src="images/iteration4.png" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="state2">
-<figure>
-<img class="" src="images/card_error.png" alt="Error on credit card transaction">
-<figcaption>Error on payment</figcaption>
-</figure>
-</div>
+  <div class="iterations">
+  <h2>Unhappy states and blankstates</h2>
+  <p>After resolving a majority of pain points, I was encouraged by senior designers
+    to tackle success/error screens, input feedback, notifications, and blank states.
+    I also revised the order screen created illustrated icons used in the error and success
+    states.</p>
+  <p><a href="https://drive.google.com/drive/folders/1Ov2F9n5dmgT2TgK2AFezuCAD2jbLK1im" target="_blank">See all states <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
 
-<div class="state3">
-<figure>
-<img src="images/notif.png" alt="Pill reminder notifications">
-<figcaption>Sphere notifications</figcaption>
-</figure>
-</div>
+  <div class="us-1">
+  <img class="cs-img" src="images/error.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="state4">
-<figure>
-<img src="images/blank.png" alt="Blankstates on prescriptions and messages">
-<figcaption>Blankstates</figcaption>
-</figure>
-</div>
+  <div class="us-2">
+  <img class="cs-img" src="images/card_error.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
-<div class="study-btn">
-<a href="https://drive.google.com/open?id=1Ov2F9n5dmgT2TgK2AFezuCAD2jbLK1im" target="_blank" class="cs-button">See all states</a>
-</div>
+  <div class="us-3">
+  <img class="cs-img" src="images/notif.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
-</section>
+  <div class="us-4">
+  <img class="cs-img" src="images/blank.jpg" alt="A sketched user flow on student scholarships">
+  </div>
 
-<!-- Logo Design and Identity -->
-<div class="identity">
-<h2>Logo Design</h2>
-<p>I stepped away from the designs to wrap up the project and decide on a name. I created a mindmap
-and settled on Sphere while working alongside a senior designer. After reaching the final design I
-built out a branding style guide, Sketch component system, and illustrated for onboarding and
-success/error screens. The logo typeface is Futura while the product typeface aligns with the HIG.
-</p>
-</div>
+  <section class="section-1">
+    <div class="learnings">
+    <h2>What I learned</h2>
+    <p>Working on Sphere Pharmacy forced me to think about the impact of my design decisions.
+      One of the most valuable insights I had was to be ok with not getting it right the first time.
+       By failing earlier, you can reduce how you impact users. Being willing to continuously cycle
+       back through with users and stay genuinely interested in how your design breaks are crucial.</p>
+       <p>I also learned a lot about maintaining consistency and communication throughout a product.
+         Not only does it ease user expectations it builds trust and makes an app worth using.</p>
+          <p>Lastly, although this was a personal project I learned a lot about not working in a silo.
+            I made it a point to reach out to my community of designers for critique and communicating
+            with users to drive the product forward.</p>
+    </div>
+  </section>
 
-<div class="logo-sketch">
-<img src="images/logosketch.jpg" alt="Analog logo ideation">
-</div>
+  <!--Footer-->
+  <div class="social-links">
+  <p id="footer-email">hello@codydennis.design</p>
+  </div>
 
-<div class="logo-digital">
-<img src="images/logo_digital.jpg" alt="Digital iterations of Sphere logo">
-</div>
 
-<div class="logo-final">
-<img src="images/logo-final.jpg" alt="Final logo design">
-</div>
+  <div class="footer-info">
+  <p>© 2020 | Designed and developed by Cody Dennis</p>
+  </div>
 
-<div class="styleguide-btn">
-<a href="https://drive.google.com/open?id=1TKngb4TnHecoOrjNpb-FyAEmETTMfqXg" target="_blank" class="cs-button">View full styleguide</a>
-</div>
 
-<div class="process-btn">
-<a href="" target="_blank" class="cs-button">View logo process</a>
-</div>
 
-<section class="conclusion">
-<div class="learn">
-<h2>What I Learned</h2>
-<p>
-Working on Sphere Pharmacy forced me to think about the impact of my design decisions.
-One of the most valuable insights I had was to be ok with not getting it right the first time.
-By failing earlier, you can reduce how you impact users. Being willing to continuously cycle back
-through with users and stay genuinely interested in how your design breaks are crucial.
-</p>
-<p>
-  I also learned a lot about maintaining consistency and communication throughout a product.
-  Not only does it ease user expectations it builds trust and makes an app worth using.
-</p>
-<p>
 
-  Lastly, although this was a personal project I learned a lot about not working in a silo.
-  I made it a point to reach out to my community of designers for critique and communicating
-  with users to drive the product forward.
-</p>
-</div>
-</section>
 
-<!-- Footer -->
-<footer>
-      <div class="footer-info"><!-- To wrap all content inside the footer -->
-      <div class="social-links"><!-- Font Awesome social media links -->
-        <a href="https://www.linkedin.com/in/codyjdennis/" target="_blank">
-          <i class="fab fa-linkedin fa-4x"></i></a>
-        <a href="http://codydennis.dribbble.com/" target="_blank">
-          <i class="fab fa-dribbble-square fa-4x"></i></a>
-        <a href="https://twitter.com/codyjdennis" target="_blank">
-          <i class="fab fa-twitter-square fa-4x"></i></a>
-     </div>
-     <div>
-        <p><i class="far fa-copyright"></i> 2018 | Designed & Developed by Cody Dennis</p>
-     </div><!-- end Social Links-->
-     </div><!-- End wrapping all content in footer -->
-</footer>
 
-</div><!--end grid wrapper-->
-</body>
+
+
+
+
+</div> <!--CSS grid wrapper end -->
+
+  </body>
 </html>
