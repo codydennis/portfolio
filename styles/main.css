@@ -236,12 +236,12 @@ header {
 
 
 .logo-container {
-    margin-left: 3.2rem;
+    margin-left: 2.4rem;
 }
 
 #text-logo {
   font-size: 2.8rem;
-  color: #28218A;
+  color: #101133;
   font-family: 'BlackerText-Bold';
   font-weight: 900;
 }
@@ -912,7 +912,7 @@ color: #7E8398;
 .hifi-mockups, .dashboard, .pref, .mobile, .iterations, .unhappy, .learnings, .landing, .cs-img-1, .cs-img-2, .flow-img,
 .hifi-1, .hifi-2, .mock-1, .mock-2, .mock-3, .iteration, .landing-1, .landing-2, .landing-results, .mobile-1,
 .mobile-2, .us-1, .us-2, .us-3, .us-4, .us-5, .us-6 {
-margin: 0 3.2rem;
+margin: 0 2.4rem;
 }
 
 /* PROJECT SHOWCASE */
