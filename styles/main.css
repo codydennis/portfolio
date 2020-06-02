@@ -105,13 +105,13 @@ h1, h2, h3 {
 h1 {
   font-size: 3.2rem;
   color: #7E8398;
-  line-height: 4.8rem;
+  line-height: 4.2rem;
   margin-bottom: 0;
 }
 
 h2 {
   font-size: 2.4rem;
-  line-height: 4rem;
+  line-height: 3.4rem;
   font-weight: 900;
 
 }
@@ -170,7 +170,7 @@ li {
 
   h2 {
     font-size: 2.8rem;
-    line-height: 3.8rem;
+    line-height: 4rem;
 
   }
 
@@ -221,12 +221,14 @@ li {
 
 header {
   padding: 1.2rem 0.4rem;
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: rgba(255, 255, 255, 0.98);
   display: flex;
   align-items: center;
   z-index: 1;
+  border-top: 0.4rem solid #01A079;
   position: fixed;
   width: 100%;
+
   justify-content: space-between;
 }
 
@@ -536,7 +538,7 @@ header {
 
 /* Global Margin on all content inside the grid wrapper */
 /* Same for mobile and tablet, but zero for desktop */
-.hero-content, .project-1-text, .project-1-img, .project-2-text, .project-2-img, .project-3-text,
+.hero-content, .case-studies, .project-1-text, .project-1-img, .project-2-text, .project-2-img, .project-3-text,
 .project-3-img, .help, .help-content {
 margin: 0 2.4rem;
 }
@@ -632,6 +634,7 @@ margin: 0 2.4rem;
 
 .case-studies {
   grid-column: 1 / -1;
+  margin-bottom: 4rem;
 }
 
 .h2-grey {
@@ -701,7 +704,7 @@ margin-bottom: 8rem;
 }
 
 .help-content p {
-  color: #F9FAFF;
+  color: #EAEAEA;
 
 }
 
@@ -730,6 +733,10 @@ margin-bottom: 8rem;
     margin-right: 0;
   }
 
+  .project-3-img {
+    margin-bottom: 12rem;
+  }
+
   .project-sub {
     padding-top: 0;
   }
@@ -738,9 +745,8 @@ margin-bottom: 8rem;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 4rem;
     grid-row-gap: 2.4rem;
-    margin: 0;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
   }
 
   .help {
