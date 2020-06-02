@@ -149,6 +149,15 @@ li {
   list-style-type: disc;
 }
 
+.bold-white {
+  font-weight: 900;
+  color: #FFF;
+}
+
+.bold {
+  font-weight: 900;
+}
+
 @media screen and (min-width:768px)
 {
   h1, h2, h3, h4, h5, h6, p {
@@ -174,7 +183,7 @@ li {
   p {
     font-size: 2.1rem;
     line-height: 3.8rem;
-    margin-bottom: 0;
+    margin-bottom: 1.6rem;
   }
 
   li {
@@ -202,7 +211,6 @@ li {
   }
 
   p {
-    padding-bottom: 1.6rem;
   }
 
 }
@@ -233,7 +241,7 @@ header {
 
 #text-logo {
   font-size: 2.8rem;
-  color: #10121C;
+  color: #28218A;
   font-family: 'BlackerText-Bold';
   font-weight: 900;
 }
@@ -497,7 +505,7 @@ header {
   .grid-wrapper {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 2em;
-    grid-row-gap: 9.6rem;
+    grid-row-gap: 2rem;
     margin: 0;
   }
 
@@ -518,12 +526,6 @@ header {
 
 @media screen and (min-width:1224px) {
 
-  .grid-wrapper {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 2em;
-    grid-row-gap: 9.6rem;
-    margin: 0;
-  }
 
 
 }
@@ -534,8 +536,9 @@ header {
 
 /* Global Margin on all content inside the grid wrapper */
 /* Same for mobile and tablet, but zero for desktop */
-.hero-content, .project-1-text, .project-1-img, .project-2-text, .project-2-img, .project-3-text, .project-3-img, .contact-me, footer {
-margin: 0 3.2rem;
+.hero-content, .project-1-text, .project-1-img, .project-2-text, .project-2-img, .project-3-text,
+.project-3-img, .help, .help-content {
+margin: 0 2.4rem;
 }
 
 
@@ -637,13 +640,12 @@ margin: 0 3.2rem;
 
 .project-1-text, .project-2-text, .project-3-text {
   grid-column: 1 / -1;
-  margin-bottom: 1.6rem;
 
 }
 
   .project-1-img, .project-2-img, .project-3-img {
     grid-column: 1 / -1;
-    margin-bottom: 9.6rem;
+    margin-bottom: 8rem;
   }
 
 
@@ -677,6 +679,33 @@ margin: 0 3.2rem;
   box-shadow: 0 10px 60px rgba(0, 0, 0, 0.16);
 }
 
+.how-can-i-help {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column: 1 / -1;
+  background-color: #10121C;
+}
+
+.help {
+  margin-top: 8rem;
+}
+
+.help-content {
+margin-bottom: 8rem;
+}
+
+.help h2 {
+  color: #FFF;
+  padding-bottom: 1.6rem;
+}
+
+.help-content p {
+  color: #F9FAFF;
+
+}
+
+
 
 
 
@@ -705,6 +734,27 @@ margin: 0 3.2rem;
     padding-top: 0;
   }
 
+  .how-can-i-help {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 2.4rem;
+    margin: 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .help {
+    grid-column: 2 / 5;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .help-content {
+    grid-column: 5 / 12;
+    margin-bottom: 0;
+  }
+
 }
 
 /* LAPTOP */
@@ -713,65 +763,6 @@ margin: 0 3.2rem;
 
 /* END DESIGN PROJECTS */
 
-/* HOW CAN I HELP SECTION */
-
-.help {
-  background-color: #dce2e6;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-column: 1 / -1;
-  }
-
-@media screen and (min-width:768px) {
-}
-
-.help {
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 2em;
-  grid-row-gap: 4rem;
-  margin-top: 9.6rem;
-  align-items: baseline;
-}
-
-.help-header {
-  grid-column: 2 / 6;
-}
-
-.help-content {
-  grid-column: 7 / 12;
-}
-
-.help-header h2, .help-content h2 {
-  color: #0E1527;
-  margin-top: 9.6rem;
-}
-
-.help-content h2{
-  font-family: 'Calibre';
-  font-weight: 700;
-}
-
-
-
-
-
-@media screen and (min-width:1224px) {
-
-
-}
-
-.contact-me {
-  grid-column: 1 / -1;
-  padding: 6rem 0;
-  text-align: center;
-}
-
-.email h2 {
-  padding-bottom: 2rem;
-}
-
-
 
 
 /* Footer */
@@ -779,17 +770,19 @@ margin: 0 3.2rem;
 .footer-info {
 grid-column: 1 / -1;
 text-align: center;
-margin-bottom: 9.6rem;
+margin-bottom: 4rem;
 color: #7E8398;
 }
 
 .social-links {
   text-align: center;
+  margin-top: 4rem;
 }
 
-#footer-email {
+.email {
   color: #01A079;
   font-weight: 500;
+  margin-bottom: 0;
 
 }
 
@@ -797,14 +790,16 @@ color: #7E8398;
 
 .footer-info {
   grid-column: 6 / 12;
-  margin-bottom: 10rem;
+  margin-top: 2rem;
   text-align: right;
 }
 
 .social-links {
   grid-column: 2 / 6;
   text-align: left;
+  margin-top: 2rem;
 }
+
 
 }
 
