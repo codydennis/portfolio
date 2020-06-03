@@ -113,6 +113,7 @@ h2 {
   font-size: 2.4rem;
   line-height: 3.4rem;
   font-weight: 900;
+  margin-bottom: 1.2rem;
 
 }
 
@@ -127,8 +128,7 @@ h4 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #0CBEA9;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 
 
@@ -467,11 +467,11 @@ header {
 
 
   .logo-container {
-      margin-left: 8rem;
+      margin-left: 3.2rem;
   }
 
   .nav-links {
-    margin-right: 8rem;
+    margin-right: 3.2rem;
   }
 }
 
@@ -571,6 +571,12 @@ margin: 0 2.4rem;
   padding-top: 5rem;
 }
 
+#header-sub {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 0.8rem;
+}
+
 .fab {
   font-size: 3.2rem;
   padding-top: 1.6rem;
@@ -589,7 +595,7 @@ margin: 0 2.4rem;
   }
 
 .hero {
-  grid-column: 1 / -1;
+  grid-column: 2 / 12;
   grid-gap: 2rem;
   text-align: center;
 }
@@ -598,6 +604,11 @@ margin: 0 2.4rem;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+#header-sub {
+  font-size: 2.4rem;
+  padding-top: 1.2rem;
 }
 
 .intro-p {
@@ -914,7 +925,7 @@ color: #7E8398;
 
 /* CASE STUDY MARGINS */
 
-.intro-content, .fruition-final, .problem, .solution, .what-i-learned, .user-survey, .insights, .comp-analysis, .target, .low-fi, .stories, .sketch, .usability-1,
+.intro-content, .fruition-final, .problem, .solution, .what-i-learned, .hr, .user-survey, .insights, .comp-analysis, .target, .low-fi, .stories, .sketch, .usability-1,
 .hifi-mockups, .dashboard, .pref, .mobile, .iterations, .unhappy, .learnings, .landing, .cs-img-1, .cs-img-2, .flow-img,
 .hifi-1, .hifi-2, .mock-1, .mock-2, .mock-3, .iteration, .landing-1, .landing-2, .landing-results, .mobile-1,
 .mobile-2, .us-1, .us-2, .us-3, .us-4, .us-5, .us-6 {
@@ -962,7 +973,7 @@ margin: 0 2.4rem;
 margin-top: 8rem;
 }
 
-.problem, .solution, .stories, .cs-img-1, .cs-img-2, .dashboard, .hifi-1, .hifi-2, .mock-1,
+.problem, .solution, .what-i-learned, .stories, .cs-img-1, .cs-img-2, .dashboard, .hifi-1, .hifi-2, .mock-1,
 .mock-2, .mock-3, .iteration, .mobile-1, .mobile-2, .us-1, .us-2, .us-3, .us-4, .us-5, .us-6 {
   margin-top: 4rem;
 }
@@ -993,7 +1004,6 @@ margin-top: 8rem;
 
 .insights-data p {
   color: #7E8398;
-
 }
 
 .insights-data h2 {
@@ -1059,6 +1069,12 @@ margin-left: 0;
 margin-right: 0;
 }
 
+.user-survey, .comp-analysis, .target, .low-fi, .sketch, .usability-1,
+.pref, .landing, .landing-results, .mobile, .iterations, .unhappy, .learnings, .flow-img, .hifi-mockups,
+.landing-1, .landing-2 {
+margin-top: 12rem;
+}
+
 .intro-cs {
 grid-template-columns: repeat(12, 1fr);
 grid-column-gap: 4rem;
@@ -1084,7 +1100,7 @@ margin: 0;
 margin-top: 0rem;
 }
 
-.problem, .solution, .stories, .flow-img, .landing-1, .landing-2, .cs-img-1, .cs-img-2, .dashboard, .hifi-1, .hifi-2, .mock-1,
+.problem, .solution, .what-i-learned, .hr, .stories, .flow-img, .landing-1, .landing-2, .cs-img-1, .cs-img-2, .dashboard, .hifi-1, .hifi-2, .mock-1,
 .mock-2, .mock-3, .pref, .iterations, .mobile-1, .mobile-2, .us-1, .us-2, .us-3, .us-4, .us-5, .us-6 {
   margin-top: 4rem;
 }
@@ -1093,13 +1109,13 @@ margin-top: 0rem;
   padding-bottom: 0;
 }
 
-.problem, .solution, .what-i-learned, .user-survey, .insights, .comp-analysis, .target, .low-fi, .stories, .sketch, .usability-1,
+.problem, .solution, .hr, .what-i-learned, .user-survey, .insights, .comp-analysis, .target, .low-fi, .stories, .sketch, .usability-1,
 .hifi-mockups, .dashboard, .pref, .mobile, .iterations, .unhappy, .learnings, .landing, .iteration {
   grid-column: 3 / 11;
 }
 
 .landing-2, .learnings {
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
 }
 
 
@@ -1140,7 +1156,7 @@ margin-top: 0rem;
 }
 
 .usability-1, .learnings {
-  margin-bottom: 7.6rem;
+  margin-bottom: 12rem;
 }
 
 .hifi-2, .mock-1 {
